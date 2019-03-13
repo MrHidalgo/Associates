@@ -7,7 +7,7 @@
  */
 const initSwiper = () => {
 
-  const mySwiper = new Swiper('.swiper-container', {
+  const swiperThink = new Swiper('.swiper-container-think', {
     // Optional parameters
     wrapperClass: "swiper-wrapper",
     slideClass: "swiper-slide",
@@ -17,6 +17,7 @@ const initSwiper = () => {
     normalizeSlideIndex: true,
     grabCursor: true,
     freeMode: false,
+    speed: 500,
     effect: 'slide', // "slide", "fade", "cube", "coverflow" or "flip"
     // autoplay: {
     //   delay: 5000,
@@ -35,9 +36,11 @@ const initSwiper = () => {
     // allowSwipeToPrev: true,
     // allowPageScroll: "auto ",
 
-    slidesPerView: 1,
-    spaceBetween: 0,
-    breakpoints: {
+    initialSlide: 1,
+    slidesPerView: 'auto',
+    spaceBetween: 37,
+    centeredSlides: true,
+    /*breakpoints: {
       // when window width is <= 320px
       320: {
         slidesPerView: 1,
@@ -53,7 +56,7 @@ const initSwiper = () => {
         slidesPerView: 3,
         spaceBetween: 30
       }
-    },
+    },*/
 
     // If we need pagination
     pagination: {
@@ -69,20 +72,20 @@ const initSwiper = () => {
     },
 
     // Navigation arrows
-    navigation: {
+    /*navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
+    },*/
 
     // And if we need scrollbar
-    scrollbar: {
+    /*scrollbar: {
       el: '.swiper-scrollbar',
-    },
+    },*/
 
-    on: {
+    /*on: {
       "slideChange": function () {
         console.log("slideChange");
       },
-    }
+    }*/
   });
 };

@@ -9,11 +9,26 @@ section#think.think
       .think__slider
 
         mixin swiperContent()
-          .swiper-slide!= "1"
-          .swiper-slide!= "2"
-          .swiper-slide!= "3"
-          .swiper-slide!= "4"
-          .swiper-slide!= "5"
+          each val, idx in [1,2,3,4,5,6,7]
+            .swiper-slide
+              p.swiper-slide-title!= "Amazing way to earn cash"
+              p.swiper-slide-desc!= "It’s great that I can earn and build my CV at the same time, I don’t have a lot of time out of labs so being to work on projects in my spare time and from anyewhere is ideal for me ."
+              .swiper-slide-user
+                div
+                  .swiper-slide-circle
+                    img(src="./img/mockupone.png" srcset="./img/mockupone@2x.png 2x" alt="" title="")
+                div
+                  p!= "David Davidson"
+                  span!= "PHD Student, Bioengineering, Imperial College London"
+
+              .swiper-slide-content
+                span
+                span
+                span
+                span
+                span
+                span
+
 
         +swiper('swiper-container-think', 'swiperContent', true, false, false)
 
