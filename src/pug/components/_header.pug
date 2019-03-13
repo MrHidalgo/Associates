@@ -1,7 +1,19 @@
 // HEADER :: START
 
 header#header.header
+  .header__bg
   .c-grid
     .header__wrapper
+      .header__wrapper-left
+
+        +logoWithBG('header')
+
+      .header__wrapper-middle
+
+        +nav('header', ['Home', 'What we do', 'Who we are'])
+        
+      .header__wrapper-right
+        a.header__btn.header__btn-pre(href="#" class="" title="")!= "pre-register"
+        a.header__btn.header__btn-login(href="#" class="" title="")!= "Log in"
 
 // HEADER :: END
