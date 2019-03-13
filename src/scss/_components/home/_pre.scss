@@ -1,0 +1,44 @@
+// SECTION pre :: START
+
+.pre {
+  padding-top: 101px;
+  padding-bottom: 62px;
+  background-color: #f8f8f8;
+
+  &__title {
+    padding-bottom: 20px;
+  }
+
+  &__desc {
+    width: 100%;
+    max-width: 536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 31px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.45;
+    text-align: center;
+    color: #4a4a4a;
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #5e5e5e;
+    text-align: center;
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+// SECTION pre :: END

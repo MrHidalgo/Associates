@@ -4,16 +4,16 @@
 // ==================================================
 // ==================================================
 
-$bth-width: 250px;
-$bth-height: 45px;
+$bth-width: 296px;
+$bth-height: 48px;
 $btn-border-width: 1px;
-$btn-border-color: rgba(#000, 1);
-$bth-border-radius: 5px;
+$btn-border-color: rgba(#44b4a8, 1);
+$bth-border-radius: 0;
 $bth-box-shadow: none;
-$bth-background-color: rgba(#000, 1);
+$bth-background-color: rgba(#44b4a8, 1);
 $bth-color: rgba(#fff, 1);
-$bth-font-size: rgba(#000, 1);
-$bth-font-weight: bold;
+$bth-font-size: 16px;
+$bth-font-weight: 500;
 
 $btn-color--border: rgba(#000, 1);
 
@@ -36,6 +36,8 @@ $btn-color--border: rgba(#000, 1);
   color: $bth-color;
   font-size: $bth-font-size;
   font-weight: $bth-font-weight;
+  line-height: 1.25;
+  letter-spacing: 1.1px;
 
   &--border {
     background-color: transparent;
@@ -44,14 +46,13 @@ $btn-color--border: rgba(#000, 1);
 
   &--bg {
     background-color: $bth-background-color;
-  }
+    @include transition(color, background-color);
 
-  &__text {
-    &-wrap {}
-  }
-
-  &__icon {
-    &-wrap {}
+    &:hover {
+      background-color: transparent;
+      color: #44b4a8;
+      @include transition(color, background-color);
+    }
   }
 }
 
