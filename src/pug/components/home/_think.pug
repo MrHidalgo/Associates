@@ -1,0 +1,20 @@
+// SECTION think :: START
+
+section#think.think
+  .c-grid-fluid
+    .think__wrapper
+
+      h2.think__title!= "WHAT DO THE <span>ASSOCIATES THINK?</span>"
+
+      .think__slider
+
+        mixin swiperContent()
+          .swiper-slide!= "1"
+          .swiper-slide!= "2"
+          .swiper-slide!= "3"
+          .swiper-slide!= "4"
+          .swiper-slide!= "5"
+
+        +swiper('swiper-container-think', 'swiperContent', true, false, false)
+
+// SECTION think :: END

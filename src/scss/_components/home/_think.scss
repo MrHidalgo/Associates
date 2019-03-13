@@ -1,0 +1,28 @@
+// SECTION think :: START
+
+.think {
+  padding-top: 76px;
+  padding-bottom: 48px;
+  background-color: #45b8ac;
+
+  .c-grid-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 1.18;
+    letter-spacing: -0.7px;
+    text-align: center;
+    color: #ffffff;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+// SECTION think :: END

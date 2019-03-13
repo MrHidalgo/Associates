@@ -463,6 +463,18 @@ picture {
   color: #ffffff;
 }
 
+/* line 1, src/scss/_shared/_swiper.scss */
+.swiper-container {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+}
+
+/* line 6, src/scss/_shared/_swiper.scss */
+.swiper-container-think {
+  max-width: 100%;
+}
+
 /* line 1, src/scss/_shared/_iconFont.scss */
 .icon-font {
   display: -webkit-box;
@@ -593,6 +605,135 @@ picture {
 .footer__wrapper-1 {
   padding-top: 15px;
   padding-bottom: 36px;
+}
+
+/* line 3, src/scss/_components/home/_flexible.scss */
+.flexible {
+  overflow: hidden;
+  background-color: #44b4a8;
+}
+
+/* line 8, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* line 12, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper-left, .flexible__wrapper-right {
+  min-height: 100%;
+}
+
+/* line 17, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+}
+
+/* line 24, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper-right {
+  position: relative;
+  width: 100%;
+  max-width: -webkit-calc(100% - 500px);
+  max-width: calc(100% - 500px);
+}
+
+/* line 29, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper-right > div {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+/* line 38, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper-right > div:nth-of-type(1) {
+  left: 0;
+  width: 60%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 44, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper-right > div:nth-of-type(1) img {
+  -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+/* line 48, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper-right > div:nth-of-type(2) {
+  right: 0;
+  width: 60%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* line 55, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper-right > div img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 64, src/scss/_components/home/_flexible.scss */
+.flexible__title {
+  padding-bottom: 21px;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.17;
+  letter-spacing: -1.1px;
+  color: #000;
+}
+
+/* line 72, src/scss/_components/home/_flexible.scss */
+.flexible__title span {
+  font-weight: bold;
+}
+
+/* line 77, src/scss/_components/home/_flexible.scss */
+.flexible__desc {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #000000;
 }
 
 /* line 4, src/scss/_components/home/_info.scss */
@@ -798,6 +939,35 @@ picture {
 /* line 38, src/scss/_components/home/_pre.scss */
 .pre__info span {
   font-weight: 500;
+}
+
+/* line 3, src/scss/_components/home/_think.scss */
+.think {
+  padding-top: 76px;
+  padding-bottom: 48px;
+  background-color: #45b8ac;
+}
+
+/* line 8, src/scss/_components/home/_think.scss */
+.think .c-grid-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 13, src/scss/_components/home/_think.scss */
+.think__title {
+  padding-bottom: 40px;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1.18;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 22, src/scss/_components/home/_think.scss */
+.think__title span {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
