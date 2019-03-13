@@ -1,0 +1,59 @@
+// SECTION advantages :: START
+
+.advantages {
+  padding-top: 61px;
+  padding-bottom: 60px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: calc((100% - 30px) / 3);
+    height: 140px;
+    padding-bottom: 16px;
+
+    &-0 {
+      background-color: #45b8ac;
+    }
+    &-1 {
+      background-color: #26a69a;
+    }
+    &-2 {
+      background-color: #009688;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-count {
+      display: flex;
+      align-items: center;
+      padding-bottom: 7px;
+      font-size: 64px;
+      font-weight: 300;
+      line-height: 0.75;
+      letter-spacing: -1.4px;
+      color: #ffffff;
+
+      span {
+        line-height: 0.75;
+      }
+    }
+
+    &-desc {
+      padding-top: 7px;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.33;
+      letter-spacing: -0.5px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
+
+// SECTION advantages :: END
