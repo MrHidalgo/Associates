@@ -1,0 +1,33 @@
+// FOOTER :: START
+
+.footer {
+  min-height: 172px;
+  background-color: #e91d63;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    &-0 {
+      padding-top: 43px;
+      padding-bottom: 15px;
+
+      .footer__wrapper-left,
+      .footer__wrapper-right {
+        width: 50%;
+      }
+
+      .footer__wrapper-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+    &-1 {
+      padding-top: 15px;
+      padding-bottom: 36px;
+    }
+  }
+}
+
+// FOOTER :: END

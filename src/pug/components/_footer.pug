@@ -1,0 +1,29 @@
+// FOOTER :: START
+
+footer#footer.footer
+  .c-grid
+    .footer__wrapper.footer__wrapper-0
+      .footer__wrapper-left
+        +logo('footer')
+
+      .footer__wrapper-right
+
+        .subscribe
+          .subscribe__form
+            .subscribe__form-icon
+              i.icon-font.icon-subscribe
+            input(type="text" placeholder='Subscribe to Newsletter' name='')
+            button(type='submit')!= 'Subscribe'
+
+    .footer__wrapper.footer__wrapper-1
+      .footer__wrapper-left
+
+        .copyright
+          p!= "© 2019 Outsmart Insights Ltd | <a href='#'>Privacy Notice</a>"
+
+      .footer__wrapper-right
+
+        +nav('footer', ['Home', 'What we do', 'Who we are'])
+
+
+// FOOTER :: END
