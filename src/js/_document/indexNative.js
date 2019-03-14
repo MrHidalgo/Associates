@@ -27,6 +27,8 @@
 		// lib
 		// ==========================================
 		initSwiper();
+		initViewPortCheckerCount();
+		initStellar();
 
 		// callback
 		// ==========================================

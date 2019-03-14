@@ -6,15 +6,21 @@ section#advantages.advantages
 
       .advantages__block-wrapper
         .advantages__block.advantages__block-0
-          p.advantages__block-count!= "<span>100</span> +"
+          p.advantages__block-count.viewport-hide-js
+            span(data-from="0" data-to="100" data-speed="1500" data-refresh-interval="50" advantages-num-js)!= "100"
+            != "&nbsp;+"
           p.advantages__block-desc!= "Projects"
 
         .advantages__block.advantages__block-1
-          p.advantages__block-count!= "<span>1,000</span> +"
+          p.advantages__block-count.viewport-hide-js
+            span(data-from="100" data-to="1000" data-speed="1500" data-refresh-interval="50" advantages-num-js)!= "1000"
+            != "&nbsp;+"
           p.advantages__block-desc!= "Scientists"
 
         .advantages__block.advantages__block-2
-          p.advantages__block-count!= "<span>100,000</span> +"
+          p.advantages__block-count.viewport-hide-js
+            span(data-from="1000" data-to="100000" data-speed="1500" data-refresh-interval="50" advantages-num-js)!= "100000"
+            != "&nbsp;+"
           p.advantages__block-desc!= "Freelance hours"
 
 

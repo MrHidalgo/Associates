@@ -496,6 +496,16 @@ picture {
   color: #ffffff;
 }
 
+/* line 1, src/scss/_shared/_viewPortChecker.scss */
+.viewport-hide-js {
+  opacity: 0;
+}
+
+/* line 4, src/scss/_shared/_viewPortChecker.scss */
+.viewport-show-js {
+  opacity: 1;
+}
+
 /* line 1, src/scss/_shared/_swiper.scss */
 .swiper-container {
   width: 100%;
@@ -1122,6 +1132,7 @@ picture {
 
 /* line 8, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1129,12 +1140,12 @@ picture {
   min-height: 100vh;
 }
 
-/* line 12, src/scss/_components/home/_flexible.scss */
+/* line 13, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-left, .flexible__wrapper-right {
   min-height: 100%;
 }
 
-/* line 17, src/scss/_components/home/_flexible.scss */
+/* line 18, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1154,7 +1165,7 @@ picture {
   padding-bottom: 73px;
 }
 
-/* line 26, src/scss/_components/home/_flexible.scss */
+/* line 27, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right {
   position: relative;
   width: 100%;
@@ -1162,7 +1173,7 @@ picture {
   max-width: calc(100% - 500px);
 }
 
-/* line 31, src/scss/_components/home/_flexible.scss */
+/* line 32, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div {
   position: absolute;
   display: -webkit-box;
@@ -1180,7 +1191,7 @@ picture {
   min-height: 100%;
 }
 
-/* line 40, src/scss/_components/home/_flexible.scss */
+/* line 41, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div:nth-of-type(1) {
   left: 0;
   width: 60%;
@@ -1194,14 +1205,14 @@ picture {
           align-items: flex-start;
 }
 
-/* line 46, src/scss/_components/home/_flexible.scss */
+/* line 47, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div:nth-of-type(1) img {
   -webkit-transform: translateX(-40px);
       -ms-transform: translateX(-40px);
           transform: translateX(-40px);
 }
 
-/* line 50, src/scss/_components/home/_flexible.scss */
+/* line 51, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div:nth-of-type(2) {
   right: 0;
   width: 60%;
@@ -1215,20 +1226,21 @@ picture {
           align-items: flex-end;
 }
 
-/* line 56, src/scss/_components/home/_flexible.scss */
+/* line 57, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div:nth-of-type(2) img {
   position: relative;
   right: -17px;
 }
 
-/* line 62, src/scss/_components/home/_flexible.scss */
+/* line 63, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div img {
+  position: relative;
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 71, src/scss/_components/home/_flexible.scss */
+/* line 73, src/scss/_components/home/_flexible.scss */
 .flexible__title {
   padding-bottom: 21px;
   font-size: 48px;
@@ -1238,12 +1250,12 @@ picture {
   color: #000;
 }
 
-/* line 79, src/scss/_components/home/_flexible.scss */
+/* line 81, src/scss/_components/home/_flexible.scss */
 .flexible__title span {
   font-weight: bold;
 }
 
-/* line 84, src/scss/_components/home/_flexible.scss */
+/* line 86, src/scss/_components/home/_flexible.scss */
 .flexible__desc {
   font-size: 22px;
   font-weight: 300;

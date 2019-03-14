@@ -62,3 +62,28 @@ const initViewPortChecker = (
   });
 
 };
+const initViewPortCheckerCount = (
+  className = "viewport-hide-js",
+  classNameToAdd = "viewport-show-js animated",
+  offsetVal = 200
+) => {
+
+  $("." + className).not(".full-visible").each(function(idx, el) {
+
+    $(el).viewportChecker({
+      classToAdd: classNameToAdd,
+      classToAddForFullView: 'full-visible',
+      classToRemove : className,
+      removeClassAfterAnimation: true,
+      offset: offsetVal,
+      repeat: false,
+      callbackFunction: function(elem, action) {
+
+        $('.viewport-show-js [advantages-num-js]').countTo();
+
+      }
+    });
+
+  });
+
+};
