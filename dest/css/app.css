@@ -214,7 +214,7 @@ picture {
 
 /* line 20, src/scss/_shared/_grid.scss */
 .c-grid {
-  max-width: 1230px;
+  max-width: 1210px;
 }
 
 /* line 27, src/scss/_shared/_grid.scss */
@@ -225,41 +225,41 @@ picture {
 @media screen and (min-width: 576px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1230px;
+    max-width: 1210px;
   }
 }
 
 @media screen and (min-width: 992px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1230px;
+    max-width: 1210px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1230px;
+    max-width: 1210px;
   }
 }
 
 @media screen and (min-width: 768px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1230px;
+    max-width: 1210px;
   }
 }
 
 @media screen and (min-width: 1366px) {
   /* line 35, src/scss/_shared/_grid.scss */
   .c-grid {
-    max-width: 1230px;
+    max-width: 1210px;
   }
 }
 
 /* line 5, src/scss/_shared/_common.scss */
 .nav--header {
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 /* line 8, src/scss/_shared/_common.scss */
@@ -330,13 +330,19 @@ picture {
           align-items: flex-start;
 }
 
-/* line 50, src/scss/_shared/_common.scss */
+/* line 49, src/scss/_shared/_common.scss */
+.logo--footer {
+  position: relative;
+  top: -9px;
+}
+
+/* line 53, src/scss/_shared/_common.scss */
 .logo--footer svg {
-  width: 171px;
+  width: 205px;
   fill: #fff;
 }
 
-/* line 56, src/scss/_shared/_common.scss */
+/* line 59, src/scss/_shared/_common.scss */
 .logo--header svg {
   width: 100%;
   height: 100%;
@@ -344,7 +350,7 @@ picture {
           filter: drop-shadow(0px 15px 0px rgba(0, 0, 0, 0.05));
 }
 
-/* line 66, src/scss/_shared/_common.scss */
+/* line 69, src/scss/_shared/_common.scss */
 .copyright {
   display: -webkit-box;
   display: -webkit-flex;
@@ -356,20 +362,20 @@ picture {
           align-items: center;
 }
 
-/* line 70, src/scss/_shared/_common.scss */
+/* line 73, src/scss/_shared/_common.scss */
 .copyright p {
   line-height: 1.43;
   letter-spacing: 1px;
   color: #ffffff;
 }
 
-/* line 75, src/scss/_shared/_common.scss */
+/* line 78, src/scss/_shared/_common.scss */
 .copyright p a {
   text-decoration: underline;
   color: #ffffff;
 }
 
-/* line 85, src/scss/_shared/_common.scss */
+/* line 88, src/scss/_shared/_common.scss */
 .subscribe__form {
   overflow: hidden;
   position: relative;
@@ -388,7 +394,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 95, src/scss/_shared/_common.scss */
+/* line 98, src/scss/_shared/_common.scss */
 .subscribe__form-icon {
   display: -webkit-box;
   display: -webkit-flex;
@@ -409,13 +415,13 @@ picture {
   height: 100%;
 }
 
-/* line 105, src/scss/_shared/_common.scss */
+/* line 108, src/scss/_shared/_common.scss */
 .subscribe__form-icon .icon-subscribe {
   font-size: 13px;
   color: rgba(74, 74, 74, 0.23);
 }
 
-/* line 111, src/scss/_shared/_common.scss */
+/* line 114, src/scss/_shared/_common.scss */
 .subscribe__form input,
 .subscribe__form button {
   outline: none;
@@ -427,7 +433,7 @@ picture {
   min-height: 100%;
 }
 
-/* line 120, src/scss/_shared/_common.scss */
+/* line 123, src/scss/_shared/_common.scss */
 .subscribe__form input {
   width: 100%;
   max-width: -webkit-calc(100% - 110px);
@@ -467,7 +473,7 @@ picture {
   font-size: 16px;
 }
 
-/* line 133, src/scss/_shared/_common.scss */
+/* line 136, src/scss/_shared/_common.scss */
 .subscribe__form button {
   cursor: pointer;
   display: -webkit-box;
@@ -500,7 +506,7 @@ picture {
 /* line 6, src/scss/_shared/_swiper.scss */
 .swiper-container-think {
   max-width: 100%;
-  height: 346px;
+  height: 355px;
 }
 
 /* line 11, src/scss/_shared/_swiper.scss */
@@ -841,7 +847,7 @@ picture {
 /* line 33, src/scss/_components/_header.scss */
 .header__wrapper-left {
   width: 100%;
-  max-width: 268px;
+  max-width: 272px;
 }
 
 /* line 38, src/scss/_components/_header.scss */
@@ -941,7 +947,7 @@ picture {
 
 /* line 11, src/scss/_components/_footer.scss */
 .footer__wrapper-0 {
-  padding-top: 43px;
+  padding-top: 44px;
   padding-bottom: 15px;
 }
 
@@ -952,6 +958,11 @@ picture {
 }
 
 /* line 20, src/scss/_components/_footer.scss */
+.footer__wrapper-0 .footer__wrapper-left {
+  padding-left: 5px;
+}
+
+/* line 24, src/scss/_components/_footer.scss */
 .footer__wrapper-0 .footer__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -967,7 +978,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 26, src/scss/_components/_footer.scss */
+/* line 30, src/scss/_components/_footer.scss */
 .footer__wrapper-1 {
   padding-top: 15px;
   padding-bottom: 36px;
@@ -976,12 +987,12 @@ picture {
 /* line 3, src/scss/_components/home/_main.scss */
 .main {
   position: relative;
-  min-height: 100vh;
 }
 
-/* line 7, src/scss/_components/home/_main.scss */
+/* line 6, src/scss/_components/home/_main.scss */
 .main__bg {
   z-index: -1;
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -1001,13 +1012,15 @@ picture {
 
 /* line 23, src/scss/_components/home/_main.scss */
 .main__bg-right img {
+  position: relative;
+  top: -51px;
   display: block;
   max-width: 100%;
   height: auto;
   margin-left: auto;
 }
 
-/* line 32, src/scss/_components/home/_main.scss */
+/* line 34, src/scss/_components/home/_main.scss */
 .main__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1020,12 +1033,7 @@ picture {
   min-height: 100vh;
 }
 
-/* line 37, src/scss/_components/home/_main.scss */
-.main__wrapper-left, .main__wrapper-right {
-  width: 50%;
-}
-
-/* line 42, src/scss/_components/home/_main.scss */
+/* line 44, src/scss/_components/home/_main.scss */
 .main__wrapper-left {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1040,13 +1048,19 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 125px;
+  width: 52%;
+  padding-top: 135px;
   padding-bottom: 24px;
 }
 
-/* line 51, src/scss/_components/home/_main.scss */
+/* line 53, src/scss/_components/home/_main.scss */
+.main__wrapper-right {
+  width: 48%;
+}
+
+/* line 58, src/scss/_components/home/_main.scss */
 .main__title {
-  padding-bottom: 8px;
+  padding-bottom: 11px;
   font-size: 56px;
   font-weight: 900;
   line-height: 1.14;
@@ -1055,7 +1069,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 61, src/scss/_components/home/_main.scss */
+/* line 68, src/scss/_components/home/_main.scss */
 .main__subtitle {
   width: 100%;
   max-width: 525px;
@@ -1069,39 +1083,35 @@ picture {
   color: #4a4a4a;
 }
 
-/* line 74, src/scss/_components/home/_main.scss */
+/* line 81, src/scss/_components/home/_main.scss */
 .main__btn {
   margin-bottom: 8px;
 }
 
-/* line 78, src/scss/_components/home/_main.scss */
+/* line 85, src/scss/_components/home/_main.scss */
 .main__info {
-  padding-bottom: 132px;
+  padding-bottom: 140px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: normal;
   color: #5e5e5e;
 }
 
-/* line 85, src/scss/_components/home/_main.scss */
+/* line 92, src/scss/_components/home/_main.scss */
 .main__info span {
   font-weight: 500;
 }
 
-/* line 90, src/scss/_components/home/_main.scss */
+/* line 97, src/scss/_components/home/_main.scss */
 .main__from {
   font-size: 17px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2;
-  letter-spacing: normal;
   color: #4a4a4a;
 }
 
-/* line 99, src/scss/_components/home/_main.scss */
+/* line 101, src/scss/_components/home/_main.scss */
 .main__from-1 {
   font-weight: bold;
+  letter-spacing: 0.1px;
 }
 
 /* line 3, src/scss/_components/home/_flexible.scss */
@@ -1141,9 +1151,10 @@ picture {
           flex-direction: column;
   width: 500px;
   min-height: 680px;
+  padding-bottom: 73px;
 }
 
-/* line 25, src/scss/_components/home/_flexible.scss */
+/* line 26, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right {
   position: relative;
   width: 100%;
@@ -1151,7 +1162,7 @@ picture {
   max-width: calc(100% - 500px);
 }
 
-/* line 30, src/scss/_components/home/_flexible.scss */
+/* line 31, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div {
   position: absolute;
   display: -webkit-box;
@@ -1169,7 +1180,7 @@ picture {
   min-height: 100%;
 }
 
-/* line 39, src/scss/_components/home/_flexible.scss */
+/* line 40, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div:nth-of-type(1) {
   left: 0;
   width: 60%;
@@ -1183,14 +1194,14 @@ picture {
           align-items: flex-start;
 }
 
-/* line 45, src/scss/_components/home/_flexible.scss */
+/* line 46, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div:nth-of-type(1) img {
-  -webkit-transform: translateX(-50px);
-      -ms-transform: translateX(-50px);
-          transform: translateX(-50px);
+  -webkit-transform: translateX(-40px);
+      -ms-transform: translateX(-40px);
+          transform: translateX(-40px);
 }
 
-/* line 49, src/scss/_components/home/_flexible.scss */
+/* line 50, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div:nth-of-type(2) {
   right: 0;
   width: 60%;
@@ -1205,13 +1216,19 @@ picture {
 }
 
 /* line 56, src/scss/_components/home/_flexible.scss */
+.flexible__wrapper-right > div:nth-of-type(2) img {
+  position: relative;
+  right: -17px;
+}
+
+/* line 62, src/scss/_components/home/_flexible.scss */
 .flexible__wrapper-right > div img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 65, src/scss/_components/home/_flexible.scss */
+/* line 71, src/scss/_components/home/_flexible.scss */
 .flexible__title {
   padding-bottom: 21px;
   font-size: 48px;
@@ -1221,16 +1238,16 @@ picture {
   color: #000;
 }
 
-/* line 73, src/scss/_components/home/_flexible.scss */
+/* line 79, src/scss/_components/home/_flexible.scss */
 .flexible__title span {
   font-weight: bold;
 }
 
-/* line 78, src/scss/_components/home/_flexible.scss */
+/* line 84, src/scss/_components/home/_flexible.scss */
 .flexible__desc {
   font-size: 22px;
   font-weight: 300;
-  line-height: 1.45;
+  line-height: 1.5;
   color: #000000;
 }
 
@@ -1270,6 +1287,17 @@ picture {
 }
 
 /* line 26, src/scss/_components/home/_info.scss */
+.info__block-0 img {
+  position: relative;
+  left: 7px;
+}
+
+/* line 31, src/scss/_components/home/_info.scss */
+.info__block-0 .info__block-right {
+  padding-left: 54px;
+}
+
+/* line 35, src/scss/_components/home/_info.scss */
 .info__block-1 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1278,38 +1306,64 @@ picture {
           flex-direction: row-reverse;
 }
 
-/* line 31, src/scss/_components/home/_info.scss */
+/* line 38, src/scss/_components/home/_info.scss */
+.info__block-1 img {
+  position: relative;
+  left: 11px;
+}
+
+/* line 43, src/scss/_components/home/_info.scss */
+.info__block-1 .info__block-right {
+  position: relative;
+  top: -13px;
+}
+
+/* line 49, src/scss/_components/home/_info.scss */
+.info__block-2 img {
+  position: relative;
+  left: -20px;
+}
+
+/* line 54, src/scss/_components/home/_info.scss */
+.info__block-2 .info__block-right {
+  padding-left: 54px;
+  padding-top: 55px;
+}
+
+/* line 60, src/scss/_components/home/_info.scss */
 .info__block-left, .info__block-right {
   width: 50%;
 }
 
-/* line 35, src/scss/_components/home/_info.scss */
+/* line 64, src/scss/_components/home/_info.scss */
 .info__block-left img, .info__block-right img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 43, src/scss/_components/home/_info.scss */
+/* line 74, src/scss/_components/home/_info.scss */
 .info__title {
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   text-align: left;
 }
 
-/* line 48, src/scss/_components/home/_info.scss */
+/* line 79, src/scss/_components/home/_info.scss */
 .info__desc {
   width: 100%;
   max-width: 536px;
   font-size: 22px;
   font-weight: 300;
-  line-height: 1.45;
+  line-height: 1.5;
   color: #4a4a4a;
 }
 
 /* line 3, src/scss/_components/home/_advantages.scss */
 .advantages {
   padding-top: 61px;
-  padding-bottom: 60px;
+  padding-bottom: 61px;
 }
 
 /* line 7, src/scss/_components/home/_advantages.scss */
@@ -1401,8 +1455,8 @@ picture {
 
 /* line 3, src/scss/_components/home/_pre.scss */
 .pre {
-  padding-top: 101px;
-  padding-bottom: 62px;
+  padding-top: 102px;
+  padding-bottom: 63px;
   background-color: #f8f8f8;
 }
 
@@ -1414,10 +1468,10 @@ picture {
 /* line 12, src/scss/_components/home/_pre.scss */
 .pre__desc {
   width: 100%;
-  max-width: 536px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 31px;
+  padding-bottom: 32px;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.45;
@@ -1449,7 +1503,7 @@ picture {
 /* line 3, src/scss/_components/home/_think.scss */
 .think {
   padding-top: 76px;
-  padding-bottom: 48px;
+  padding-bottom: 38px;
   background-color: #45b8ac;
 }
 

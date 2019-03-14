@@ -9,12 +9,16 @@
     align-items: center;
 
     &-0 {
-      padding-top: 43px;
+      padding-top: 44px;
       padding-bottom: 15px;
 
       .footer__wrapper-left,
       .footer__wrapper-right {
         width: 50%;
+      }
+
+      .footer__wrapper-left {
+        padding-left: 5px;
       }
 
       .footer__wrapper-right {

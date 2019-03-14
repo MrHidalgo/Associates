@@ -20,6 +20,7 @@
       flex-direction: column;
       width: 500px;
       min-height: 680px;
+      padding-bottom: 73px;
     }
 
     &-right {
@@ -43,7 +44,7 @@
           align-items: flex-start;
 
           img {
-            transform: translateX(-50px);
+            transform: translateX(-40px);
           }
         }
         &:nth-of-type(2) {
@@ -51,6 +52,11 @@
           width: 60%;
           justify-content: space-between;
           align-items: flex-end;
+
+          img {
+            position: relative;
+            right: -17px;
+          }
         }
 
         img {
@@ -78,7 +84,7 @@
   &__desc {
     font-size: 22px;
     font-weight: 300;
-    line-height: 1.45;
+    line-height: 1.5;
     color: #000000;
   }
 }

@@ -3,7 +3,7 @@
 // nav
 .nav {
   &--header {
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 
     .nav__list {
       justify-content: center;
@@ -47,8 +47,11 @@
   align-items: flex-start;
 
   &--footer {
+    position: relative;
+    top: -9px;
+
     svg {
-      width: 171px;
+      width: 205px;
       fill: #fff;
     }
   }
