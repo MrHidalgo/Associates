@@ -80,6 +80,7 @@ const initViewPortCheckerCount = (
       callbackFunction: function(elem, action) {
 
         $('.viewport-show-js [advantages-num-js]').countTo();
+        $('.viewport-show-js [network-num-js]').countTo();
 
       }
     });

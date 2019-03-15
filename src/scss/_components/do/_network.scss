@@ -4,7 +4,101 @@
   background-color: #fff;
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
     min-height: 719px;
+  }
+
+  &__row {
+    position: relative;
+    min-height: 100%;
+
+    &__bg {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      max-width: 1210px;
+      height: calc(100% - 50px);
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url('../img/img-network-map@2x.png');
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: contain;
+    }
+
+    &-0 {
+      display: flex;
+      min-height: 479px;
+      background-color: #c2185b;
+
+      .c-grid {
+        display: flex;
+        align-items: center;
+        min-height: 100%;
+
+      }
+    }
+
+    &-1 {
+      min-height: calc(100% - 479px);
+      padding-top: 48px;
+      padding-bottom: 52px;
+    }
+  }
+
+  &__title {
+    color: #ffffff;
+    text-align: left;
+
+    span {
+      display: block;
+      color: #ffffff;
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: calc((100% - (19px * 3)) / 4);
+    min-height: 140px;
+    background-color: #45b8ac;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-count {
+      display: flex;
+      align-items: center;
+      padding-bottom: 3px;
+      font-size: 64px;
+      font-weight: 300;
+      line-height: 0.75;
+      letter-spacing: -1.4px;
+      color: #ffffff;
+
+      span {
+        line-height: 0.75;
+      }
+    }
+
+    &-desc {
+      padding-top: 3px;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.33;
+      letter-spacing: -0.5px;
+      text-align: center;
+      color: #ffffff;
+    }
   }
 }
 

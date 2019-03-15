@@ -61,7 +61,7 @@ mixin nav(classMod, arr)
     ul.nav__list
       each val, idx in arr
         li.nav__list-item
-          a.nav__list-btn(href="#" class="" title="")!= val
+          a.nav__list-btn(href= arr[idx].href class="" title="")!= arr[idx].name
 //- nav :: end
 
 //- MIXIN :: END

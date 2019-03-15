@@ -264,6 +264,7 @@ var initViewPortCheckerCount = function initViewPortCheckerCount() {
       callbackFunction: function callbackFunction(elem, action) {
 
         $('.viewport-show-js [advantages-num-js]').countTo();
+        $('.viewport-show-js [network-num-js]').countTo();
       }
     });
   });

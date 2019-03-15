@@ -1640,7 +1640,157 @@ picture {
 
 /* line 6, src/scss/_components/do/_network.scss */
 .network__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 719px;
+}
+
+/* line 12, src/scss/_components/do/_network.scss */
+.network__row {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 16, src/scss/_components/do/_network.scss */
+.network__row__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1210px;
+  height: -webkit-calc(100% - 50px);
+  height: calc(100% - 50px);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/img-network-map@2x.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+/* line 33, src/scss/_components/do/_network.scss */
+.network__row-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 479px;
+  background-color: #c2185b;
+}
+
+/* line 38, src/scss/_components/do/_network.scss */
+.network__row-0 .c-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+/* line 46, src/scss/_components/do/_network.scss */
+.network__row-1 {
+  min-height: -webkit-calc(100% - 479px);
+  min-height: calc(100% - 479px);
+  padding-top: 48px;
+  padding-bottom: 52px;
+}
+
+/* line 53, src/scss/_components/do/_network.scss */
+.network__title {
+  color: #ffffff;
+  text-align: left;
+}
+
+/* line 57, src/scss/_components/do/_network.scss */
+.network__title span {
+  display: block;
+  color: #ffffff;
+}
+
+/* line 63, src/scss/_components/do/_network.scss */
+.network__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: -webkit-calc((100% - (19px * 3)) / 4);
+  max-width: calc((100% - (19px * 3)) / 4);
+  min-height: 140px;
+  background-color: #45b8ac;
+}
+
+/* line 73, src/scss/_components/do/_network.scss */
+.network__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 78, src/scss/_components/do/_network.scss */
+.network__block-count {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3px;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 0.75;
+  letter-spacing: -1.4px;
+  color: #ffffff;
+}
+
+/* line 88, src/scss/_components/do/_network.scss */
+.network__block-count span {
+  line-height: 0.75;
+}
+
+/* line 93, src/scss/_components/do/_network.scss */
+.network__block-desc {
+  padding-top: 3px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* line 3, src/scss/_components/do/_community.scss */
