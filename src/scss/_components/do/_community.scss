@@ -1,5 +1,11 @@
 // SECTION community :: START
 
-.community {}
+.community {
+  background-color: #f8f8f8;
+
+  &__wrapper {
+    min-height: 717px;
+  }
+}
 
 // SECTION community :: END

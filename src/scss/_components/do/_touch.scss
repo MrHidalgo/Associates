@@ -1,5 +1,11 @@
 // SECTION touch :: START
 
-.touch {}
+.touch {
+  background-color: #333333;
+
+  &__wrapper {
+    min-height: 727px;
+  }
+}
 
 // SECTION touch :: END

@@ -1,5 +1,11 @@
 // SECTION network :: START
 
-.network {}
+.network {
+  background-color: #fff;
+
+  &__wrapper {
+    min-height: 719px;
+  }
+}
 
 // SECTION network :: END

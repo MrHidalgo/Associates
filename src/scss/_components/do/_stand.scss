@@ -1,5 +1,11 @@
 // SECTION stand :: START
 
-.stand {}
+.stand {
+  background-color: #f8f8f8;
+
+  &__wrapper {
+    min-height: 722px;
+  }
+}
 
 // SECTION stand :: END

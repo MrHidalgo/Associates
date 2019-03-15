@@ -1541,4 +1541,126 @@ picture {
   font-weight: bold;
 }
 
+/* line 3, src/scss/_components/do/_main.scss */
+.d-main {
+  position: relative;
+  background-color: #ffffff;
+}
+
+/* line 7, src/scss/_components/do/_main.scss */
+.d-main__bg {
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, src/scss/_components/do/_main.scss */
+.d-main__bg-left, .d-main__bg-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 50%;
+}
+
+/* line 23, src/scss/_components/do/_main.scss */
+.d-main__bg-left {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+/* line 27, src/scss/_components/do/_main.scss */
+.d-main__bg-right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 32, src/scss/_components/do/_main.scss */
+.d-main .c-grid {
+  max-width: 578px;
+}
+
+/* line 36, src/scss/_components/do/_main.scss */
+.d-main__wrapper {
+  z-index: 2;
+  position: relative;
+  min-height: 639px;
+  padding-top: 76px;
+  padding-bottom: 89px;
+}
+
+/* line 44, src/scss/_components/do/_main.scss */
+.d-main__title {
+  padding-bottom: 18px;
+  text-align: left;
+}
+
+/* line 49, src/scss/_components/do/_main.scss */
+.d-main__desc {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #4a4a4a;
+}
+
+/* line 55, src/scss/_components/do/_main.scss */
+.d-main__desc--pb {
+  padding-bottom: 30px;
+}
+
+/* line 3, src/scss/_components/do/_stand.scss */
+.stand {
+  background-color: #f8f8f8;
+}
+
+/* line 6, src/scss/_components/do/_stand.scss */
+.stand__wrapper {
+  min-height: 722px;
+}
+
+/* line 3, src/scss/_components/do/_network.scss */
+.network {
+  background-color: #fff;
+}
+
+/* line 6, src/scss/_components/do/_network.scss */
+.network__wrapper {
+  min-height: 719px;
+}
+
+/* line 3, src/scss/_components/do/_community.scss */
+.community {
+  background-color: #f8f8f8;
+}
+
+/* line 6, src/scss/_components/do/_community.scss */
+.community__wrapper {
+  min-height: 717px;
+}
+
+/* line 3, src/scss/_components/do/_touch.scss */
+.touch {
+  background-color: #333333;
+}
+
+/* line 6, src/scss/_components/do/_touch.scss */
+.touch__wrapper {
+  min-height: 727px;
+}
+
 /*# sourceMappingURL=maps/app.css.map */
