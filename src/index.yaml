@@ -3,4 +3,19 @@ ProjectTitle: Associates
 PageList:
 - file: index.html
   titleName: Home
+  ready: 75
+- file: do.html
+  titleName: What We Do
+  ready: 1
+- file: are.html
+  titleName: Who We Are
+  ready: 1
+- file: plain.html
+  titleName: Plain
+  ready: 1
+- file: apply.html
+  titleName: Apply
+  ready: 1
+- file: apply-closed.html
+  titleName: Apply Closed
   ready: 1
