@@ -1800,7 +1800,165 @@ picture {
 
 /* line 6, src/scss/_components/do/_community.scss */
 .community__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 96px;
+  padding-bottom: 155px;
   min-height: 717px;
+}
+
+/* line 13, src/scss/_components/do/_community.scss */
+.community__wrapper-left, .community__wrapper-right {
+  width: 50%;
+}
+
+/* line 19, src/scss/_components/do/_community.scss */
+.community__title {
+  padding-bottom: 18px;
+  text-align: left;
+}
+
+/* line 24, src/scss/_components/do/_community.scss */
+.community__desc {
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 563px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #4a4a4a;
+}
+
+/* line 34, src/scss/_components/do/_community.scss */
+.community__btn {
+  margin-bottom: 17px;
+}
+
+/* line 38, src/scss/_components/do/_community.scss */
+.community__info {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #5e5e5e;
+}
+
+/* line 44, src/scss/_components/do/_community.scss */
+.community__info span {
+  font-weight: 500;
+}
+
+/* line 49, src/scss/_components/do/_community.scss */
+.community__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 369px;
+  min-height: 466px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 5px 4px 0 #0000003f;
+          box-shadow: 0 5px 4px 0 #0000003f;
+}
+
+/* line 60, src/scss/_components/do/_community.scss */
+.community__block-top, .community__block-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 66, src/scss/_components/do/_community.scss */
+.community__block-top {
+  height: 349px;
+  padding: 30px 15px 15px;
+  background-color: #333333;
+}
+
+/* line 72, src/scss/_components/do/_community.scss */
+.community__block-bottom {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: -webkit-calc(466px - 349px);
+  min-height: calc(466px - 349px);
+  padding: 10px;
+}
+
+/* line 78, src/scss/_components/do/_community.scss */
+.community__block-img {
+  overflow: hidden;
+  position: relative;
+  width: 168px;
+  height: 168px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: 5px solid #fff;
+}
+
+/* line 88, src/scss/_components/do/_community.scss */
+.community__block-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 99, src/scss/_components/do/_community.scss */
+.community__block-title {
+  padding-bottom: 40px;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.9px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 109, src/scss/_components/do/_community.scss */
+.community__block-name {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* line 118, src/scss/_components/do/_community.scss */
+.community__block-pos {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  text-align: center;
+  color: #4a4a4a;
 }
 
 /* line 3, src/scss/_components/do/_touch.scss */
