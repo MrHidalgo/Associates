@@ -36,9 +36,13 @@
   &__wrapper {
     z-index: 2;
     position: relative;
-    min-height: 639px;
-    padding-top: 76px;
-    padding-bottom: 89px;
+    left: -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 107px;
+    padding-bottom: 95px;
+    min-height: calc(100vh - 51px);
   }
 
   &__title {
@@ -53,7 +57,7 @@
     color: #4a4a4a;
 
     &--pb {
-      padding-bottom: 30px;
+      padding-bottom: 34px;
     }
   }
 }

@@ -6,7 +6,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 719px;
+    min-height: calc(100vh - 51px);
   }
 
   &__row {
@@ -44,7 +44,9 @@
     }
 
     &-1 {
-      min-height: calc(100% - 479px);
+      display: flex;
+      align-items: center;
+      min-height: calc((100vh - 51px) - 479px);
       padding-top: 48px;
       padding-bottom: 52px;
     }
@@ -68,6 +70,7 @@
     width: 100%;
     max-width: calc((100% - (19px * 3)) / 4);
     min-height: 140px;
+    padding-top: 13px;
     background-color: #45b8ac;
 
     &-wrapper {
@@ -78,7 +81,7 @@
     &-count {
       display: flex;
       align-items: center;
-      padding-bottom: 3px;
+      padding-bottom: 6px;
       font-size: 64px;
       font-weight: 300;
       line-height: 0.75;

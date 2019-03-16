@@ -5,8 +5,8 @@
 
   &__wrapper {
     display: flex;
-    padding-top: 84px;
-    padding-bottom: 82px;
+    padding-top: 65px;
+    padding-bottom: 80px;
     min-height: 727px;
 
     &-left {
@@ -16,7 +16,7 @@
     &-right {
       width: 100%;
       max-width: calc(100% - 369px);
-      padding-left: 198px;
+      padding-left: 192px;
     }
   }
   
@@ -37,6 +37,8 @@
 
   &__form {
     &-field {
+      display: flex;
+      flex-direction: column;
       margin-bottom: 32px;
 
       label {
