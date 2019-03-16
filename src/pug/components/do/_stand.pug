@@ -1,7 +1,38 @@
 // SECTION stand :: START
 
 section#stand.stand
-  .c-grid
-    .stand__wrapper
+  .stand__wrapper
+
+    .stand__row.stand__row-0
+
+      mixin swiperContent()
+        .swiper-slide
+        .swiper-slide
+        .swiper-slide
+        .swiper-slide
+        .swiper-slide
+        .swiper-slide
+
+      +swiper('swiper-container-stand', 'swiperContent', true, false, false)
+
+    .stand__row.stand__row-1
+      .c-grid
+
+        h2.stand__title.c-title!= "WHAT WE STAND FOR"
+
+        .stand__block-wrapper
+          .stand__block.stand__block-0
+            p.stand__block-title!= "Rigour and ingenuity"
+            p.stand__block-desc!= "Our clients recognise that it is the quality of our work that sets us apart; a reputation built on the highest standards of scientific enquiry and critical analysis in emerging technology areas. Be prepared to put your intelligence, rigour and ingenuity to the test."
+
+          .stand__block.stand__block-1
+            p.stand__block-title!= "Independent thinking"
+            p.stand__block-desc!= "The bedrock of this network are the motivated self starters who populate it. We look for independent thinkers - experts in their field who aren’t afraid to formulate their own opinions and go beyond the brief, whether working individually or as part of a multidisciplinary team. "
+
+          .stand__block.stand__block-2
+            p.stand__block-title!= "Fair play, teamwork"
+            p.stand__block-desc!= "The quality of our work is only as good as the sum of our Associates' contributions. That's why every place on a project team matters - we are a network of partners. There is no boss, no hierarchy and no bureaucracy. Play fair in teams and you will thrive"
+
+
 
 // SECTION stand :: END

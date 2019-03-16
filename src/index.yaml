@@ -6,7 +6,7 @@ PageList:
   ready: 75
 - file: do.html
   titleName: What We Do
-  ready: 1
+  ready: 75
 - file: are.html
   titleName: Who We Are
   ready: 1

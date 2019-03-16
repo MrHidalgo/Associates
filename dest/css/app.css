@@ -733,6 +733,52 @@ picture {
   background-color: #ffffff;
 }
 
+/* line 159, src/scss/_shared/_swiper.scss */
+.swiper-container-stand {
+  max-width: 100%;
+  height: 300px;
+}
+
+/* line 164, src/scss/_shared/_swiper.scss */
+.swiper-container-stand .swiper-slide {
+  position: relative;
+  width: 280px;
+  height: 238px;
+  border: solid 1px #979797;
+  background-color: #d8d8d8;
+}
+
+/* line 172, src/scss/_shared/_swiper.scss */
+.swiper-container-stand .swiper-pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 177, src/scss/_shared/_swiper.scss */
+.swiper-container-stand .swiper-pagination-bullet {
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #989898;
+}
+
+/* line 185, src/scss/_shared/_swiper.scss */
+.swiper-container-stand .swiper-pagination-bullet-active {
+  background-color: #44a399;
+}
+
 /* line 1, src/scss/_shared/_iconFont.scss */
 .icon-font {
   display: -webkit-box;
@@ -1630,7 +1676,75 @@ picture {
 
 /* line 6, src/scss/_components/do/_stand.scss */
 .stand__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 722px;
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
+
+/* line 15, src/scss/_components/do/_stand.scss */
+.stand__row-0 {
+  min-height: 352px;
+}
+
+/* line 19, src/scss/_components/do/_stand.scss */
+.stand__row-1 {
+  min-height: -webkit-calc(100% - 352px);
+  min-height: calc(100% - 352px);
+}
+
+/* line 24, src/scss/_components/do/_stand.scss */
+.stand__title {
+  padding-bottom: 35px;
+  color: #4a4a4a;
+}
+
+/* line 29, src/scss/_components/do/_stand.scss */
+.stand__block {
+  width: 100%;
+  max-width: -webkit-calc((100% - (44px * 2)) / 3);
+  max-width: calc((100% - (44px * 2)) / 3);
+}
+
+/* line 33, src/scss/_components/do/_stand.scss */
+.stand__block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 38, src/scss/_components/do/_stand.scss */
+.stand__block-title {
+  padding-bottom: 22px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+  color: #4a4a4a;
+}
+
+/* line 47, src/scss/_components/do/_stand.scss */
+.stand__block-desc {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #4a4a4a;
 }
 
 /* line 3, src/scss/_components/do/_network.scss */

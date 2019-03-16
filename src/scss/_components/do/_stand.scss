@@ -4,7 +4,55 @@
   background-color: #f8f8f8;
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
     min-height: 722px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+
+  &__row {
+    &-0 {
+      min-height: 352px;
+    }
+
+    &-1 {
+      min-height: calc(100% - 352px);
+    }
+  }
+
+  &__title {
+    padding-bottom: 35px;
+    color: #4a4a4a;
+  }
+
+  &__block {
+    width: 100%;
+    max-width: calc((100% - (44px * 2)) / 3);
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-title {
+      padding-bottom: 22px;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.25;
+      letter-spacing: -0.7px;
+      color: #4a4a4a;
+    }
+
+    &-desc {
+      font-size: 18px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: #4a4a4a;
+    }
   }
 }
 
