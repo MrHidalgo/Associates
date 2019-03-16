@@ -3,5 +3,38 @@
 section#touch.touch
   .c-grid
     .touch__wrapper
+      .touch__wrapper-left
+
+        h2.touch__title.c-title!= "Get in touch"
+        p.touch__desc!= "If you are interested in finding out more about Outsmart Insight, get in touch"
+
+        .touch__form
+          .touch__form-field.touch__form-field--input
+            label(for="touch_name")!= "Name"
+            input(type='text' placeholder='Please enter your name' name='' id='touch_name')
+          .touch__form-field.touch__form-field--input
+            label(for="touch_name")!= "Email"
+            input(type='text' placeholder='Please enter your email address' name='' id='touch_email')
+          .touch__form-field.touch__form-field--textarea
+            label(for="touch_name")!= "Message"
+            textarea(name="" placeholder='Please enter your message' id='touch_message')
+          .touch__form-field.touch__form-field--btn
+            button.c-btn.c-btn--bg(type='submit')!= "send"
+
+      .touch__wrapper-right
+
+        .touch__block.touch__block-0
+          .touch__block-left
+            .touch__block-map
+
+          .touch__block-right
+            p!= "Outsmart Insight Ltd<br>First Floor<br>67-69 George Street<br>London W1U 8LT"
+
+        .touch__block.touch__block-1
+          .touch__block-left
+            .touch__block-map
+
+          .touch__block-right
+            p!= "Outsmart Insight Ltd<br>LABS Atrium<br>Chalk Farm Rd<br>London, NW1 8AH"
 
 // SECTION touch :: END

@@ -4,7 +4,129 @@
   background-color: #333333;
 
   &__wrapper {
+    display: flex;
+    padding-top: 84px;
+    padding-bottom: 82px;
     min-height: 727px;
+
+    &-left {
+      width: 369px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 369px);
+      padding-left: 198px;
+    }
+  }
+  
+  &__title {
+    padding-bottom: 20px;
+    text-align: left;
+    color: #fff;
+    text-transform: initial;
+  }
+
+  &__desc {
+    padding-bottom: 14px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+
+  &__form {
+    &-field {
+      margin-bottom: 32px;
+
+      label {
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: -0.3px;
+        color: #ffffff;
+      }
+
+      input,
+      textarea {
+        outline: none;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 6px 8px;
+        border: solid 1px #ffffff;
+        background-color: transparent;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.43;
+        letter-spacing: -0.3px;
+        color: #ffffff;
+        @include inputPlaceholder {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 1.43;
+          letter-spacing: -0.3px;
+          color: #ffffff;
+        }
+      }
+
+      &--input {
+        input {
+          height: 32px;
+        }
+      }
+
+      &--textarea {
+        textarea {
+          resize: none;
+          height: 180px;
+        }
+      }
+
+      &--btn {
+        margin-bottom: 0;
+
+        button {
+          max-width: 122px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: flex-start;
+
+    &-0 {
+      padding-bottom: 34px;
+    }
+
+    &-left {
+      width: 456px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 456px);
+      padding-left: 15px;
+
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #ffffff;
+      }
+    }
+
+    &-map {
+      height: 265px;
+      border: solid 1px #979797;
+      background-color: #d8d8d8;
+    }
   }
 }
 

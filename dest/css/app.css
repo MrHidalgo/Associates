@@ -1968,7 +1968,196 @@ picture {
 
 /* line 6, src/scss/_components/do/_touch.scss */
 .touch__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 84px;
+  padding-bottom: 82px;
   min-height: 727px;
+}
+
+/* line 12, src/scss/_components/do/_touch.scss */
+.touch__wrapper-left {
+  width: 369px;
+}
+
+/* line 16, src/scss/_components/do/_touch.scss */
+.touch__wrapper-right {
+  width: 100%;
+  max-width: -webkit-calc(100% - 369px);
+  max-width: calc(100% - 369px);
+  padding-left: 198px;
+}
+
+/* line 23, src/scss/_components/do/_touch.scss */
+.touch__title {
+  padding-bottom: 20px;
+  text-align: left;
+  color: #fff;
+  text-transform: initial;
+}
+
+/* line 30, src/scss/_components/do/_touch.scss */
+.touch__desc {
+  padding-bottom: 14px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* line 39, src/scss/_components/do/_touch.scss */
+.touch__form-field {
+  margin-bottom: 32px;
+}
+
+/* line 42, src/scss/_components/do/_touch.scss */
+.touch__form-field label {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+/* line 53, src/scss/_components/do/_touch.scss */
+.touch__form-field input,
+.touch__form-field textarea {
+  outline: none;
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  padding: 6px 8px;
+  border: solid 1px #ffffff;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+/* line 88, src/scss/_utilities/_mixin.scss */
+.touch__form-field input.placeholder,
+.touch__form-field textarea.placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+/* line 89, src/scss/_utilities/_mixin.scss */
+.touch__form-field input:-moz-placeholder,
+.touch__form-field textarea:-moz-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+/* line 90, src/scss/_utilities/_mixin.scss */
+.touch__form-field input::-moz-placeholder,
+.touch__form-field textarea::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+/* line 91, src/scss/_utilities/_mixin.scss */
+.touch__form-field input:-ms-input-placeholder,
+.touch__form-field textarea:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+/* line 92, src/scss/_utilities/_mixin.scss */
+.touch__form-field input::-webkit-input-placeholder,
+.touch__form-field textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  letter-spacing: -0.3px;
+  color: #ffffff;
+}
+
+/* line 77, src/scss/_components/do/_touch.scss */
+.touch__form-field--input input {
+  height: 32px;
+}
+
+/* line 83, src/scss/_components/do/_touch.scss */
+.touch__form-field--textarea textarea {
+  resize: none;
+  height: 180px;
+}
+
+/* line 89, src/scss/_components/do/_touch.scss */
+.touch__form-field--btn {
+  margin-bottom: 0;
+}
+
+/* line 92, src/scss/_components/do/_touch.scss */
+.touch__form-field--btn button {
+  max-width: 122px;
+  text-transform: uppercase;
+}
+
+/* line 100, src/scss/_components/do/_touch.scss */
+.touch__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* line 104, src/scss/_components/do/_touch.scss */
+.touch__block-0 {
+  padding-bottom: 34px;
+}
+
+/* line 108, src/scss/_components/do/_touch.scss */
+.touch__block-left {
+  width: 456px;
+}
+
+/* line 112, src/scss/_components/do/_touch.scss */
+.touch__block-right {
+  width: 100%;
+  max-width: -webkit-calc(100% - 456px);
+  max-width: calc(100% - 456px);
+  padding-left: 15px;
+}
+
+/* line 117, src/scss/_components/do/_touch.scss */
+.touch__block-right p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+/* line 125, src/scss/_components/do/_touch.scss */
+.touch__block-map {
+  height: 265px;
+  border: solid 1px #979797;
+  background-color: #d8d8d8;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
