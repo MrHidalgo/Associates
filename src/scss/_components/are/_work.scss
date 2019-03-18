@@ -1,5 +1,156 @@
 // SECTION work :: START
 
-.work {}
+.work {
+  padding-top: 48px;
+  padding-bottom: 109px;
+
+  &__wrapper {
+    &-0 {
+      padding-bottom: 137px;
+    }
+    &-1 {
+      padding-bottom: 148px;
+    }
+    &-2 {}
+  }
+  
+  &__title {
+    &-0 {
+      padding-bottom: 66px;
+      color: #4a4a4a;
+    }
+
+    &-1 {
+      padding-bottom: 18px;
+      text-align: left;
+    }
+  }
+
+  &__row {
+    &-0 {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 48px;
+
+      .work__row-left {
+        width: 380px;
+      }
+
+      .work__row-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: calc((100% - 20px) - 380px);
+      }
+    }
+
+    &-1 {
+      display: flex;
+      justify-content: space-between;
+
+      .are__block {
+        width: 100%;
+        max-width: calc((100% - 20px) / 2);
+        margin-bottom: 0;
+      }
+    }
+
+    &-2 {
+      display: flex;
+
+      .work__row-left,
+      .work__row-right {
+        width: 50%;
+
+        .are__block {
+          width: 100%;
+          max-width: 480px;
+        }
+      }
+    }
+  }
+
+  &__desc {
+    width: 100%;
+    max-width: 480px;
+    padding-bottom: 89px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.45;
+    color: #4a4a4a;
+  }
+
+  &__img {
+    position: relative;
+    background-color: rgba(#000, 0.1);
+
+    &-0 {
+      height: 384px;
+    }
+
+    &-1 {
+      height: 610px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__box {
+    padding: 22px 20px;
+    height: 100%;
+
+    &-1,
+    &-2 {
+      height: calc((100% - 20px) / 2);
+    }
+
+    &-0 {
+      background-color: #484848;
+    }
+    &-1 {
+      background-color: #5e5e5e;
+    }
+    &-2 {
+      background-color: #989898;
+    }
+
+    &-title {
+      padding-bottom: 20px;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 1.25;
+      letter-spacing: -0.7px;
+      color: #ffffff;
+    }
+
+    > div {
+      display: flex;
+
+      ul {
+        width: 100%;
+        max-width: calc(100% / 2);
+      }
+    }
+
+    ul {
+      padding-left: 28px;
+
+      li {
+        font-size: 22px;
+        line-height: 2.18;
+        color: #ffffff;
+      }
+    }
+  }
+}
 
 // SECTION work :: END
