@@ -300,16 +300,17 @@ picture {
   width: 100%;
   max-width: -webkit-calc(100% - 79px);
   max-width: calc(100% - 79px);
+  padding-right: 15px;
 }
 
-/* line 29, src/scss/_shared/_common.scss */
+/* line 30, src/scss/_shared/_common.scss */
 .are__block > div:nth-of-type(2) span {
   font-size: 16px;
   line-height: 2;
   color: #ffffff;
 }
 
-/* line 37, src/scss/_shared/_common.scss */
+/* line 38, src/scss/_shared/_common.scss */
 .are__block-circle {
   display: -webkit-box;
   display: -webkit-flex;
@@ -330,10 +331,10 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 46, src/scss/_shared/_common.scss */
+/* line 47, src/scss/_shared/_common.scss */
 .are__block-circle i {
   position: relative;
-  top: -1px;
+  top: -2px;
   width: 20px;
   height: 13px;
   border-style: solid;
@@ -344,12 +345,12 @@ picture {
           transform: rotate(-45deg);
 }
 
-/* line 63, src/scss/_shared/_common.scss */
+/* line 64, src/scss/_shared/_common.scss */
 .nav--header {
   padding-bottom: 12px;
 }
 
-/* line 66, src/scss/_shared/_common.scss */
+/* line 67, src/scss/_shared/_common.scss */
 .nav--header .nav__list {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -357,22 +358,22 @@ picture {
           justify-content: center;
 }
 
-/* line 69, src/scss/_shared/_common.scss */
+/* line 70, src/scss/_shared/_common.scss */
 .nav--header .nav__list-btn {
   color: #333333;
 }
 
-/* line 74, src/scss/_shared/_common.scss */
+/* line 75, src/scss/_shared/_common.scss */
 .nav--footer {
   padding-left: 107px;
 }
 
-/* line 77, src/scss/_shared/_common.scss */
+/* line 78, src/scss/_shared/_common.scss */
 .nav--footer .nav__list-btn {
   color: #ffffff;
 }
 
-/* line 82, src/scss/_shared/_common.scss */
+/* line 83, src/scss/_shared/_common.scss */
 .nav__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -384,13 +385,13 @@ picture {
           align-items: center;
 }
 
-/* line 86, src/scss/_shared/_common.scss */
+/* line 87, src/scss/_shared/_common.scss */
 .nav__list-item {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 91, src/scss/_shared/_common.scss */
+/* line 92, src/scss/_shared/_common.scss */
 .nav__list-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -405,7 +406,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 103, src/scss/_shared/_common.scss */
+/* line 104, src/scss/_shared/_common.scss */
 .logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -417,19 +418,19 @@ picture {
           align-items: flex-start;
 }
 
-/* line 107, src/scss/_shared/_common.scss */
+/* line 108, src/scss/_shared/_common.scss */
 .logo--footer {
   position: relative;
   top: -9px;
 }
 
-/* line 111, src/scss/_shared/_common.scss */
+/* line 112, src/scss/_shared/_common.scss */
 .logo--footer svg {
   width: 205px;
   fill: #fff;
 }
 
-/* line 117, src/scss/_shared/_common.scss */
+/* line 118, src/scss/_shared/_common.scss */
 .logo--header svg {
   width: 100%;
   height: 100%;
@@ -437,7 +438,7 @@ picture {
           filter: drop-shadow(0px 15px 0px rgba(0, 0, 0, 0.05));
 }
 
-/* line 127, src/scss/_shared/_common.scss */
+/* line 128, src/scss/_shared/_common.scss */
 .copyright {
   display: -webkit-box;
   display: -webkit-flex;
@@ -449,20 +450,20 @@ picture {
           align-items: center;
 }
 
-/* line 131, src/scss/_shared/_common.scss */
+/* line 132, src/scss/_shared/_common.scss */
 .copyright p {
   line-height: 1.43;
   letter-spacing: 1px;
   color: #ffffff;
 }
 
-/* line 136, src/scss/_shared/_common.scss */
+/* line 137, src/scss/_shared/_common.scss */
 .copyright p a {
   text-decoration: underline;
   color: #ffffff;
 }
 
-/* line 146, src/scss/_shared/_common.scss */
+/* line 147, src/scss/_shared/_common.scss */
 .subscribe__form {
   overflow: hidden;
   position: relative;
@@ -481,7 +482,7 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 156, src/scss/_shared/_common.scss */
+/* line 157, src/scss/_shared/_common.scss */
 .subscribe__form-icon {
   display: -webkit-box;
   display: -webkit-flex;
@@ -502,13 +503,13 @@ picture {
   height: 100%;
 }
 
-/* line 166, src/scss/_shared/_common.scss */
+/* line 167, src/scss/_shared/_common.scss */
 .subscribe__form-icon .icon-subscribe {
   font-size: 13px;
   color: rgba(74, 74, 74, 0.23);
 }
 
-/* line 172, src/scss/_shared/_common.scss */
+/* line 173, src/scss/_shared/_common.scss */
 .subscribe__form input,
 .subscribe__form button {
   outline: none;
@@ -520,7 +521,7 @@ picture {
   min-height: 100%;
 }
 
-/* line 181, src/scss/_shared/_common.scss */
+/* line 182, src/scss/_shared/_common.scss */
 .subscribe__form input {
   width: 100%;
   max-width: -webkit-calc(100% - 110px);
@@ -560,7 +561,7 @@ picture {
   font-size: 16px;
 }
 
-/* line 194, src/scss/_shared/_common.scss */
+/* line 195, src/scss/_shared/_common.scss */
 .subscribe__form button {
   cursor: pointer;
   display: -webkit-box;
@@ -601,12 +602,145 @@ picture {
 }
 
 /* line 6, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise {
+  max-width: 100%;
+  height: 450px;
+  padding: 0 15px 15px;
+}
+
+/* line 13, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-slide-block {
+  width: 100%;
+  max-width: -webkit-calc((100% - 60px) / 4);
+  max-width: calc((100% - 60px) / 4);
+  height: 192px;
+  margin-top: 25px;
+  -webkit-box-shadow: 0 11px 11px 0 #00000021;
+          box-shadow: 0 11px 11px 0 #00000021;
+  background-color: #ffffff;
+}
+
+/* line 21, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-slide-block-top {
+  position: relative;
+  height: 146px;
+}
+
+/* line 25, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-slide-block-top img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 36, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-slide-block-top:after {
+  opacity: 0.8;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00000000), color-stop(30%, #00000023), color-stop(50%, #00000042), color-stop(70%, #00000085), color-stop(90%, #000000cc), color-stop(96%, #000000e1), to(#000));
+  background-image: -webkit-linear-gradient(top, #00000000, #00000023 30%, #00000042 50%, #00000085 70%, #000000cc 90%, #000000e1 96%, #000);
+  background-image: -o-linear-gradient(top, #00000000, #00000023 30%, #00000042 50%, #00000085 70%, #000000cc 90%, #000000e1 96%, #000);
+  background-image: linear-gradient(to bottom, #00000000, #00000023 30%, #00000042 50%, #00000085 70%, #000000cc 90%, #000000e1 96%, #000);
+}
+
+/* line 48, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-slide-block-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-calc(192px - 146px);
+  height: calc(192px - 146px);
+  padding: 5px 10px;
+  text-align: center;
+}
+
+/* line 56, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-slide-block-bottom span {
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.4px;
+  text-align: center;
+  color: #000;
+}
+
+/* line 67, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-slide-block-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 75, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-pagination {
+  top: 0;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 82, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-pagination-bullet {
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #989898;
+}
+
+/* line 90, src/scss/_shared/_swiper.scss */
+.swiper-container-expertise .swiper-pagination-bullet-active {
+  background-color: #44a399;
+}
+
+/* line 98, src/scss/_shared/_swiper.scss */
 .swiper-container-think {
   max-width: 100%;
   height: 355px;
 }
 
-/* line 11, src/scss/_shared/_swiper.scss */
+/* line 103, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide {
   position: relative;
   width: 600px;
@@ -620,7 +754,7 @@ picture {
   transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 19, src/scss/_shared/_swiper.scss */
+/* line 111, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-content {
   opacity: 1;
   position: absolute;
@@ -644,7 +778,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 32, src/scss/_shared/_swiper.scss */
+/* line 124, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-content span {
   width: 100%;
   height: 12px;
@@ -652,38 +786,38 @@ picture {
   background-color: rgba(67, 67, 67, 0.17);
 }
 
-/* line 38, src/scss/_shared/_swiper.scss */
+/* line 130, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-content span:nth-of-type(1) {
   max-width: 185px;
 }
 
-/* line 41, src/scss/_shared/_swiper.scss */
+/* line 133, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-content span:nth-of-type(2) {
   max-width: 154px;
   margin-bottom: 28px;
 }
 
-/* line 45, src/scss/_shared/_swiper.scss */
+/* line 137, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-content span:nth-of-type(3) {
   max-width: 95%;
 }
 
-/* line 48, src/scss/_shared/_swiper.scss */
+/* line 140, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-content span:nth-of-type(4) {
   max-width: 90%;
 }
 
-/* line 51, src/scss/_shared/_swiper.scss */
+/* line 143, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-content span:nth-of-type(5) {
   max-width: 99px;
 }
 
-/* line 54, src/scss/_shared/_swiper.scss */
+/* line 146, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-content span:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 60, src/scss/_shared/_swiper.scss */
+/* line 152, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-active {
   width: 600px !important;
   -webkit-box-shadow: 4px 9px 13px 0 #00000028;
@@ -697,7 +831,7 @@ picture {
   transition: box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out, background-color 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
 }
 
-/* line 67, src/scss/_shared/_swiper.scss */
+/* line 159, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-active .swiper-slide-content {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -708,7 +842,7 @@ picture {
           transition-delay: 0.35s;
 }
 
-/* line 74, src/scss/_shared/_swiper.scss */
+/* line 166, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-title {
   padding-bottom: 16px;
   font-size: 24px;
@@ -718,7 +852,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 83, src/scss/_shared/_swiper.scss */
+/* line 175, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-desc {
   padding-bottom: 16px;
   font-size: 16px;
@@ -726,7 +860,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 90, src/scss/_shared/_swiper.scss */
+/* line 182, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-circle {
   overflow: hidden;
   position: relative;
@@ -737,7 +871,7 @@ picture {
   border: solid 2px #ffffff;
 }
 
-/* line 98, src/scss/_shared/_swiper.scss */
+/* line 190, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-circle img {
   position: absolute;
   top: 0;
@@ -750,7 +884,7 @@ picture {
      object-position: center;
 }
 
-/* line 109, src/scss/_shared/_swiper.scss */
+/* line 201, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-user {
   display: -webkit-box;
   display: -webkit-flex;
@@ -762,19 +896,19 @@ picture {
           align-items: center;
 }
 
-/* line 114, src/scss/_shared/_swiper.scss */
+/* line 206, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-user > div:nth-of-type(1) {
   width: 72px;
 }
 
-/* line 117, src/scss/_shared/_swiper.scss */
+/* line 209, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-user > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 72px);
   max-width: calc(100% - 72px);
 }
 
-/* line 121, src/scss/_shared/_swiper.scss */
+/* line 213, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-user > div:nth-of-type(2) p {
   font-size: 18px;
   font-weight: 500;
@@ -782,14 +916,14 @@ picture {
   color: #ffffff;
 }
 
-/* line 128, src/scss/_shared/_swiper.scss */
+/* line 220, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-slide-user > div:nth-of-type(2) span {
   font-size: 16px;
   line-height: 1.56;
   color: #ffffff;
 }
 
-/* line 138, src/scss/_shared/_swiper.scss */
+/* line 230, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-pagination {
   display: -webkit-box;
   display: -webkit-flex;
@@ -805,7 +939,7 @@ picture {
           justify-content: center;
 }
 
-/* line 143, src/scss/_shared/_swiper.scss */
+/* line 235, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-pagination-bullet {
   opacity: 1;
   width: 16px;
@@ -815,18 +949,18 @@ picture {
   background-color: #44a399;
 }
 
-/* line 151, src/scss/_shared/_swiper.scss */
+/* line 243, src/scss/_shared/_swiper.scss */
 .swiper-container-think .swiper-pagination-bullet-active {
   background-color: #ffffff;
 }
 
-/* line 159, src/scss/_shared/_swiper.scss */
+/* line 251, src/scss/_shared/_swiper.scss */
 .swiper-container-stand {
   max-width: 100%;
   height: 273px;
 }
 
-/* line 164, src/scss/_shared/_swiper.scss */
+/* line 256, src/scss/_shared/_swiper.scss */
 .swiper-container-stand .swiper-slide {
   position: relative;
   width: 280px;
@@ -835,7 +969,7 @@ picture {
   background-color: #d8d8d8;
 }
 
-/* line 172, src/scss/_shared/_swiper.scss */
+/* line 264, src/scss/_shared/_swiper.scss */
 .swiper-container-stand .swiper-pagination {
   display: -webkit-box;
   display: -webkit-flex;
@@ -851,7 +985,7 @@ picture {
           justify-content: center;
 }
 
-/* line 177, src/scss/_shared/_swiper.scss */
+/* line 269, src/scss/_shared/_swiper.scss */
 .swiper-container-stand .swiper-pagination-bullet {
   opacity: 1;
   width: 8px;
@@ -861,12 +995,12 @@ picture {
   background-color: #989898;
 }
 
-/* line 185, src/scss/_shared/_swiper.scss */
+/* line 277, src/scss/_shared/_swiper.scss */
 .swiper-container-stand .swiper-pagination-bullet-active {
   background-color: #44a399;
 }
 
-/* line 196, src/scss/_shared/_swiper.scss */
+/* line 288, src/scss/_shared/_swiper.scss */
 .swiper-slide-circle {
   overflow: hidden;
   position: relative;
@@ -877,7 +1011,7 @@ picture {
   border: solid 2px #ffffff;
 }
 
-/* line 204, src/scss/_shared/_swiper.scss */
+/* line 296, src/scss/_shared/_swiper.scss */
 .swiper-slide-circle img {
   position: absolute;
   top: 0;
@@ -890,7 +1024,7 @@ picture {
      object-position: center;
 }
 
-/* line 214, src/scss/_shared/_swiper.scss */
+/* line 306, src/scss/_shared/_swiper.scss */
 .swiper-slide-user {
   display: -webkit-box;
   display: -webkit-flex;
@@ -902,25 +1036,25 @@ picture {
           align-items: center;
 }
 
-/* line 221, src/scss/_shared/_swiper.scss */
+/* line 313, src/scss/_shared/_swiper.scss */
 .swiper-slide-user.swiper-slide-user--dark > div:nth-of-type(2) p,
 .swiper-slide-user.swiper-slide-user--dark > div:nth-of-type(2) span {
   color: #4a4a4a;
 }
 
-/* line 230, src/scss/_shared/_swiper.scss */
+/* line 322, src/scss/_shared/_swiper.scss */
 .swiper-slide-user > div:nth-of-type(1) {
   width: 72px;
 }
 
-/* line 233, src/scss/_shared/_swiper.scss */
+/* line 325, src/scss/_shared/_swiper.scss */
 .swiper-slide-user > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 72px);
   max-width: calc(100% - 72px);
 }
 
-/* line 237, src/scss/_shared/_swiper.scss */
+/* line 329, src/scss/_shared/_swiper.scss */
 .swiper-slide-user > div:nth-of-type(2) p {
   font-size: 18px;
   font-weight: 500;
@@ -928,7 +1062,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 244, src/scss/_shared/_swiper.scss */
+/* line 336, src/scss/_shared/_swiper.scss */
 .swiper-slide-user > div:nth-of-type(2) span {
   font-size: 16px;
   line-height: 1.56;
@@ -2543,6 +2677,49 @@ picture {
 /* line 47, src/scss/_components/are/_collective.scss */
 .collective__desc--pb {
   padding-bottom: 30px;
+}
+
+/* line 3, src/scss/_components/are/_expertise.scss */
+.expertise {
+  padding-top: 79px;
+  padding-bottom: 64px;
+  background-color: #f8f8f8;
+}
+
+/* line 8, src/scss/_components/are/_expertise.scss */
+.expertise__title {
+  padding-bottom: 46px;
+  color: #4a4a4a;
+}
+
+/* line 15, src/scss/_components/are/_expertise.scss */
+.expertise__wrapper-0 .c-grid {
+  max-width: 1240px;
+}
+
+/* line 20, src/scss/_components/are/_expertise.scss */
+.expertise__wrapper-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 47px;
+}
+
+/* line 26, src/scss/_components/are/_expertise.scss */
+.expertise__wrapper-1 .are__block {
+  width: 100%;
+  max-width: -webkit-calc((100% - 20px) / 2);
+  max-width: calc((100% - 20px) / 2);
+  margin-bottom: 0;
 }
 
 /* line 3, src/scss/_components/are/_mapping.scss */

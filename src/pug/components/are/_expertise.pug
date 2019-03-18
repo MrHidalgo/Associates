@@ -2,6 +2,66 @@
 
 section#expertise.expertise
   .c-grid
-    .expertise__wrapper
+
+    h2.expertise__title.c-title!= "AREAS OF EXPERTISE"
+
+  .expertise__wrapper.expertise__wrapper-0
+    .c-grid
+
+      mixin swiperContent()
+        each val, idx in [1,2,3,4]
+          .swiper-slide
+            .swiper-slide-block-wrapper
+              .swiper-slide-block.swiper-slide-block-0
+                .swiper-slide-block-top
+                .swiper-slide-block-bottom
+                  span!= "Quantum Technologies"
+              .swiper-slide-block.swiper-slide-block-1
+                .swiper-slide-block-top
+                .swiper-slide-block-bottom
+                  span!= "Nanoscale materials"
+              .swiper-slide-block.swiper-slide-block-2
+                .swiper-slide-block-top
+                .swiper-slide-block-bottom
+                  span!= "Machine Learning"
+              .swiper-slide-block.swiper-slide-block-3
+                .swiper-slide-block-top
+                .swiper-slide-block-bottom
+                  span!= "Energy and Power systems"
+              .swiper-slide-block.swiper-slide-block-4
+                .swiper-slide-block-top
+                .swiper-slide-block-bottom
+                  span!= "Quantum Technologies"
+              .swiper-slide-block.swiper-slide-block-5
+                .swiper-slide-block-top
+                .swiper-slide-block-bottom
+                  span!= "Human factors"
+              .swiper-slide-block.swiper-slide-block-6
+                .swiper-slide-block-top
+                .swiper-slide-block-bottom
+                  span!= "Neurotechnology"
+              .swiper-slide-block.swiper-slide-block-7
+                .swiper-slide-block-top
+                .swiper-slide-block-bottom
+                  span!= "Robotics"
+
+
+      +swiper('swiper-container-expertise', 'swiperContent', true, false, false)
+
+  .c-grid
+    .expertise__wrapper.expertise__wrapper-1
+
+      .are__block
+        div
+          .are__block-circle
+            i
+        div
+          span!= "Communicate your insight from the frontiers of science"
+      .are__block
+        div
+          .are__block-circle
+            i
+        div
+          span!= "Put your subject matter expertise to work"
 
 // SECTION expertise :: END
