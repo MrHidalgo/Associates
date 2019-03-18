@@ -13,6 +13,9 @@
 
 			$('.mapping__tabs-btn').removeClass('is-active');
 			_elem.addClass('is-active');
+
+			$('.mapping__content').hide().removeClass('is-active');
+			$('.mapping__content[data-content="' + _elemID + '"]').fadeIn('350').addClass('is-active');
 		});
 	};
 	/*

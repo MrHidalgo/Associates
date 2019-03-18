@@ -50,7 +50,7 @@
     display: none;
 
     &.is-active {
-      display: flex;
+      display: flex !important;
     }
 
     &-left,

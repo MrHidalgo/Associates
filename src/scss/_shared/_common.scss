@@ -1,5 +1,63 @@
 // COMMON :: START
 
+// are
+.are {
+  &__block {
+    display: flex;
+    align-items: center;
+    height: 67px;
+    border: solid 1px #ffffff7f;
+    background-color: #009688;
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    > div {
+      &:nth-of-type(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 79px;
+      }
+
+      &:nth-of-type(2) {
+        width: 100%;
+        max-width: calc(100% - 79px);
+
+        span {
+          font-size: 16px;
+          line-height: 2;
+          color: #ffffff;
+        }
+      }
+    }
+
+    &-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background-color: #ffffff;
+
+      i {
+        position: relative;
+        top: -1px;
+        width: 20px;
+        height: 13px;
+        border-style: solid;
+        border-width: 0 0 3px 3px;
+        border-color: #009688;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+// are :: end
+
 // nav
 .nav {
   &--header {

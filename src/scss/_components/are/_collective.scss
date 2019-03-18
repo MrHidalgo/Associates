@@ -1,5 +1,53 @@
 // SECTION collective :: START
 
-.collective {}
+.collective {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: #44b4a8;
+
+  &__wrapper {
+    display: flex;
+
+    &-left,
+    &-right {
+      width: 50%;
+    }
+
+    &-left {
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__title {
+    padding-bottom: 18px;
+    text-align: left;
+
+    &.c-title {
+      color: #000000;
+
+      .c-title--color {
+        color: #000000;
+      }
+    }
+  }
+
+  &__desc {
+    padding-bottom: 61px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.45;
+    color: #000;
+
+    &--pb {
+      padding-bottom: 30px;
+    }
+  }
+}
 
 // SECTION collective :: END
