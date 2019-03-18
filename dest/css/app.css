@@ -2620,6 +2620,95 @@ picture {
   background-color: #d8d8d8;
 }
 
+/* line 3, src/scss/_components/are/_main.scss */
+.a-main {
+  overflow: hidden;
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 180px;
+}
+
+/* line 9, src/scss/_components/are/_main.scss */
+.a-main__bg {
+  z-index: -1;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, src/scss/_components/are/_main.scss */
+.a-main__bg-left, .a-main__bg-right {
+  height: 100%;
+}
+
+/* line 23, src/scss/_components/are/_main.scss */
+.a-main__bg-left {
+  width: 40%;
+}
+
+/* line 27, src/scss/_components/are/_main.scss */
+.a-main__bg-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 60%;
+}
+
+/* line 33, src/scss/_components/are/_main.scss */
+.a-main__bg-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 41, src/scss/_components/are/_main.scss */
+.a-main__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 44, src/scss/_components/are/_main.scss */
+.a-main__wrapper-left, .a-main__wrapper-right {
+  width: 50%;
+}
+
+/* line 50, src/scss/_components/are/_main.scss */
+.a-main__title {
+  padding-bottom: 18px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+/* line 56, src/scss/_components/are/_main.scss */
+.a-main__desc {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #4a4a4a;
+}
+
+/* line 62, src/scss/_components/are/_main.scss */
+.a-main__desc--pb {
+  padding-bottom: 30px;
+}
+
 /* line 3, src/scss/_components/are/_collective.scss */
 .collective {
   padding-top: 96px;

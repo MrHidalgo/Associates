@@ -1,7 +1,21 @@
 // SECTION main :: START
 
 section#a-main.a-main
+
+  .a-main__bg
+    .a-main__bg-left
+    .a-main__bg-right
+      img(src="./img/img-a-main-bg.png" srcset="./img/img-a-main-bg@2x.png 2x" alt="" title="")
+
   .c-grid
     .a-main__wrapper
+      .a-main__wrapper-left
+
+        h1.a-main__title.c-title!= "TECHNOLOGY IS EVOLVING <br>AT <span class='c-title--color'>BREAKNECK SPEED</span>"
+        p.a-main__desc.a-main__desc--pb!= "By bringing together multidisciplinary groups of scientists, online, we help R&D companies keep pace with the latest breakthrough technologies emerging from the lab."
+        p.a-main__desc!= "We do this by mapping technology landscapes, tracking how they develop in real-time, and forecasting long term trends/future innovation."
+
+      .a-main__wrapper-right
+
 
 // SECTION main :: END
