@@ -1,0 +1,36 @@
+// SECTION mapping :: START
+
+section#mapping.mapping
+  .c-grid
+    .mapping__wrapper.mapping__wrapper-0
+
+      .mapping__tabs
+        a.mapping__tabs-btn.mapping__tabs-btn--1.is-active(href="#" class="" title="" data-btn-id='1')!= "Mapping"
+        a.mapping__tabs-btn.mapping__tabs-btn--2(href="#" class="" title="" data-btn-id='2')!= "TRACKING"
+        a.mapping__tabs-btn.mapping__tabs-btn--3(href="#" class="" title="" data-btn-id='3')!= "FORECASTING"
+
+    .mapping__wrapper.mapping__wrapper-1
+
+      each val,idx in [1,2,3]
+        .mapping__content.mapping__content-1(class!= (idx === 0) ?'is-active':'' data-content!=val)
+          .mapping__content-left
+
+            .mapping__content-img
+
+          .mapping__content-right
+            p.mapping__content-title.c-title!= "CASE STUDY: <span class='c-title--color'>MAPPING</span>"
+            p.mapping__content-text.mapping__content-text--pb!= "A market research and technology intelligence client required a detailed assessment of the impact of graphene and carbon nanotubes on next-generation battery technologies."
+            p.mapping__content-text!= "Through research and analysis of highly-cited, peer-reviewed journals, the team was able to provide deep technical specifications and add vital context relating to manufacturing processes, impurities, percentage loading and life cycles."
+
+            .mapping__content-review
+              p!= "I was able to decide how much to contribute for each project depending on the workload of my PhD."
+
+            .swiper-slide-user.swiper-slide-user--dark
+              div
+                .swiper-slide-circle
+                  img(src="./img/mockupone.png" srcset="./img/mockupone@2x.png 2x" alt="" title="")
+              div
+                p!= "David Davidson"
+                span!= "PHD Student, Bioengineering, Imperial College London"
+
+// SECTION mapping :: END

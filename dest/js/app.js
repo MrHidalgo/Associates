@@ -387,7 +387,15 @@ var initWebFontLoader = function initWebFontLoader() {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
+  var initTabs = function initTabs() {
+    $('.mapping__tabs-btn').on('click', function (ev) {
+      var _elem = $(ev.currentTarget),
+          _elemID = _elem.data('btn-id');
 
+      $('.mapping__tabs-btn').removeClass('is-active');
+      _elem.addClass('is-active');
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -412,6 +420,7 @@ var initWebFontLoader = function initWebFontLoader() {
 
     // callback
     // ==========================================
+    initTabs();
   };
   initNative();
 })();

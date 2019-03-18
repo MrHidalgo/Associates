@@ -6,7 +6,15 @@
 	* =============================================
 	* CALLBACK :: start
 	* ============================================= */
+	const initTabs = () => {
+		$('.mapping__tabs-btn').on('click', (ev) => {
+			const _elem = $(ev.currentTarget),
+				_elemID = _elem.data('btn-id');
 
+			$('.mapping__tabs-btn').removeClass('is-active');
+			_elem.addClass('is-active');
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -32,6 +40,7 @@
 
 		// callback
 		// ==========================================
+		initTabs();
 	};
 	initNative();
 })();

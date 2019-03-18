@@ -779,6 +779,75 @@ picture {
   background-color: #44a399;
 }
 
+/* line 196, src/scss/_shared/_swiper.scss */
+.swiper-slide-circle {
+  overflow: hidden;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: solid 2px #ffffff;
+}
+
+/* line 204, src/scss/_shared/_swiper.scss */
+.swiper-slide-circle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 214, src/scss/_shared/_swiper.scss */
+.swiper-slide-user {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 221, src/scss/_shared/_swiper.scss */
+.swiper-slide-user.swiper-slide-user--dark > div:nth-of-type(2) p,
+.swiper-slide-user.swiper-slide-user--dark > div:nth-of-type(2) span {
+  color: #4a4a4a;
+}
+
+/* line 230, src/scss/_shared/_swiper.scss */
+.swiper-slide-user > div:nth-of-type(1) {
+  width: 72px;
+}
+
+/* line 233, src/scss/_shared/_swiper.scss */
+.swiper-slide-user > div:nth-of-type(2) {
+  width: 100%;
+  max-width: -webkit-calc(100% - 72px);
+  max-width: calc(100% - 72px);
+}
+
+/* line 237, src/scss/_shared/_swiper.scss */
+.swiper-slide-user > div:nth-of-type(2) p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.39;
+  color: #ffffff;
+}
+
+/* line 244, src/scss/_shared/_swiper.scss */
+.swiper-slide-user > div:nth-of-type(2) span {
+  font-size: 16px;
+  line-height: 1.56;
+  color: #ffffff;
+}
+
 /* line 1, src/scss/_shared/_iconFont.scss */
 .icon-font {
   display: -webkit-box;
@@ -2328,6 +2397,166 @@ picture {
   height: 265px;
   border: solid 1px #979797;
   background-color: #d8d8d8;
+}
+
+/* line 3, src/scss/_components/are/_mapping.scss */
+.mapping {
+  padding-bottom: 108px;
+  background-color: #f2f2f2;
+}
+
+/* line 8, src/scss/_components/are/_mapping.scss */
+.mapping__wrapper-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 48px;
+}
+
+/* line 16, src/scss/_components/are/_mapping.scss */
+.mapping__tabs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+
+/* line 21, src/scss/_components/are/_mapping.scss */
+.mapping__tabs-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 192px;
+  height: 48px;
+  margin-left: 1px;
+  background-color: #45b8ac;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 1.1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 37, src/scss/_components/are/_mapping.scss */
+.mapping__tabs-btn:first-of-type {
+  margin-left: 0;
+}
+
+/* line 41, src/scss/_components/are/_mapping.scss */
+.mapping__tabs-btn:hover, .mapping__tabs-btn.is-active {
+  background-color: #009688;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 49, src/scss/_components/are/_mapping.scss */
+.mapping__content {
+  display: none;
+}
+
+/* line 52, src/scss/_components/are/_mapping.scss */
+.mapping__content.is-active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 56, src/scss/_components/are/_mapping.scss */
+.mapping__content-left, .mapping__content-right {
+  width: 50%;
+}
+
+/* line 61, src/scss/_components/are/_mapping.scss */
+.mapping__content-right {
+  padding-left: 12px;
+}
+
+/* line 65, src/scss/_components/are/_mapping.scss */
+.mapping__content-img {
+  position: relative;
+  width: 100%;
+  max-width: 501px;
+  height: 352px;
+  border: solid 1px #979797;
+  background-color: #979797;
+}
+
+/* line 73, src/scss/_components/are/_mapping.scss */
+.mapping__content-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 84, src/scss/_components/are/_mapping.scss */
+.mapping__content-title {
+  padding-bottom: 18px;
+  text-align: left;
+}
+
+/* line 89, src/scss/_components/are/_mapping.scss */
+.mapping__content-text {
+  padding-bottom: 50px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #4a4a4a;
+}
+
+/* line 96, src/scss/_components/are/_mapping.scss */
+.mapping__content-text--pb {
+  padding-bottom: 30px;
+}
+
+/* line 101, src/scss/_components/are/_mapping.scss */
+.mapping__content-review {
+  position: relative;
+  width: 100%;
+  max-width: 544px;
+  padding-bottom: 24px;
+}
+
+/* line 107, src/scss/_components/are/_mapping.scss */
+.mapping__content-review p {
+  font-size: 30px;
+  line-height: 1.33;
+  letter-spacing: -0.7px;
+  color: #4a4a4a;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
