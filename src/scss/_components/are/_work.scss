@@ -68,13 +68,17 @@
           max-width: 480px;
         }
       }
+
+      .work__row-right {
+        padding-left: 15px;
+      }
     }
   }
 
   &__desc {
     width: 100%;
     max-width: 480px;
-    padding-bottom: 89px;
+    padding-bottom: 91px;
     font-size: 22px;
     font-weight: 300;
     line-height: 1.45;
@@ -90,7 +94,7 @@
     }
 
     &-1 {
-      height: 610px;
+      height: 612px;
     }
 
     img {
@@ -105,7 +109,7 @@
   }
 
   &__box {
-    padding: 22px 20px;
+    padding: 22px 20px 41px;
     height: 100%;
 
     &-1,

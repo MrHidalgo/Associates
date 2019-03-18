@@ -5,7 +5,7 @@
 
   &-expertise {
     max-width: 100%;
-    height: 450px;
+    height: 460px;
     padding: 0 15px 15px;
 
     .swiper {
@@ -13,14 +13,14 @@
         &-block {
           width: 100%;
           max-width: calc((100% - 60px) / 4);
-          height: 192px;
+          height: 195px;
           margin-top: 25px;
           box-shadow: 0 11px 11px 0 #00000021;
           background-color: #ffffff;
 
           &-top {
             position: relative;
-            height: 146px;
+            height: 150px;
 
             img {
               z-index: -1;
@@ -49,7 +49,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: calc(192px - 146px);
+            height: calc(195px - 150px);
             padding: 5px 10px;
             text-align: center;
 

@@ -604,7 +604,7 @@ picture {
 /* line 6, src/scss/_shared/_swiper.scss */
 .swiper-container-expertise {
   max-width: 100%;
-  height: 450px;
+  height: 460px;
   padding: 0 15px 15px;
 }
 
@@ -613,7 +613,7 @@ picture {
   width: 100%;
   max-width: -webkit-calc((100% - 60px) / 4);
   max-width: calc((100% - 60px) / 4);
-  height: 192px;
+  height: 195px;
   margin-top: 25px;
   -webkit-box-shadow: 0 11px 11px 0 #00000021;
           box-shadow: 0 11px 11px 0 #00000021;
@@ -623,7 +623,7 @@ picture {
 /* line 21, src/scss/_shared/_swiper.scss */
 .swiper-container-expertise .swiper-slide-block-top {
   position: relative;
-  height: 146px;
+  height: 150px;
 }
 
 /* line 25, src/scss/_shared/_swiper.scss */
@@ -669,8 +669,8 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: -webkit-calc(192px - 146px);
-  height: calc(192px - 146px);
+  height: -webkit-calc(195px - 150px);
+  height: calc(195px - 150px);
   padding: 5px 10px;
   text-align: center;
 }
@@ -2624,8 +2624,8 @@ picture {
 .a-main {
   overflow: hidden;
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 180px;
+  padding-top: 152px;
+  padding-bottom: 182px;
 }
 
 /* line 9, src/scss/_components/are/_main.scss */
@@ -2647,12 +2647,12 @@ picture {
   height: 100%;
 }
 
-/* line 23, src/scss/_components/are/_main.scss */
+/* line 24, src/scss/_components/are/_main.scss */
 .a-main__bg-left {
-  width: 40%;
+  width: 48%;
 }
 
-/* line 27, src/scss/_components/are/_main.scss */
+/* line 28, src/scss/_components/are/_main.scss */
 .a-main__bg-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2666,17 +2666,18 @@ picture {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 60%;
+  width: 52%;
+  padding-top: 60px;
 }
 
-/* line 33, src/scss/_components/are/_main.scss */
+/* line 35, src/scss/_components/are/_main.scss */
 .a-main__bg-right img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 41, src/scss/_components/are/_main.scss */
+/* line 43, src/scss/_components/are/_main.scss */
 .a-main__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2684,19 +2685,19 @@ picture {
   display: flex;
 }
 
-/* line 44, src/scss/_components/are/_main.scss */
+/* line 46, src/scss/_components/are/_main.scss */
 .a-main__wrapper-left, .a-main__wrapper-right {
   width: 50%;
 }
 
-/* line 50, src/scss/_components/are/_main.scss */
+/* line 52, src/scss/_components/are/_main.scss */
 .a-main__title {
   padding-bottom: 18px;
   text-align: left;
   line-height: 1.2;
 }
 
-/* line 56, src/scss/_components/are/_main.scss */
+/* line 58, src/scss/_components/are/_main.scss */
 .a-main__desc {
   font-size: 22px;
   font-weight: 300;
@@ -2704,33 +2705,51 @@ picture {
   color: #4a4a4a;
 }
 
-/* line 62, src/scss/_components/are/_main.scss */
+/* line 64, src/scss/_components/are/_main.scss */
 .a-main__desc--pb {
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 
 /* line 3, src/scss/_components/are/_collective.scss */
 .collective {
-  padding-top: 96px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 101px;
   padding-bottom: 96px;
   background-color: #44b4a8;
 }
 
-/* line 8, src/scss/_components/are/_collective.scss */
-.collective__wrapper {
+/* line 10, src/scss/_components/are/_collective.scss */
+.collective__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, src/scss/_components/are/_collective.scss */
+.collective__bg-left, .collective__bg-right {
+  height: 100%;
+}
+
+/* line 24, src/scss/_components/are/_collective.scss */
+.collective__bg-left {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 52%;
+  padding-left: 36px;
 }
 
-/* line 11, src/scss/_components/are/_collective.scss */
-.collective__wrapper-left, .collective__wrapper-right {
-  width: 50%;
-}
-
-/* line 17, src/scss/_components/are/_collective.scss */
-.collective__wrapper-left img {
+/* line 30, src/scss/_components/are/_collective.scss */
+.collective__bg-left img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -2738,34 +2757,59 @@ picture {
   margin-right: auto;
 }
 
-/* line 27, src/scss/_components/are/_collective.scss */
+/* line 39, src/scss/_components/are/_collective.scss */
+.collective__bg-right {
+  width: 48%;
+}
+
+/* line 44, src/scss/_components/are/_collective.scss */
+.collective__wrapper {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 49, src/scss/_components/are/_collective.scss */
+.collective__wrapper-left, .collective__wrapper-right {
+  width: 50%;
+}
+
+/* line 54, src/scss/_components/are/_collective.scss */
+.collective__wrapper-right {
+  padding-left: 10px;
+}
+
+/* line 59, src/scss/_components/are/_collective.scss */
 .collective__title {
-  padding-bottom: 18px;
+  padding-bottom: 22px;
   text-align: left;
 }
 
-/* line 31, src/scss/_components/are/_collective.scss */
+/* line 63, src/scss/_components/are/_collective.scss */
 .collective__title.c-title {
   color: #000000;
 }
 
-/* line 34, src/scss/_components/are/_collective.scss */
+/* line 66, src/scss/_components/are/_collective.scss */
 .collective__title.c-title .c-title--color {
   color: #000000;
 }
 
-/* line 40, src/scss/_components/are/_collective.scss */
+/* line 72, src/scss/_components/are/_collective.scss */
 .collective__desc {
-  padding-bottom: 61px;
+  padding-bottom: 64px;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.45;
   color: #000;
 }
 
-/* line 47, src/scss/_components/are/_collective.scss */
+/* line 79, src/scss/_components/are/_collective.scss */
 .collective__desc--pb {
-  padding-bottom: 30px;
+  padding-bottom: 36px;
 }
 
 /* line 3, src/scss/_components/are/_expertise.scss */
@@ -2800,7 +2844,7 @@ picture {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 47px;
+  padding-top: 29px;
 }
 
 /* line 26, src/scss/_components/are/_expertise.scss */
@@ -2918,34 +2962,39 @@ picture {
   max-width: 480px;
 }
 
-/* line 74, src/scss/_components/are/_work.scss */
+/* line 72, src/scss/_components/are/_work.scss */
+.work__row-2 .work__row-right {
+  padding-left: 15px;
+}
+
+/* line 78, src/scss/_components/are/_work.scss */
 .work__desc {
   width: 100%;
   max-width: 480px;
-  padding-bottom: 89px;
+  padding-bottom: 91px;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.45;
   color: #4a4a4a;
 }
 
-/* line 84, src/scss/_components/are/_work.scss */
+/* line 88, src/scss/_components/are/_work.scss */
 .work__img {
   position: relative;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 88, src/scss/_components/are/_work.scss */
+/* line 92, src/scss/_components/are/_work.scss */
 .work__img-0 {
   height: 384px;
 }
 
-/* line 92, src/scss/_components/are/_work.scss */
+/* line 96, src/scss/_components/are/_work.scss */
 .work__img-1 {
-  height: 610px;
+  height: 612px;
 }
 
-/* line 96, src/scss/_components/are/_work.scss */
+/* line 100, src/scss/_components/are/_work.scss */
 .work__img img {
   position: absolute;
   top: 0;
@@ -2958,34 +3007,34 @@ picture {
      object-position: center;
 }
 
-/* line 107, src/scss/_components/are/_work.scss */
+/* line 111, src/scss/_components/are/_work.scss */
 .work__box {
-  padding: 22px 20px;
+  padding: 22px 20px 41px;
   height: 100%;
 }
 
-/* line 111, src/scss/_components/are/_work.scss */
+/* line 115, src/scss/_components/are/_work.scss */
 .work__box-1, .work__box-2 {
   height: -webkit-calc((100% - 20px) / 2);
   height: calc((100% - 20px) / 2);
 }
 
-/* line 116, src/scss/_components/are/_work.scss */
+/* line 120, src/scss/_components/are/_work.scss */
 .work__box-0 {
   background-color: #484848;
 }
 
-/* line 119, src/scss/_components/are/_work.scss */
+/* line 123, src/scss/_components/are/_work.scss */
 .work__box-1 {
   background-color: #5e5e5e;
 }
 
-/* line 122, src/scss/_components/are/_work.scss */
+/* line 126, src/scss/_components/are/_work.scss */
 .work__box-2 {
   background-color: #989898;
 }
 
-/* line 126, src/scss/_components/are/_work.scss */
+/* line 130, src/scss/_components/are/_work.scss */
 .work__box-title {
   padding-bottom: 20px;
   font-size: 32px;
@@ -2995,7 +3044,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 135, src/scss/_components/are/_work.scss */
+/* line 139, src/scss/_components/are/_work.scss */
 .work__box > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3003,19 +3052,19 @@ picture {
   display: flex;
 }
 
-/* line 138, src/scss/_components/are/_work.scss */
+/* line 142, src/scss/_components/are/_work.scss */
 .work__box > div ul {
   width: 100%;
   max-width: -webkit-calc(100% / 2);
   max-width: calc(100% / 2);
 }
 
-/* line 144, src/scss/_components/are/_work.scss */
+/* line 148, src/scss/_components/are/_work.scss */
 .work__box ul {
   padding-left: 28px;
 }
 
-/* line 147, src/scss/_components/are/_work.scss */
+/* line 151, src/scss/_components/are/_work.scss */
 .work__box ul li {
   font-size: 22px;
   line-height: 2.18;
@@ -3120,7 +3169,7 @@ picture {
 
 /* line 61, src/scss/_components/are/_mapping.scss */
 .mapping__content-right {
-  padding-left: 12px;
+  padding-left: 14px;
 }
 
 /* line 65, src/scss/_components/are/_mapping.scss */
@@ -3148,13 +3197,13 @@ picture {
 
 /* line 84, src/scss/_components/are/_mapping.scss */
 .mapping__content-title {
-  padding-bottom: 18px;
+  padding-bottom: 19px;
   text-align: left;
 }
 
 /* line 89, src/scss/_components/are/_mapping.scss */
 .mapping__content-text {
-  padding-bottom: 50px;
+  padding-bottom: 59px;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.45;
@@ -3163,22 +3212,23 @@ picture {
 
 /* line 96, src/scss/_components/are/_mapping.scss */
 .mapping__content-text--pb {
-  padding-bottom: 30px;
+  padding-bottom: 36px;
 }
 
 /* line 101, src/scss/_components/are/_mapping.scss */
 .mapping__content-review {
   position: relative;
+  left: -4px;
   width: 100%;
   max-width: 544px;
   padding-bottom: 24px;
 }
 
-/* line 107, src/scss/_components/are/_mapping.scss */
+/* line 108, src/scss/_components/are/_mapping.scss */
 .mapping__content-review p {
   font-size: 30px;
   line-height: 1.33;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.25px;
   color: #4a4a4a;
 }
 

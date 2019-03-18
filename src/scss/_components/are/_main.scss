@@ -3,8 +3,8 @@
 .a-main {
   overflow: hidden;
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 180px;
+  padding-top: 152px;
+  padding-bottom: 182px;
 
   &__bg {
     z-index: -1;
@@ -17,18 +17,20 @@
 
     &-left,
     &-right {
+      //width: 50%;
       height: 100%;
     }
 
     &-left {
-      width: 40%;
+      width: 48%;
     }
 
     &-right {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      width: 60%;
+      width: 52%;
+      padding-top: 60px;
 
       img {
         display: block;
@@ -60,7 +62,7 @@
     color: #4a4a4a;
 
     &--pb {
-      padding-bottom: 30px;
+      padding-bottom: 35px;
     }
   }
 }

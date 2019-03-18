@@ -9,7 +9,7 @@ PageList:
   ready: 75
 - file: are.html
   titleName: Who We Are
-  ready: 35
+  ready: 75
 - file: plain.html
   titleName: Plain
   ready: 1

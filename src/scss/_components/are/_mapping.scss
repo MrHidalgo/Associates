@@ -59,7 +59,7 @@
     }
 
     &-right {
-      padding-left: 12px;
+      padding-left: 14px;
     }
 
     &-img {
@@ -82,24 +82,25 @@
     }
 
     &-title {
-      padding-bottom: 18px;
+      padding-bottom: 19px;
       text-align: left;
     }
 
     &-text {
-      padding-bottom: 50px;
+      padding-bottom: 59px;
       font-size: 22px;
       font-weight: 300;
       line-height: 1.45;
       color: #4a4a4a;
 
       &--pb {
-        padding-bottom: 30px;
+        padding-bottom: 36px;
       }
     }
 
     &-review {
       position: relative;
+      left: -4px;
       width: 100%;
       max-width: 544px;
       padding-bottom: 24px;
@@ -107,7 +108,7 @@
       p {
         font-size: 30px;
         line-height: 1.33;
-        letter-spacing: -0.7px;
+        letter-spacing: -0.25px;
         color: #4a4a4a;
       }
     }
