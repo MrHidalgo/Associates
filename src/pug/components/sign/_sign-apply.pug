@@ -15,41 +15,43 @@ section#sign.sign.sign--apply
           h2.sign__title.c-title!= "Become an Associate"
           p.sign__subtitle!= "This platform is currently open to new applicants.<br>Apply before 7 January 2019"
 
-          form.c-form(action='' method='' autocomplete='off')
-            .c-form__group.c-form__group--two
-              .c-form__group-col.c-form__group-col-0
-                +formInput(dataFormObj.inputEmail)
-              .c-form__group-col.c-form__group-col-1
-                +formInput(dataFormObj.inputPassword)
-            .c-form__group.c-form__group--two
-              .c-form__group-col.c-form__group-col-0
-                +formSelectCustom(dataFormObj.selectFieldStatus)
-              .c-form__group-col.c-form__group-col-1
-                +formSelectCustom(dataFormObj.selectFieldUniversity)
+          .sign__content
 
-          p.sign__heading!= "Be prepared, We’ll ask you for the following"
+            form.c-form(action='' method='' autocomplete='off')
+              .c-form__group.c-form__group--two
+                .c-form__group-col.c-form__group-col-0
+                  +formInput(dataFormObj.inputEmail)
+                .c-form__group-col.c-form__group-col-1
+                  +formInput(dataFormObj.inputPassword)
+              .c-form__group.c-form__group--two
+                .c-form__group-col.c-form__group-col-0
+                  +formSelectCustom(dataFormObj.selectFieldStatus)
+                .c-form__group-col.c-form__group-col-1
+                  +formSelectCustom(dataFormObj.selectFieldUniversity)
 
-          .sign__box-wrapper
-            .sign__box.sign__box-0
-              div
-                .sign__box-circle
-                  span!= "1"
-              div
-                p!= "Your basic info and a bit about yourself"
-            .sign__box.sign__box-1
-              div
-                .sign__box-circle
-                  span!= "2"
-              div
-                p!= "A photo of your passport or ID"
+            p.sign__heading!= "Be prepared, We’ll ask you for the following"
 
-          a.sign__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "LET’S GO"
+            .sign__box-wrapper
+              .sign__box.sign__box-0
+                div
+                  .sign__box-circle
+                    span!= "1"
+                div
+                  p!= "Your basic info and a bit about yourself"
+              .sign__box.sign__box-1
+                div
+                  .sign__box-circle
+                    span!= "2"
+                div
+                  p!= "A photo of your passport or ID"
 
-          p.sign__info
-            span
-              != "Your location may determine whether you can participate in projects. For more<br>information please read our&nbsp;"
-              i!= 'i'
-            a(href="#" class="" title="")!= "Our international working policy"
+            a.sign__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "LET’S GO"
+
+            p.sign__info
+              span
+                != "Your location may determine whether you can participate in projects. For more <br>information please read our&nbsp;"
+                i!= 'i'
+              a(href="#" class="" title="")!= "Our international working policy"
 
       .sign__wrapper-right
 
