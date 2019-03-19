@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*
 *
@@ -14,6 +14,139 @@
 * ============================
 * ============================
 * */
+
+/**
+ *
+ * @type {{init(): void, change(): void, chooseVal(*): void, focusElem(*): void, blurElem(*): void}}
+ * @private
+ */
+var customSelect = {
+  init: function init() {
+    var _select = document.querySelectorAll('select');
+
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = _select[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var elem = _step.value;
+
+        elem.previousElementSibling.innerHTML = elem.options[elem.selectedIndex].text;
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  },
+  change: function change() {
+    var _select = document.querySelectorAll('select');
+
+    var _iteratorNormalCompletion2 = true;
+    var _didIteratorError2 = false;
+    var _iteratorError2 = undefined;
+
+    try {
+      for (var _iterator2 = _select[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+        var elem = _step2.value;
+
+        var _selectedOption = elem.options[elem.selectedIndex],
+            _selectedValue = _selectedOption.value,
+            _selectedText = _selectedOption.text;
+
+        if (_selectedValue !== '') {
+          this.chooseVal(elem);
+        }
+
+        elem.previousElementSibling.innerHTML = _selectedText;
+        this.blurElem(elem);
+      }
+    } catch (err) {
+      _didIteratorError2 = true;
+      _iteratorError2 = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+          _iterator2.return();
+        }
+      } finally {
+        if (_didIteratorError2) {
+          throw _iteratorError2;
+        }
+      }
+    }
+  },
+  chooseVal: function chooseVal(elem) {
+    elem.closest('.c-form__select-wrapper').classList.add('is-choose');
+  },
+  focusElem: function focusElem(elem) {
+    elem.closest('.c-form__select-wrapper').classList.add('is-focus');
+  },
+  blurElem: function blurElem(elem) {
+    elem.closest('.c-form__select-wrapper').classList.remove('is-focus');
+  }
+};
+
+/**
+ * @name initCustomSelect
+ *
+ * @description
+ */
+var initCustomSelect = function initCustomSelect() {
+  var _select = document.querySelectorAll('select');
+
+  customSelect.init();
+
+  var _loop = function _loop(elem) {
+    elem.addEventListener('change', function () {
+      customSelect.change(elem);
+    });
+    elem.addEventListener('focus', function () {
+      customSelect.focusElem(elem);
+    });
+    elem.addEventListener('click', function () {
+      customSelect.focusElem(elem);
+    });
+    elem.addEventListener('blur', function () {
+      customSelect.blurElem(elem);
+    });
+  };
+
+  var _iteratorNormalCompletion3 = true;
+  var _didIteratorError3 = false;
+  var _iteratorError3 = undefined;
+
+  try {
+    for (var _iterator3 = _select[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+      var elem = _step3.value;
+
+      _loop(elem);
+    }
+  } catch (err) {
+    _didIteratorError3 = true;
+    _iteratorError3 = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion3 && _iterator3.return) {
+        _iterator3.return();
+      }
+    } finally {
+      if (_didIteratorError3) {
+        throw _iteratorError3;
+      }
+    }
+  }
+};
 
 /**
  * @name initPreventBehavior
@@ -137,6 +270,88 @@ var initSwiper = function initSwiper() {
     initialSlide: 1,
     slidesPerView: 'auto',
     spaceBetween: 37,
+    centeredSlides: true,
+    /*breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is <= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    },*/
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+      // renderBullet: function (index, className) {
+      //   return `
+      //     <div class="${className}">
+      //       ${index}
+      //     </div>
+      //   `;
+      // }
+    }
+
+    // Navigation arrows
+    /*navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },*/
+
+    // And if we need scrollbar
+    /*scrollbar: {
+      el: '.swiper-scrollbar',
+    },*/
+
+    /*on: {
+      "slideChange": function () {
+        console.log("slideChange");
+      },
+    }*/
+  });
+
+  var swiperApply = new Swiper('.swiper-container-apply', {
+    // Optional parameters
+    wrapperClass: "swiper-wrapper",
+    slideClass: "swiper-slide",
+    direction: 'vertical', // 'horizontal' or 'vertical'
+    loop: true,
+    watchOverflow: true,
+    normalizeSlideIndex: true,
+    grabCursor: true,
+    freeMode: false,
+    speed: 500,
+    effect: 'slide', // "slide", "fade", "cube", "coverflow" or "flip"
+    // autoplay: {
+    //   delay: 5000,
+    // },
+    // Disable preloading of all images
+    // preloadImages: false,
+    // Enable lazy loading
+    // lazy: {
+    //   loadPrevNext: true,
+    // },
+
+    // off touch for destop
+    // touchMoveStopPropagation:false,
+    // simulateTouch : false,
+    // allowSwipeToNext: true,
+    // allowSwipeToPrev: true,
+    // allowPageScroll: "auto ",
+
+    initialSlide: 1,
+    slidesPerView: 'auto',
+    spaceBetween: 47,
     centeredSlides: true,
     /*breakpoints: {
       // when window width is <= 320px
@@ -500,6 +715,7 @@ var initWebFontLoader = function initWebFontLoader() {
     initSwiper();
     initViewPortCheckerCount();
     initStellar();
+    initCustomSelect();
 
     // callback
     // ==========================================

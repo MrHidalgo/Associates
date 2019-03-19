@@ -40,6 +40,7 @@
 		initSwiper();
 		initViewPortCheckerCount();
 		initStellar();
+		initCustomSelect();
 
 		// callback
 		// ==========================================

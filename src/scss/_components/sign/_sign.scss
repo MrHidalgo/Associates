@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
 
+  &--apply,
   &--plain {
     .sign {
       &__wrapper {
@@ -25,6 +26,80 @@
             line-height: 1.2;
           }
         }
+      }
+
+      &__heading {
+        padding-bottom: 9px;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: 1.6;
+        letter-spacing: -0.7px;
+        color: #4a4a4a;
+        text-align: center;
+      }
+
+      &__subtitle {
+        padding-bottom: 30px;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1.45;
+        color: #ffffff;
+      }
+
+      &__desc {
+        padding-bottom: 27px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.33;
+        color: #ffffff;
+
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+
+      &__btn {
+        margin-bottom: 17px;
+      }
+    }
+  }
+
+  &--apply {
+    .sign {
+      &__wrapper {
+        min-height: 650px;
+
+        &-left {
+          .sign__title {
+            padding-bottom: 12px;
+            text-transform: none;
+            text-align: left;
+          }
+        }
+
+        &-right {
+          padding-left: 55px;
+
+          .think__slider {
+            width: calc(100% + 30px);
+            height: calc(100% + 60px);
+            margin-top: -30px;
+          }
+        }
+      }
+
+      &__subtitle {
+        padding-bottom: 44px;
+        color: #000000;
+      }
+    }
+  }
+
+  &--plain {
+    .sign {
+      &__wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
 
         &-right {
           display: flex;

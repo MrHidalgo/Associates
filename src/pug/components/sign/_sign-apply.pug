@@ -1,0 +1,82 @@
+// SECTION sign :: START
+
+section#sign.sign.sign--apply
+
+  .sign__bg
+    .sign__bg-left
+    .sign__bg-right
+
+  .c-grid
+
+    .sign__wrapper
+      .sign__wrapper-left
+
+        div
+          h2.sign__title.c-title!= "Become an Associate"
+          p.sign__subtitle!= "This platform is currently open to new applicants.<br>Apply before 7 January 2019"
+
+          form.c-form(action='' method='' autocomplete='off')
+            .c-form__group.c-form__group--two
+              .c-form__group-col.c-form__group-col-0
+                +formInput(dataFormObj.inputEmail)
+              .c-form__group-col.c-form__group-col-1
+                +formInput(dataFormObj.inputPassword)
+            .c-form__group.c-form__group--two
+              .c-form__group-col.c-form__group-col-0
+                +formSelectCustom(dataFormObj.selectFieldStatus)
+              .c-form__group-col.c-form__group-col-1
+                +formSelectCustom(dataFormObj.selectFieldUniversity)
+
+          p.sign__heading!= "Be prepared, We’ll ask you for the following"
+
+          .sign__box-wrapper
+            .sign__box.sign__box-0
+              div
+                .sign__box-circle
+                  span!= "1"
+              div
+                p!= "Your basic info and a bit about yourself"
+            .sign__box.sign__box-1
+              div
+                .sign__box-circle
+                  span!= "2"
+              div
+                p!= "A photo of your passport or ID"
+
+          a.sign__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "LET’S GO"
+
+          p.sign__info
+            span
+              != "Your location may determine whether you can participate in projects. For more<br>information please read our&nbsp;"
+              i!= 'i'
+            a(href="#" class="" title="")!= "Our international working policy"
+
+      .sign__wrapper-right
+
+        .think__slider
+
+          mixin swiperContent()
+            each val, idx in [1,2,3,4,5,6,7]
+              .swiper-slide
+                p.swiper-slide-title!= "Amazing way to earn cash"
+                p.swiper-slide-desc!= "It’s great that I can earn and build my CV at the same time, I don’t have a lot of time out of labs so being to work on projects in my spare time and from anyewhere is ideal for me ."
+                .swiper-slide-user
+                  div
+                    .swiper-slide-circle
+                      img(src="./img/mockupone.png" srcset="./img/mockupone@2x.png 2x" alt="" title="")
+                  div
+                    p!= "David Davidson"
+                    span!= "PHD Student, Bioengineering, Imperial College London"
+
+                .swiper-slide-content
+                  span
+                  span
+                  span
+                  span
+                  span
+                  span
+
+
+          +swiper('swiper-container-apply', 'swiperContent', true, false, false)
+
+// SECTION sign :: END

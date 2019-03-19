@@ -95,6 +95,7 @@
     }
   }
 
+  &-apply,
   &-think {
     max-width: 100%;
     height: 355px;
@@ -244,6 +245,29 @@
             background-color: #ffffff;
           }
         }
+      }
+    }
+  }
+
+  &-apply {
+    height: 100%;
+    padding-right: 30px;
+
+    .swiper {
+      &-slide {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+
+        &-active {
+          width: 100% !important;
+          max-width: 600px !important;
+        }
+      }
+
+      &-pagination {
+        flex-direction: column;
+        right: 0;
       }
     }
   }
