@@ -7,29 +7,72 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &-0 {
       padding-top: 44px;
       padding-bottom: 15px;
+      @include adaptive(767) {
+        padding-top: 45px;
+        padding-bottom: 32px;
+      }
 
       .footer__wrapper-left,
       .footer__wrapper-right {
         width: 50%;
+        @include adaptive(767) {
+          width: 100%;
+        }
       }
 
       .footer__wrapper-left {
         padding-left: 5px;
+        @include adaptive(767) {
+          padding-left: 0;
+        }
       }
 
       .footer__wrapper-right {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        @include adaptive(767) {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .nav {
+          display: none;
+          @include adaptive(767) {
+            display: block;
+          }
+        }
       }
     }
     &-1 {
       padding-top: 15px;
       padding-bottom: 36px;
+      @include adaptive(767) {
+        padding-top: 0;
+        padding-bottom: 47px;
+      }
+
+      .footer__wrapper-left,
+      .footer__wrapper-right {
+        @include adaptive(767) {
+          width: 100%;
+        }
+      }
+
+      .footer__wrapper-right {
+        .nav {
+          @include adaptive(767) {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

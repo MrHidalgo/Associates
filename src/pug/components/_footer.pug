@@ -8,6 +8,8 @@ footer#footer.footer
 
       .footer__wrapper-right
 
+        +nav('footer', [{href:'/', name:'Home'},{href:'do.html', name:'What we do'},{href:'are.html',name:'Who we are'}])
+
         .subscribe
           .subscribe__form
             .subscribe__form-icon
@@ -19,7 +21,7 @@ footer#footer.footer
       .footer__wrapper-left
 
         .copyright
-          p!= "© 2019 Outsmart Insights Ltd | <a href='#'>Privacy Notice</a>"
+          p!= "© 2019 Outsmart Insights Ltd <span>|</span> <a href='#'>Privacy Notice</a>"
 
       .footer__wrapper-right
 

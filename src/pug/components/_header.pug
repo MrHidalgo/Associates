@@ -8,12 +8,16 @@ header#header.header
 
         +logoWithBG('header')
 
-      .header__wrapper-middle
+        +hamburger()
 
-        +nav('header', [{href:'/', name:'Home'},{href:'do.html', name:'What we do'},{href:'are.html',name:'Who we are'}])
-        
-      .header__wrapper-right
-        a.header__btn.header__btn-pre(href="#" class="" title="")!= "pre-register"
-        a.header__btn.header__btn-login(href="#" class="" title="")!= "Log in"
+      .header__wrapper-mobile(mobile-block-js)
+
+        .header__wrapper-middle
+
+          +nav('header', [{href:'/', name:'Home'},{href:'do.html', name:'What we do'},{href:'are.html',name:'Who we are'}])
+
+        .header__wrapper-right
+          a.header__btn.header__btn-pre(href="#" class="" title="")!= "pre-register"
+          a.header__btn.header__btn-login(href="#" class="" title="")!= "Log in"
 
 // HEADER :: END

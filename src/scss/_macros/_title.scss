@@ -1,13 +1,13 @@
 // TITLE :: START
 
 .c-title {
-  font-size: 40px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.9px;
   text-align: center;
   color: #4a4a4a;
   text-transform: uppercase;
+  @include fluid(font-size, 320px, 1440px, 32px, 40px);
 
   &--color {
     color: #45b8ac;

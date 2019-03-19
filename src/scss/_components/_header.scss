@@ -24,6 +24,16 @@
     align-items: center;
     height: 100%;
 
+    &-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+      @include adaptive(991) {
+        display: none;
+      }
+    }
+
     &-left,
     &-middle,
     &-right {
@@ -33,6 +43,20 @@
     &-left {
       width: 100%;
       max-width: 272px;
+      @include adaptive(991) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+      }
+
+      .hamburger {
+        display: none;
+        padding-bottom: 12px;
+        @include adaptive(991) {
+          display: flex;
+        }
+      }
     }
 
     &-middle {

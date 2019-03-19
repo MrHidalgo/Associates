@@ -74,6 +74,13 @@
   }
   &--footer {
     padding-left: 107px;
+    @include adaptive(991) {
+      padding-left: 30px;
+    }
+    @include adaptive(767) {
+      padding-left: 0;
+      padding-bottom: 38px;
+    }
 
     .nav__list-btn {
       color: #ffffff;
@@ -87,9 +94,22 @@
     &-item {
       padding-left: 20px;
       padding-right: 20px;
+      @include adaptive(767) {
+        &:first-of-type {
+          padding-left: 0;
+        }
+        &:last-of-type {
+          padding-right: 0;
+        }
+      }
+      @include adaptive(374) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
 
     &-btn {
+      white-space: nowrap;
       display: flex;
       align-items: center;
       line-height: 1.43;
@@ -108,6 +128,11 @@
   &--footer {
     position: relative;
     top: -9px;
+    @include adaptive(767) {
+      top: 0;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
 
     svg {
       width: 205px;
@@ -128,15 +153,30 @@
 .copyright {
   display: flex;
   align-items: center;
+  @include adaptive(767) {
+    justify-content: center;
+  }
 
   p {
     line-height: 1.43;
     letter-spacing: 1px;
     color: #ffffff;
+    @include adaptive(767) {
+      text-align: center;
+    }
+
+    span {
+      @include adaptive(767) {
+        display: none;
+      }
+    }
 
     a {
       text-decoration: underline;
       color: #ffffff;
+      @include adaptive(767) {
+        display: block;
+      }
     }
   }
 }
@@ -149,7 +189,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 362px;
+    width: 100%;
+    max-width: 362px;
     height: 42px;
     border-radius: 6px;
     background-color: #ffffff;

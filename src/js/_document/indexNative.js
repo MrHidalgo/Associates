@@ -41,6 +41,7 @@
 		initViewPortCheckerCount();
 		initStellar();
 		initCustomSelect();
+		initHamburger();
 
 		// callback
 		// ==========================================

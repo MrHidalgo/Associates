@@ -14,6 +14,9 @@
         &-left {
           display: flex;
           align-items: center;
+          @include adaptive(1199) {
+            padding-right: 15px;
+          }
 
           > div {
             width: 100%;
@@ -158,6 +161,9 @@
           display: flex;
           align-items: center;
           padding-left: 59px;
+          @include adaptive(1199) {
+            padding-left: 15px;
+          }
 
           > div {
             padding-top: 15px;
@@ -184,10 +190,10 @@
 
       &__subtitle {
         padding-bottom: 30px;
-        font-size: 22px;
         font-weight: 300;
         line-height: 1.45;
         color: #ffffff;
+        @include fluid(font-size, 320px, 1440px, 18px, 22px);
       }
 
       &__desc {
@@ -196,6 +202,9 @@
         font-weight: 300;
         line-height: 1.33;
         color: #ffffff;
+        @include adaptive(767) {
+          font-size: 16px;
+        }
 
         &:last-of-type {
           padding-bottom: 0;
