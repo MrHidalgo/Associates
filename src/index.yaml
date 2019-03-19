@@ -18,4 +18,4 @@ PageList:
   ready: 75
 - file: apply-closed.html
   titleName: Apply Closed
-  ready: 1
+  ready: 75

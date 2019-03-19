@@ -65,6 +65,17 @@
   }
 
   &--apply {
+    &.sign--closed {
+      .sign {
+        &__wrapper {
+          min-height: 740px;
+        }
+        &__subtitle {
+          padding-bottom: 15px;
+        }
+      }
+    }
+
     .sign {
       &__wrapper {
         min-height: 650px;
@@ -92,6 +103,20 @@
         padding-bottom: 44px;
         color: #000000;
       }
+
+      &__desc {
+        padding-bottom: 20px;
+        color: #000000;
+      }
+
+      &__btn {
+        max-width: 436px;
+        margin-left: 0;
+      }
+    }
+
+    .c-form {
+      margin-left: 0;
     }
   }
 
@@ -249,6 +274,29 @@
       font-weight: 300;
       line-height: 1.43;
       color: #000000;
+    }
+  }
+
+  &__wait {
+    width: 100%;
+    max-width: 480px;
+    min-height: 172px;
+    padding: 25px 16px;
+    background-color: #e91d63;
+
+    p {
+      padding-bottom: 10px;
+      font-size: 32px;
+      line-height: 1.25;
+      letter-spacing: -0.7px;
+      color: #ffffff;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.5;
+      color: #ffffff;
     }
   }
 
