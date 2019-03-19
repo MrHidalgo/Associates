@@ -3232,4 +3232,301 @@ picture {
   color: #4a4a4a;
 }
 
+/* line 3, src/scss/_components/sign/_sign.scss */
+.sign {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 9, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 13, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__wrapper-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 17, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__wrapper-left > div {
+  width: 100%;
+  max-width: 475px;
+}
+
+/* line 22, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__wrapper-left .sign__title {
+  padding-bottom: 43px;
+  color: #4a4a4a;
+  line-height: 1.2;
+}
+
+/* line 29, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 59px;
+}
+
+/* line 34, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__wrapper-right > div {
+  padding-top: 15px;
+}
+
+/* line 38, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__wrapper-right .sign__title {
+  padding-bottom: 8px;
+  text-align: left;
+  color: #fff;
+  line-height: 1.2;
+}
+
+/* line 47, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__heading {
+  padding-bottom: 9px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: -0.7px;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+/* line 57, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__subtitle {
+  padding-bottom: 30px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #ffffff;
+}
+
+/* line 65, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__desc {
+  padding-bottom: 27px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #ffffff;
+}
+
+/* line 72, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__desc:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 77, src/scss/_components/sign/_sign.scss */
+.sign--plain .sign__btn {
+  margin-bottom: 17px;
+}
+
+/* line 83, src/scss/_components/sign/_sign.scss */
+.sign__bg {
+  z-index: -1;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 92, src/scss/_components/sign/_sign.scss */
+.sign__bg-left, .sign__bg-right {
+  width: 50%;
+}
+
+/* line 97, src/scss/_components/sign/_sign.scss */
+.sign__bg-left {
+  background-color: #ffffff;
+}
+
+/* line 101, src/scss/_components/sign/_sign.scss */
+.sign__bg-right {
+  background-color: #44b4a8;
+}
+
+/* line 106, src/scss/_components/sign/_sign.scss */
+.sign__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-calc(100vh - (172px + 51px));
+  height: calc(100vh - (172px + 51px));
+}
+
+/* line 110, src/scss/_components/sign/_sign.scss */
+.sign__wrapper-left, .sign__wrapper-right {
+  width: 50%;
+}
+
+/* line 116, src/scss/_components/sign/_sign.scss */
+.sign__btn {
+  width: 100%;
+  max-width: 461px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 124, src/scss/_components/sign/_sign.scss */
+.sign__box {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 50%;
+}
+
+/* line 131, src/scss/_components/sign/_sign.scss */
+.sign__box-0 {
+  border-right: 1px solid #f2f2f2;
+}
+
+/* line 136, src/scss/_components/sign/_sign.scss */
+.sign__box > div:nth-of-type(1) {
+  width: 64px;
+  padding-left: 16px;
+}
+
+/* line 140, src/scss/_components/sign/_sign.scss */
+.sign__box > div:nth-of-type(2) {
+  width: 100%;
+  max-width: -webkit-calc(100% - 64px);
+  max-width: calc(100% - 64px);
+  padding-right: 10px;
+}
+
+/* line 147, src/scss/_components/sign/_sign.scss */
+.sign__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 35px;
+}
+
+/* line 153, src/scss/_components/sign/_sign.scss */
+.sign__box-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #f2f2f2;
+}
+
+/* line 162, src/scss/_components/sign/_sign.scss */
+.sign__box-circle span {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* line 172, src/scss/_components/sign/_sign.scss */
+.sign__box p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: #000000;
+}
+
+/* line 180, src/scss/_components/sign/_sign.scss */
+.sign__info {
+  text-align: center;
+}
+
+/* line 183, src/scss/_components/sign/_sign.scss */
+.sign__info i {
+  z-index: -1;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: -15px;
+  width: 12px;
+  height: 12px;
+  padding-top: 1px;
+  padding-left: 1px;
+  background-color: #020202;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* line 203, src/scss/_components/sign/_sign.scss */
+.sign__info span,
+.sign__info a {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.33;
+}
+
+/* line 210, src/scss/_components/sign/_sign.scss */
+.sign__info span {
+  position: relative;
+  color: #000000;
+}
+
+/* line 215, src/scss/_components/sign/_sign.scss */
+.sign__info a {
+  color: #44b4a8;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=maps/app.css.map */

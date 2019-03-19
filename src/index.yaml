@@ -12,7 +12,7 @@ PageList:
   ready: 75
 - file: plain.html
   titleName: Plain
-  ready: 1
+  ready: 75
 - file: apply.html
   titleName: Apply
   ready: 1
