@@ -3,8 +3,6 @@
 .a-main {
   overflow: hidden;
   position: relative;
-  padding-top: 152px;
-  padding-bottom: 182px;
 
   &__bg {
     z-index: -1;
@@ -33,15 +31,27 @@
       padding-top: 60px;
 
       img {
+        opacity: 0;
         display: block;
         max-width: 100%;
         height: auto;
+        transform: translateX(80%);
+
+        .is-animated & {
+          opacity: 1;
+          transform: translateX(0);
+          @include transition(opacity 1s, transform 1s);
+        }
       }
     }
   }
 
   &__wrapper {
     display: flex;
+    align-items: center;
+    padding-top: 152px;
+    padding-bottom: 182px;
+    min-height: calc(100vh - 51px);
 
     &-left,
     &-right {

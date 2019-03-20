@@ -4100,11 +4100,9 @@ picture {
 .a-main {
   overflow: hidden;
   position: relative;
-  padding-top: 152px;
-  padding-bottom: 182px;
 }
 
-/* line 9, src/scss/_components/are/_main.scss */
+/* line 7, src/scss/_components/are/_main.scss */
 .a-main__bg {
   z-index: -1;
   position: absolute;
@@ -4118,17 +4116,17 @@ picture {
   height: 100%;
 }
 
-/* line 18, src/scss/_components/are/_main.scss */
+/* line 16, src/scss/_components/are/_main.scss */
 .a-main__bg-left, .a-main__bg-right {
   height: 100%;
 }
 
-/* line 24, src/scss/_components/are/_main.scss */
+/* line 22, src/scss/_components/are/_main.scss */
 .a-main__bg-left {
   width: 48%;
 }
 
-/* line 28, src/scss/_components/are/_main.scss */
+/* line 26, src/scss/_components/are/_main.scss */
 .a-main__bg-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4146,34 +4144,59 @@ picture {
   padding-top: 60px;
 }
 
-/* line 35, src/scss/_components/are/_main.scss */
+/* line 33, src/scss/_components/are/_main.scss */
 .a-main__bg-right img {
+  opacity: 0;
   display: block;
   max-width: 100%;
   height: auto;
+  -webkit-transform: translateX(80%);
+      -ms-transform: translateX(80%);
+          transform: translateX(80%);
 }
 
-/* line 43, src/scss/_components/are/_main.scss */
+/* line 40, src/scss/_components/are/_main.scss */
+.is-animated .a-main__bg-right img {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: opacity 1s 0.3s ease-in-out, -webkit-transform 1s 0.3s ease-in-out;
+  transition: opacity 1s 0.3s ease-in-out, -webkit-transform 1s 0.3s ease-in-out;
+  -o-transition: opacity 1s 0.3s ease-in-out, transform 1s 0.3s ease-in-out;
+  transition: opacity 1s 0.3s ease-in-out, transform 1s 0.3s ease-in-out;
+  transition: opacity 1s 0.3s ease-in-out, transform 1s 0.3s ease-in-out, -webkit-transform 1s 0.3s ease-in-out;
+}
+
+/* line 49, src/scss/_components/are/_main.scss */
 .a-main__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 152px;
+  padding-bottom: 182px;
+  min-height: -webkit-calc(100vh - 51px);
+  min-height: calc(100vh - 51px);
 }
 
-/* line 46, src/scss/_components/are/_main.scss */
+/* line 56, src/scss/_components/are/_main.scss */
 .a-main__wrapper-left, .a-main__wrapper-right {
   width: 50%;
 }
 
-/* line 52, src/scss/_components/are/_main.scss */
+/* line 62, src/scss/_components/are/_main.scss */
 .a-main__title {
   padding-bottom: 18px;
   text-align: left;
   line-height: 1.2;
 }
 
-/* line 58, src/scss/_components/are/_main.scss */
+/* line 68, src/scss/_components/are/_main.scss */
 .a-main__desc {
   font-size: 22px;
   font-weight: 300;
@@ -4181,7 +4204,7 @@ picture {
   color: #4a4a4a;
 }
 
-/* line 64, src/scss/_components/are/_main.scss */
+/* line 74, src/scss/_components/are/_main.scss */
 .a-main__desc--pb {
   padding-bottom: 35px;
 }
@@ -4465,12 +4488,27 @@ picture {
   height: 384px;
 }
 
-/* line 96, src/scss/_components/are/_work.scss */
+/* line 95, src/scss/_components/are/_work.scss */
+.work__img-0:after {
+  content: '';
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#00000000), color-stop(30%, #00000023), color-stop(50%, #00000042), color-stop(70%, #00000085), color-stop(90%, #000000cc), color-stop(96%, #000000e1), to(#000000));
+  background-image: -webkit-linear-gradient(top, #00000000, #00000023 30%, #00000042 50%, #00000085 70%, #000000cc 90%, #000000e1 96%, #000000);
+  background-image: -o-linear-gradient(top, #00000000, #00000023 30%, #00000042 50%, #00000085 70%, #000000cc 90%, #000000e1 96%, #000000);
+  background-image: linear-gradient(to bottom, #00000000, #00000023 30%, #00000042 50%, #00000085 70%, #000000cc 90%, #000000e1 96%, #000000);
+}
+
+/* line 107, src/scss/_components/are/_work.scss */
 .work__img-1 {
   height: 612px;
 }
 
-/* line 100, src/scss/_components/are/_work.scss */
+/* line 111, src/scss/_components/are/_work.scss */
 .work__img img {
   position: absolute;
   top: 0;
@@ -4483,34 +4521,34 @@ picture {
      object-position: center;
 }
 
-/* line 111, src/scss/_components/are/_work.scss */
+/* line 122, src/scss/_components/are/_work.scss */
 .work__box {
   padding: 22px 20px 41px;
   height: 100%;
 }
 
-/* line 115, src/scss/_components/are/_work.scss */
+/* line 126, src/scss/_components/are/_work.scss */
 .work__box-1, .work__box-2 {
   height: -webkit-calc((100% - 20px) / 2);
   height: calc((100% - 20px) / 2);
 }
 
-/* line 120, src/scss/_components/are/_work.scss */
+/* line 131, src/scss/_components/are/_work.scss */
 .work__box-0 {
   background-color: #484848;
 }
 
-/* line 123, src/scss/_components/are/_work.scss */
+/* line 134, src/scss/_components/are/_work.scss */
 .work__box-1 {
   background-color: #5e5e5e;
 }
 
-/* line 126, src/scss/_components/are/_work.scss */
+/* line 137, src/scss/_components/are/_work.scss */
 .work__box-2 {
   background-color: #989898;
 }
 
-/* line 130, src/scss/_components/are/_work.scss */
+/* line 141, src/scss/_components/are/_work.scss */
 .work__box-title {
   padding-bottom: 20px;
   font-size: 32px;
@@ -4520,7 +4558,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 139, src/scss/_components/are/_work.scss */
+/* line 150, src/scss/_components/are/_work.scss */
 .work__box > div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4528,19 +4566,19 @@ picture {
   display: flex;
 }
 
-/* line 142, src/scss/_components/are/_work.scss */
+/* line 153, src/scss/_components/are/_work.scss */
 .work__box > div ul {
   width: 100%;
   max-width: -webkit-calc(100% / 2);
   max-width: calc(100% / 2);
 }
 
-/* line 148, src/scss/_components/are/_work.scss */
+/* line 159, src/scss/_components/are/_work.scss */
 .work__box ul {
   padding-left: 28px;
 }
 
-/* line 151, src/scss/_components/are/_work.scss */
+/* line 162, src/scss/_components/are/_work.scss */
 .work__box ul li {
   font-size: 22px;
   line-height: 2.18;

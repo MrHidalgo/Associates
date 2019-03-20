@@ -18,6 +18,12 @@
 			$('.mapping__content[data-content="' + _elemID + '"]').fadeIn('350').addClass('is-active');
 		});
 	};
+
+	const initAreImageLoad = () => {
+		setTimeout(() => {
+			$('.a-main').addClass('is-animated');
+		}, 0);
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -46,6 +52,7 @@
 		// callback
 		// ==========================================
 		initTabs();
+		initAreImageLoad();
 	};
 	initNative();
 })();

@@ -666,6 +666,12 @@ var initWebFontLoader = function initWebFontLoader() {
       $('.mapping__content[data-content="' + _elemID + '"]').fadeIn('350').addClass('is-active');
     });
   };
+
+  var initAreImageLoad = function initAreImageLoad() {
+    setTimeout(function () {
+      $('.a-main').addClass('is-animated');
+    }, 0);
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -693,6 +699,7 @@ var initWebFontLoader = function initWebFontLoader() {
     // callback
     // ==========================================
     initTabs();
+    initAreImageLoad();
   };
   initNative();
 })();
