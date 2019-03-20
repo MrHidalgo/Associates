@@ -34,6 +34,9 @@
           > div {
             width: 100%;
             max-width: 475px;
+            @include adaptive(767) {
+              max-width: 100%;
+            }
           }
 
           .sign__title {
@@ -55,14 +58,17 @@
         letter-spacing: -0.7px;
         color: #4a4a4a;
         text-align: center;
+        @include adaptive(575) {
+          text-align: left;
+        }
       }
 
       &__subtitle {
         padding-bottom: 30px;
-        font-size: 22px;
         font-weight: 300;
         line-height: 1.45;
         color: #ffffff;
+        @include fluid(font-size, 320px, 1440px, 16px, 22px);
       }
 
       &__desc {
@@ -101,22 +107,51 @@
     .sign {
       &__wrapper {
         min-height: 650px;
+        @include adaptive(991) {
+          height: auto;
+          min-height: auto;
+        }
 
         &-left {
+          @include adaptive(1365) {
+            justify-content: center;
+            padding-bottom: 0;
+          }
+
           .sign__title {
             padding-bottom: 12px;
             text-transform: none;
             text-align: left;
+            @include adaptive(575) {
+              padding-bottom: 30px;
+            }
           }
         }
 
         &-right {
           padding-left: 55px;
+          @include adaptive(1199) {
+            padding-left: 30px;
+          }
+          @include adaptive(991) {
+            max-height: 700px;
+          }
+          @include adaptive(767) {
+            padding: 0;
+            box-shadow: none;
+          }
 
           .think__slider {
             width: calc(100% + 30px);
             height: calc(100% + 60px);
             margin-top: -30px;
+            @include adaptive(1365) {
+              width: 100%;
+            }
+            @include adaptive(767) {
+              height: auto;
+              margin-top: 0;
+            }
           }
         }
       }
@@ -124,12 +159,19 @@
       &__content {
         width: 100%;
         max-width: 436px;
+        @include adaptive(767) {
+          max-width: 100%;
+        }
       }
 
       &__info {
         padding: 8px 15px 8px 40px;
         background-color: #f2f2f2;
         text-align: left;
+        @include adaptive(575) {
+          width: calc(100% + 44px);
+          margin-left: -22px;
+        }
 
         span {
           text-align: left;
@@ -142,6 +184,10 @@
             left: -20px;
             top: 50%;
             transform: translateY(-50%);
+            @include adaptive(575) {
+              top: 0;
+              transform: translateY(0);
+            }
           }
         }
       }
@@ -149,6 +195,14 @@
       &__subtitle {
         padding-bottom: 44px;
         color: #000000;
+        @include adaptive(767) {
+          br {
+            display: none;
+          }
+        }
+        @include adaptive(575) {
+          padding-bottom: 30px;
+        }
       }
 
       &__desc {
@@ -159,6 +213,9 @@
       &__btn {
         max-width: 436px;
         margin-left: 0;
+        @include adaptive(767) {
+          max-width: 100%;
+        }
       }
     }
 
@@ -317,6 +374,9 @@
     height: 40px;
     margin-left: auto;
     margin-right: auto;
+    @include adaptive(767) {
+      max-width: 100%;
+    }
   }
 
   &__box {

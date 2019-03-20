@@ -12,10 +12,10 @@ PageList:
   ready: 75
 - file: plain.html
   titleName: Plain
-  ready: 75
+  ready: 90
 - file: apply.html
   titleName: Apply
-  ready: 75
+  ready: 90
 - file: apply-closed.html
   titleName: Apply Closed
   ready: 75

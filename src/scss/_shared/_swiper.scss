@@ -252,12 +252,25 @@
   &-apply {
     height: 100%;
     padding-right: 30px;
+    @include adaptive(1365) {
+      padding-right: 40px;
+    }
+    @include adaptive(1199) {
+      padding-right: 30px;
+    }
+    @include adaptive(767) {
+      padding-right: 0;
+      padding-bottom: 50px;
+    }
 
     .swiper {
       &-slide {
         position: relative;
         width: 100%;
         max-width: 600px;
+        @include adaptive(1365) {
+          height: auto;
+        }
 
         &-active {
           width: 100% !important;
@@ -268,6 +281,11 @@
       &-pagination {
         flex-direction: column;
         right: 0;
+        @include adaptive(767) {
+          flex-direction: row;
+          right: auto;
+          bottom: 0;
+        }
       }
     }
   }
