@@ -3,6 +3,10 @@
 .sign {
   overflow: hidden;
   position: relative;
+  @include adaptive(767) {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
 
   &--apply,
   &--plain {
@@ -10,12 +14,21 @@
       &__wrapper {
         padding-top: 30px;
         padding-bottom: 30px;
+        @include adaptive(767) {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
 
         &-left {
           display: flex;
           align-items: center;
           @include adaptive(1199) {
             padding-right: 15px;
+          }
+          @include adaptive(767) {
+            padding-left: 22px;
+            padding-right: 22px;
+            margin-bottom: 33px;
           }
 
           > div {
@@ -27,6 +40,9 @@
             padding-bottom: 43px;
             color: #4a4a4a;
             line-height: 1.2;
+            @include adaptive(767) {
+              padding-bottom: 30px;
+            }
           }
         }
       }
@@ -156,6 +172,16 @@
       &__wrapper {
         padding-top: 30px;
         padding-bottom: 30px;
+        @include adaptive(767) {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        &-left {
+          @include adaptive(1365) {
+            justify-content: center;
+          }
+        }
 
         &-right {
           display: flex;
@@ -163,6 +189,10 @@
           padding-left: 59px;
           @include adaptive(1199) {
             padding-left: 15px;
+          }
+          @include adaptive(767) {
+            padding-left: 22px;
+            padding-right: 22px;
           }
 
           > div {
@@ -186,6 +216,9 @@
         letter-spacing: -0.7px;
         color: #4a4a4a;
         text-align: center;
+        @include adaptive(767) {
+          padding-bottom: 30px;
+        }
       }
 
       &__subtitle {
@@ -233,6 +266,9 @@
 
     &-left {
       background-color: #ffffff;
+      @include adaptive(767) {
+        background-color: #44b4a8;
+      }
     }
 
     &-right {
@@ -243,10 +279,35 @@
   &__wrapper {
     display: flex;
     height: calc(100vh - (172px + 51px));
+    @include adaptive(767) {
+      flex-wrap: wrap;
+      height: auto;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include adaptive(767) {
+        width: 100%;
+      }
+    }
+
+    &-left {
+      @include adaptive(767) {
+        padding-top: 30px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px 0 #00000028;
+        padding-bottom: 30px;
+      }
+    }
+
+    &-right {
+      @include adaptive(767) {
+        padding-top: 30px;
+        background-color: #44b4a8;
+        box-shadow: 0 2px 4px 0 #00000028;
+        padding-bottom: 30px;
+      }
     }
   }
 
@@ -264,20 +325,39 @@
     align-items: center;
     width: 100%;
     max-width: 50%;
+    @include adaptive(991) {
+      max-width: 100%;
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
 
     &-0 {
       border-right: 1px solid #f2f2f2;
+      @include adaptive(991) {
+        border: none;
+      }
     }
 
     > div {
       &:nth-of-type(1) {
         width: 64px;
         padding-left: 16px;
+        @include adaptive(767) {
+          width: 48px;
+          padding-left: 0;
+        }
       }
       &:nth-of-type(2) {
         width: 100%;
         max-width: calc(100% - 64px);
         padding-right: 10px;
+        @include adaptive(767) {
+          max-width: calc(100% - 48px);
+          padding-right: 0;
+        }
       }
     }
 
@@ -285,6 +365,9 @@
       display: flex;
       align-items: center;
       padding-bottom: 35px;
+      @include adaptive(991) {
+        flex-wrap: wrap;
+      }
     }
 
     &-circle {
@@ -370,6 +453,11 @@
     span {
       position: relative;
       color: #000000;
+      @include adaptive(991) {
+        br {
+          display: none;
+        }
+      }
     }
 
     a {
