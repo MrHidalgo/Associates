@@ -73,10 +73,13 @@
 
       &__desc {
         padding-bottom: 27px;
-        font-size: 18px;
         font-weight: 300;
         line-height: 1.33;
         color: #ffffff;
+        @include fluid(font-size, 320px, 1440px, 16px, 18px);
+        @include adaptive(767) {
+          padding-bottom: 30px;
+        }
 
         &:last-of-type {
           padding-bottom: 0;
@@ -93,10 +96,13 @@
     &.sign--closed {
       .sign {
         &__wrapper {
-          min-height: 740px;
+          min-height: 800px;
         }
         &__subtitle {
           padding-bottom: 15px;
+          @include adaptive(767) {
+            padding-bottom: 30px;
+          }
         }
         &__btn {
           margin-bottom: 42px;
@@ -463,13 +469,23 @@
     min-height: 172px;
     padding: 25px 16px;
     background-color: #e91d63;
+    @include adaptive(767) {
+      max-width: 100%;
+    }
+    @include adaptive(575) {
+      max-width: initial;
+      width: calc(100% + 44px);
+      margin-left: -22px;
+      padding-left: 22px;
+      padding-right: 22px;
+    }
 
     p {
       padding-bottom: 10px;
-      font-size: 32px;
       line-height: 1.25;
       letter-spacing: -0.7px;
       color: #ffffff;
+      @include fluid(font-size, 320px, 1440px, 25px, 32px);
     }
 
     span {

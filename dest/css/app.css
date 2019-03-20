@@ -1125,7 +1125,15 @@ picture {
   color: #ffffff;
 }
 
-/* line 176, src/scss/_shared/_swiper.scss */
+@media screen and (max-width: 575px) {
+  /* line 167, src/scss/_shared/_swiper.scss */
+  .swiper-container-apply .swiper-slide-title, .swiper-container-think .swiper-slide-title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+}
+
+/* line 180, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide-desc, .swiper-container-think .swiper-slide-desc {
   padding-bottom: 16px;
   font-size: 16px;
@@ -1133,7 +1141,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 183, src/scss/_shared/_swiper.scss */
+/* line 187, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide-circle, .swiper-container-think .swiper-slide-circle {
   overflow: hidden;
   position: relative;
@@ -1144,7 +1152,7 @@ picture {
   border: solid 2px #ffffff;
 }
 
-/* line 191, src/scss/_shared/_swiper.scss */
+/* line 195, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide-circle img, .swiper-container-think .swiper-slide-circle img {
   position: absolute;
   top: 0;
@@ -1157,7 +1165,7 @@ picture {
      object-position: center;
 }
 
-/* line 202, src/scss/_shared/_swiper.scss */
+/* line 206, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide-user, .swiper-container-think .swiper-slide-user {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1169,19 +1177,19 @@ picture {
           align-items: center;
 }
 
-/* line 207, src/scss/_shared/_swiper.scss */
+/* line 211, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide-user > div:nth-of-type(1), .swiper-container-think .swiper-slide-user > div:nth-of-type(1) {
   width: 72px;
 }
 
-/* line 210, src/scss/_shared/_swiper.scss */
+/* line 214, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide-user > div:nth-of-type(2), .swiper-container-think .swiper-slide-user > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 72px);
   max-width: calc(100% - 72px);
 }
 
-/* line 214, src/scss/_shared/_swiper.scss */
+/* line 218, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide-user > div:nth-of-type(2) p, .swiper-container-think .swiper-slide-user > div:nth-of-type(2) p {
   font-size: 18px;
   font-weight: 500;
@@ -1189,14 +1197,14 @@ picture {
   color: #ffffff;
 }
 
-/* line 221, src/scss/_shared/_swiper.scss */
+/* line 225, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide-user > div:nth-of-type(2) span, .swiper-container-think .swiper-slide-user > div:nth-of-type(2) span {
   font-size: 16px;
   line-height: 1.56;
   color: #ffffff;
 }
 
-/* line 231, src/scss/_shared/_swiper.scss */
+/* line 235, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-pagination, .swiper-container-think .swiper-pagination {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1212,7 +1220,7 @@ picture {
           justify-content: center;
 }
 
-/* line 236, src/scss/_shared/_swiper.scss */
+/* line 240, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-pagination-bullet, .swiper-container-think .swiper-pagination-bullet {
   opacity: 1;
   width: 16px;
@@ -1222,40 +1230,40 @@ picture {
   background-color: #44a399;
 }
 
-/* line 244, src/scss/_shared/_swiper.scss */
+/* line 248, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-pagination-bullet-active, .swiper-container-think .swiper-pagination-bullet-active {
   background-color: #ffffff;
 }
 
-/* line 252, src/scss/_shared/_swiper.scss */
+/* line 256, src/scss/_shared/_swiper.scss */
 .swiper-container-apply {
   height: 100%;
   padding-right: 30px;
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 252, src/scss/_shared/_swiper.scss */
+  /* line 256, src/scss/_shared/_swiper.scss */
   .swiper-container-apply {
     padding-right: 40px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 252, src/scss/_shared/_swiper.scss */
+  /* line 256, src/scss/_shared/_swiper.scss */
   .swiper-container-apply {
     padding-right: 30px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 252, src/scss/_shared/_swiper.scss */
+  /* line 256, src/scss/_shared/_swiper.scss */
   .swiper-container-apply {
     padding-right: 0;
     padding-bottom: 50px;
   }
 }
 
-/* line 267, src/scss/_shared/_swiper.scss */
+/* line 271, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide {
   position: relative;
   width: 100%;
@@ -1263,19 +1271,26 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 267, src/scss/_shared/_swiper.scss */
+  /* line 271, src/scss/_shared/_swiper.scss */
   .swiper-container-apply .swiper-slide {
     height: auto;
   }
 }
 
-/* line 275, src/scss/_shared/_swiper.scss */
+@media screen and (max-width: 575px) {
+  /* line 271, src/scss/_shared/_swiper.scss */
+  .swiper-container-apply .swiper-slide {
+    padding: 30px 20px;
+  }
+}
+
+/* line 282, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-slide-active {
   width: 100% !important;
   max-width: 600px !important;
 }
 
-/* line 281, src/scss/_shared/_swiper.scss */
+/* line 288, src/scss/_shared/_swiper.scss */
 .swiper-container-apply .swiper-pagination {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1286,7 +1301,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 281, src/scss/_shared/_swiper.scss */
+  /* line 288, src/scss/_shared/_swiper.scss */
   .swiper-container-apply .swiper-pagination {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1298,13 +1313,13 @@ picture {
   }
 }
 
-/* line 293, src/scss/_shared/_swiper.scss */
+/* line 300, src/scss/_shared/_swiper.scss */
 .swiper-container-stand {
   max-width: 100%;
   height: 273px;
 }
 
-/* line 298, src/scss/_shared/_swiper.scss */
+/* line 305, src/scss/_shared/_swiper.scss */
 .swiper-container-stand .swiper-slide {
   position: relative;
   width: 280px;
@@ -1313,7 +1328,7 @@ picture {
   background-color: #d8d8d8;
 }
 
-/* line 306, src/scss/_shared/_swiper.scss */
+/* line 313, src/scss/_shared/_swiper.scss */
 .swiper-container-stand .swiper-pagination {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1329,7 +1344,7 @@ picture {
           justify-content: center;
 }
 
-/* line 311, src/scss/_shared/_swiper.scss */
+/* line 318, src/scss/_shared/_swiper.scss */
 .swiper-container-stand .swiper-pagination-bullet {
   opacity: 1;
   width: 8px;
@@ -1339,12 +1354,12 @@ picture {
   background-color: #989898;
 }
 
-/* line 319, src/scss/_shared/_swiper.scss */
+/* line 326, src/scss/_shared/_swiper.scss */
 .swiper-container-stand .swiper-pagination-bullet-active {
   background-color: #44a399;
 }
 
-/* line 330, src/scss/_shared/_swiper.scss */
+/* line 337, src/scss/_shared/_swiper.scss */
 .swiper-slide-circle {
   overflow: hidden;
   position: relative;
@@ -1355,7 +1370,7 @@ picture {
   border: solid 2px #ffffff;
 }
 
-/* line 338, src/scss/_shared/_swiper.scss */
+/* line 345, src/scss/_shared/_swiper.scss */
 .swiper-slide-circle img {
   position: absolute;
   top: 0;
@@ -1368,7 +1383,7 @@ picture {
      object-position: center;
 }
 
-/* line 348, src/scss/_shared/_swiper.scss */
+/* line 355, src/scss/_shared/_swiper.scss */
 .swiper-slide-user {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1380,25 +1395,25 @@ picture {
           align-items: center;
 }
 
-/* line 355, src/scss/_shared/_swiper.scss */
+/* line 362, src/scss/_shared/_swiper.scss */
 .swiper-slide-user.swiper-slide-user--dark > div:nth-of-type(2) p,
 .swiper-slide-user.swiper-slide-user--dark > div:nth-of-type(2) span {
   color: #4a4a4a;
 }
 
-/* line 364, src/scss/_shared/_swiper.scss */
+/* line 371, src/scss/_shared/_swiper.scss */
 .swiper-slide-user > div:nth-of-type(1) {
   width: 72px;
 }
 
-/* line 367, src/scss/_shared/_swiper.scss */
+/* line 374, src/scss/_shared/_swiper.scss */
 .swiper-slide-user > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 72px);
   max-width: calc(100% - 72px);
 }
 
-/* line 371, src/scss/_shared/_swiper.scss */
+/* line 378, src/scss/_shared/_swiper.scss */
 .swiper-slide-user > div:nth-of-type(2) p {
   font-size: 18px;
   font-weight: 500;
@@ -1406,7 +1421,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 378, src/scss/_shared/_swiper.scss */
+/* line 385, src/scss/_shared/_swiper.scss */
 .swiper-slide-user > div:nth-of-type(2) span {
   font-size: 16px;
   line-height: 1.56;
@@ -4821,44 +4836,73 @@ picture {
 /* line 74, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__desc, .sign--plain .sign__desc {
   padding-bottom: 27px;
-  font-size: 18px;
   font-weight: 300;
   line-height: 1.33;
   color: #ffffff;
+  font-size: 16px;
 }
 
-/* line 81, src/scss/_components/sign/_sign.scss */
+@media screen and (min-width: 320px) {
+  /* line 74, src/scss/_components/sign/_sign.scss */
+  .sign--apply .sign__desc, .sign--plain .sign__desc {
+    font-size: -webkit-calc(16px + 2 * (100vw - 320px) / 1120);
+    font-size: calc(16px + 2 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 74, src/scss/_components/sign/_sign.scss */
+  .sign--apply .sign__desc, .sign--plain .sign__desc {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 74, src/scss/_components/sign/_sign.scss */
+  .sign--apply .sign__desc, .sign--plain .sign__desc {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 84, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__desc:last-of-type, .sign--plain .sign__desc:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 86, src/scss/_components/sign/_sign.scss */
+/* line 89, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__btn, .sign--plain .sign__btn {
   margin-bottom: 17px;
 }
 
-/* line 95, src/scss/_components/sign/_sign.scss */
+/* line 98, src/scss/_components/sign/_sign.scss */
 .sign--apply.sign--closed .sign__wrapper {
-  min-height: 740px;
+  min-height: 800px;
 }
 
-/* line 98, src/scss/_components/sign/_sign.scss */
+/* line 101, src/scss/_components/sign/_sign.scss */
 .sign--apply.sign--closed .sign__subtitle {
   padding-bottom: 15px;
 }
 
-/* line 101, src/scss/_components/sign/_sign.scss */
+@media screen and (max-width: 767px) {
+  /* line 101, src/scss/_components/sign/_sign.scss */
+  .sign--apply.sign--closed .sign__subtitle {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 107, src/scss/_components/sign/_sign.scss */
 .sign--apply.sign--closed .sign__btn {
   margin-bottom: 42px;
 }
 
-/* line 108, src/scss/_components/sign/_sign.scss */
+/* line 114, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__wrapper {
   min-height: 650px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 108, src/scss/_components/sign/_sign.scss */
+  /* line 114, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__wrapper {
     height: auto;
     min-height: auto;
@@ -4866,7 +4910,7 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 115, src/scss/_components/sign/_sign.scss */
+  /* line 121, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__wrapper-left {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -4876,7 +4920,7 @@ picture {
   }
 }
 
-/* line 121, src/scss/_components/sign/_sign.scss */
+/* line 127, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__wrapper-left .sign__title {
   padding-bottom: 12px;
   text-transform: none;
@@ -4884,33 +4928,33 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 121, src/scss/_components/sign/_sign.scss */
+  /* line 127, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__wrapper-left .sign__title {
     padding-bottom: 30px;
   }
 }
 
-/* line 131, src/scss/_components/sign/_sign.scss */
+/* line 137, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__wrapper-right {
   padding-left: 55px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 131, src/scss/_components/sign/_sign.scss */
+  /* line 137, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__wrapper-right {
     padding-left: 30px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  /* line 131, src/scss/_components/sign/_sign.scss */
+  /* line 137, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__wrapper-right {
     max-height: 700px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 131, src/scss/_components/sign/_sign.scss */
+  /* line 137, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__wrapper-right {
     padding: 0;
     -webkit-box-shadow: none;
@@ -4918,7 +4962,7 @@ picture {
   }
 }
 
-/* line 144, src/scss/_components/sign/_sign.scss */
+/* line 150, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__wrapper-right .think__slider {
   width: -webkit-calc(100% + 30px);
   width: calc(100% + 30px);
@@ -4928,34 +4972,34 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 144, src/scss/_components/sign/_sign.scss */
+  /* line 150, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__wrapper-right .think__slider {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 144, src/scss/_components/sign/_sign.scss */
+  /* line 150, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__wrapper-right .think__slider {
     height: auto;
     margin-top: 0;
   }
 }
 
-/* line 159, src/scss/_components/sign/_sign.scss */
+/* line 165, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__content {
   width: 100%;
   max-width: 436px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 159, src/scss/_components/sign/_sign.scss */
+  /* line 165, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__content {
     max-width: 100%;
   }
 }
 
-/* line 167, src/scss/_components/sign/_sign.scss */
+/* line 173, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__info {
   padding: 8px 15px 8px 40px;
   background-color: #f2f2f2;
@@ -4963,7 +5007,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 167, src/scss/_components/sign/_sign.scss */
+  /* line 173, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__info {
     width: -webkit-calc(100% + 44px);
     width: calc(100% + 44px);
@@ -4971,17 +5015,17 @@ picture {
   }
 }
 
-/* line 176, src/scss/_components/sign/_sign.scss */
+/* line 182, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__info span {
   text-align: left;
 }
 
-/* line 179, src/scss/_components/sign/_sign.scss */
+/* line 185, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__info span br {
   display: none;
 }
 
-/* line 183, src/scss/_components/sign/_sign.scss */
+/* line 189, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__info span i {
   left: -20px;
   top: 50%;
@@ -4991,7 +5035,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 183, src/scss/_components/sign/_sign.scss */
+  /* line 189, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__info span i {
     top: 0;
     -webkit-transform: translateY(0);
@@ -5000,58 +5044,58 @@ picture {
   }
 }
 
-/* line 195, src/scss/_components/sign/_sign.scss */
+/* line 201, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__subtitle {
   padding-bottom: 44px;
   color: #000000;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 199, src/scss/_components/sign/_sign.scss */
+  /* line 205, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__subtitle br {
     display: none;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 195, src/scss/_components/sign/_sign.scss */
+  /* line 201, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__subtitle {
     padding-bottom: 30px;
   }
 }
 
-/* line 208, src/scss/_components/sign/_sign.scss */
+/* line 214, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__desc {
   padding-bottom: 20px;
   color: #000000;
 }
 
-/* line 213, src/scss/_components/sign/_sign.scss */
+/* line 219, src/scss/_components/sign/_sign.scss */
 .sign--apply .sign__btn {
   max-width: 436px;
   margin-left: 0;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 213, src/scss/_components/sign/_sign.scss */
+  /* line 219, src/scss/_components/sign/_sign.scss */
   .sign--apply .sign__btn {
     max-width: 100%;
   }
 }
 
-/* line 222, src/scss/_components/sign/_sign.scss */
+/* line 228, src/scss/_components/sign/_sign.scss */
 .sign--apply .c-form {
   margin-left: 0;
 }
 
-/* line 229, src/scss/_components/sign/_sign.scss */
+/* line 235, src/scss/_components/sign/_sign.scss */
 .sign--plain .sign__wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 229, src/scss/_components/sign/_sign.scss */
+  /* line 235, src/scss/_components/sign/_sign.scss */
   .sign--plain .sign__wrapper {
     padding-top: 0;
     padding-bottom: 0;
@@ -5059,7 +5103,7 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 237, src/scss/_components/sign/_sign.scss */
+  /* line 243, src/scss/_components/sign/_sign.scss */
   .sign--plain .sign__wrapper-left {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -5068,7 +5112,7 @@ picture {
   }
 }
 
-/* line 243, src/scss/_components/sign/_sign.scss */
+/* line 249, src/scss/_components/sign/_sign.scss */
 .sign--plain .sign__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5082,26 +5126,26 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 243, src/scss/_components/sign/_sign.scss */
+  /* line 249, src/scss/_components/sign/_sign.scss */
   .sign--plain .sign__wrapper-right {
     padding-left: 15px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 243, src/scss/_components/sign/_sign.scss */
+  /* line 249, src/scss/_components/sign/_sign.scss */
   .sign--plain .sign__wrapper-right {
     padding-left: 22px;
     padding-right: 22px;
   }
 }
 
-/* line 255, src/scss/_components/sign/_sign.scss */
+/* line 261, src/scss/_components/sign/_sign.scss */
 .sign--plain .sign__wrapper-right > div {
   padding-top: 15px;
 }
 
-/* line 259, src/scss/_components/sign/_sign.scss */
+/* line 265, src/scss/_components/sign/_sign.scss */
 .sign--plain .sign__wrapper-right .sign__title {
   padding-bottom: 8px;
   text-align: left;
@@ -5109,7 +5153,7 @@ picture {
   line-height: 1.2;
 }
 
-/* line 268, src/scss/_components/sign/_sign.scss */
+/* line 274, src/scss/_components/sign/_sign.scss */
 .sign--plain .sign__heading {
   padding-bottom: 9px;
   font-size: 25px;
@@ -5121,13 +5165,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 268, src/scss/_components/sign/_sign.scss */
+  /* line 274, src/scss/_components/sign/_sign.scss */
   .sign--plain .sign__heading {
     padding-bottom: 30px;
   }
 }
 
-/* line 281, src/scss/_components/sign/_sign.scss */
+/* line 287, src/scss/_components/sign/_sign.scss */
 .sign--plain .sign__subtitle {
   padding-bottom: 30px;
   font-weight: 300;
@@ -5137,7 +5181,7 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 281, src/scss/_components/sign/_sign.scss */
+  /* line 287, src/scss/_components/sign/_sign.scss */
   .sign--plain .sign__subtitle {
     font-size: -webkit-calc(18px + 4 * (100vw - 320px) / 1120);
     font-size: calc(18px + 4 * (100vw - 320px) / 1120);
@@ -5145,13 +5189,13 @@ picture {
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 281, src/scss/_components/sign/_sign.scss */
+  /* line 287, src/scss/_components/sign/_sign.scss */
   .sign--plain .sign__subtitle {
     font-size: 22px;
   }
 }
 
-/* line 289, src/scss/_components/sign/_sign.scss */
+/* line 295, src/scss/_components/sign/_sign.scss */
 .sign--plain .sign__desc {
   padding-bottom: 27px;
   font-size: 18px;
@@ -5161,23 +5205,23 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 289, src/scss/_components/sign/_sign.scss */
+  /* line 295, src/scss/_components/sign/_sign.scss */
   .sign--plain .sign__desc {
     font-size: 16px;
   }
 }
 
-/* line 299, src/scss/_components/sign/_sign.scss */
+/* line 305, src/scss/_components/sign/_sign.scss */
 .sign--plain .sign__desc:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 304, src/scss/_components/sign/_sign.scss */
+/* line 310, src/scss/_components/sign/_sign.scss */
 .sign--plain .sign__btn {
   margin-bottom: 17px;
 }
 
-/* line 310, src/scss/_components/sign/_sign.scss */
+/* line 316, src/scss/_components/sign/_sign.scss */
 .sign__bg {
   z-index: -1;
   position: absolute;
@@ -5191,29 +5235,29 @@ picture {
   height: 100%;
 }
 
-/* line 319, src/scss/_components/sign/_sign.scss */
+/* line 325, src/scss/_components/sign/_sign.scss */
 .sign__bg-left, .sign__bg-right {
   width: 50%;
 }
 
-/* line 324, src/scss/_components/sign/_sign.scss */
+/* line 330, src/scss/_components/sign/_sign.scss */
 .sign__bg-left {
   background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 324, src/scss/_components/sign/_sign.scss */
+  /* line 330, src/scss/_components/sign/_sign.scss */
   .sign__bg-left {
     background-color: #44b4a8;
   }
 }
 
-/* line 331, src/scss/_components/sign/_sign.scss */
+/* line 337, src/scss/_components/sign/_sign.scss */
 .sign__bg-right {
   background-color: #44b4a8;
 }
 
-/* line 336, src/scss/_components/sign/_sign.scss */
+/* line 342, src/scss/_components/sign/_sign.scss */
 .sign__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5224,7 +5268,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 336, src/scss/_components/sign/_sign.scss */
+  /* line 342, src/scss/_components/sign/_sign.scss */
   .sign__wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -5233,20 +5277,20 @@ picture {
   }
 }
 
-/* line 344, src/scss/_components/sign/_sign.scss */
+/* line 350, src/scss/_components/sign/_sign.scss */
 .sign__wrapper-left, .sign__wrapper-right {
   width: 50%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 344, src/scss/_components/sign/_sign.scss */
+  /* line 350, src/scss/_components/sign/_sign.scss */
   .sign__wrapper-left, .sign__wrapper-right {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 352, src/scss/_components/sign/_sign.scss */
+  /* line 358, src/scss/_components/sign/_sign.scss */
   .sign__wrapper-left {
     padding-top: 30px;
     background-color: #ffffff;
@@ -5257,7 +5301,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 361, src/scss/_components/sign/_sign.scss */
+  /* line 367, src/scss/_components/sign/_sign.scss */
   .sign__wrapper-right {
     padding-top: 30px;
     background-color: #44b4a8;
@@ -5267,7 +5311,7 @@ picture {
   }
 }
 
-/* line 371, src/scss/_components/sign/_sign.scss */
+/* line 377, src/scss/_components/sign/_sign.scss */
 .sign__btn {
   width: 100%;
   max-width: 461px;
@@ -5277,13 +5321,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 371, src/scss/_components/sign/_sign.scss */
+  /* line 377, src/scss/_components/sign/_sign.scss */
   .sign__btn {
     max-width: 100%;
   }
 }
 
-/* line 382, src/scss/_components/sign/_sign.scss */
+/* line 388, src/scss/_components/sign/_sign.scss */
 .sign__box {
   position: relative;
   display: -webkit-box;
@@ -5299,44 +5343,44 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 382, src/scss/_components/sign/_sign.scss */
+  /* line 388, src/scss/_components/sign/_sign.scss */
   .sign__box {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  /* line 392, src/scss/_components/sign/_sign.scss */
+  /* line 398, src/scss/_components/sign/_sign.scss */
   .sign__box:last-of-type {
     margin-bottom: 0;
   }
 }
 
-/* line 397, src/scss/_components/sign/_sign.scss */
+/* line 403, src/scss/_components/sign/_sign.scss */
 .sign__box-0 {
   border-right: 1px solid #f2f2f2;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 397, src/scss/_components/sign/_sign.scss */
+  /* line 403, src/scss/_components/sign/_sign.scss */
   .sign__box-0 {
     border: none;
   }
 }
 
-/* line 405, src/scss/_components/sign/_sign.scss */
+/* line 411, src/scss/_components/sign/_sign.scss */
 .sign__box > div:nth-of-type(1) {
   width: 64px;
   padding-left: 16px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 405, src/scss/_components/sign/_sign.scss */
+  /* line 411, src/scss/_components/sign/_sign.scss */
   .sign__box > div:nth-of-type(1) {
     width: 48px;
     padding-left: 0;
   }
 }
 
-/* line 413, src/scss/_components/sign/_sign.scss */
+/* line 419, src/scss/_components/sign/_sign.scss */
 .sign__box > div:nth-of-type(2) {
   width: 100%;
   max-width: -webkit-calc(100% - 64px);
@@ -5345,7 +5389,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 413, src/scss/_components/sign/_sign.scss */
+  /* line 419, src/scss/_components/sign/_sign.scss */
   .sign__box > div:nth-of-type(2) {
     max-width: -webkit-calc(100% - 48px);
     max-width: calc(100% - 48px);
@@ -5353,7 +5397,7 @@ picture {
   }
 }
 
-/* line 424, src/scss/_components/sign/_sign.scss */
+/* line 430, src/scss/_components/sign/_sign.scss */
 .sign__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5367,7 +5411,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 424, src/scss/_components/sign/_sign.scss */
+  /* line 430, src/scss/_components/sign/_sign.scss */
   .sign__box-wrapper {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -5375,7 +5419,7 @@ picture {
   }
 }
 
-/* line 433, src/scss/_components/sign/_sign.scss */
+/* line 439, src/scss/_components/sign/_sign.scss */
 .sign__box-circle {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5396,7 +5440,7 @@ picture {
   background-color: #f2f2f2;
 }
 
-/* line 442, src/scss/_components/sign/_sign.scss */
+/* line 448, src/scss/_components/sign/_sign.scss */
 .sign__box-circle span {
   font-size: 20px;
   font-weight: bold;
@@ -5406,7 +5450,7 @@ picture {
   color: #4a4a4a;
 }
 
-/* line 452, src/scss/_components/sign/_sign.scss */
+/* line 458, src/scss/_components/sign/_sign.scss */
 .sign__box p {
   font-size: 14px;
   font-weight: 300;
@@ -5414,7 +5458,7 @@ picture {
   color: #000000;
 }
 
-/* line 460, src/scss/_components/sign/_sign.scss */
+/* line 466, src/scss/_components/sign/_sign.scss */
 .sign__wait {
   width: 100%;
   max-width: 480px;
@@ -5423,16 +5467,50 @@ picture {
   background-color: #e91d63;
 }
 
-/* line 467, src/scss/_components/sign/_sign.scss */
+@media screen and (max-width: 767px) {
+  /* line 466, src/scss/_components/sign/_sign.scss */
+  .sign__wait {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 466, src/scss/_components/sign/_sign.scss */
+  .sign__wait {
+    max-width: initial;
+    width: -webkit-calc(100% + 44px);
+    width: calc(100% + 44px);
+    margin-left: -22px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+/* line 483, src/scss/_components/sign/_sign.scss */
 .sign__wait p {
   padding-bottom: 10px;
-  font-size: 32px;
   line-height: 1.25;
   letter-spacing: -0.7px;
   color: #ffffff;
+  font-size: 25px;
 }
 
-/* line 475, src/scss/_components/sign/_sign.scss */
+@media screen and (min-width: 320px) {
+  /* line 483, src/scss/_components/sign/_sign.scss */
+  .sign__wait p {
+    font-size: -webkit-calc(25px + 7 * (100vw - 320px) / 1120);
+    font-size: calc(25px + 7 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 483, src/scss/_components/sign/_sign.scss */
+  .sign__wait p {
+    font-size: 32px;
+  }
+}
+
+/* line 491, src/scss/_components/sign/_sign.scss */
 .sign__wait span {
   font-size: 16px;
   font-weight: 300;
@@ -5440,12 +5518,12 @@ picture {
   color: #ffffff;
 }
 
-/* line 483, src/scss/_components/sign/_sign.scss */
+/* line 499, src/scss/_components/sign/_sign.scss */
 .sign__info {
   text-align: center;
 }
 
-/* line 486, src/scss/_components/sign/_sign.scss */
+/* line 502, src/scss/_components/sign/_sign.scss */
 .sign__info i {
   z-index: 0;
   position: absolute;
@@ -5476,7 +5554,7 @@ picture {
   font-style: normal;
 }
 
-/* line 506, src/scss/_components/sign/_sign.scss */
+/* line 522, src/scss/_components/sign/_sign.scss */
 .sign__info span,
 .sign__info a {
   font-size: 12px;
@@ -5484,20 +5562,20 @@ picture {
   line-height: 1.33;
 }
 
-/* line 513, src/scss/_components/sign/_sign.scss */
+/* line 529, src/scss/_components/sign/_sign.scss */
 .sign__info span {
   position: relative;
   color: #000000;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 517, src/scss/_components/sign/_sign.scss */
+  /* line 533, src/scss/_components/sign/_sign.scss */
   .sign__info span br {
     display: none;
   }
 }
 
-/* line 523, src/scss/_components/sign/_sign.scss */
+/* line 539, src/scss/_components/sign/_sign.scss */
 .sign__info a {
   color: #44b4a8;
   text-decoration: underline;
