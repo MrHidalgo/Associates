@@ -1,6 +1,7 @@
 // SECTION main :: START
 
 .d-main {
+  overflow: hidden;
   position: relative;
   background-color: #ffffff;
 
@@ -12,25 +13,69 @@
     left: 0;
     width: 100%;
     height: 100%;
+    @include adaptive(767) {
+      display: none;
+    }
 
     &-left,
     &-right {
       display: flex;
       align-items: flex-end;
       width: 50%;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
     }
 
     &-left {
       justify-content: flex-start;
+
+      img {
+        position: relative;
+        @include adaptive(1365) {
+          left: -40px;
+        }
+        @include adaptive(1199) {
+          left: -60px;
+        }
+      }
     }
 
     &-right {
       justify-content: flex-end;
+
+      img {
+        position: relative;
+        @include adaptive(1365) {
+          right: -70px;
+        }
+        @include adaptive(1199) {
+          right: -130px;
+        }
+        @include adaptive(991) {
+          display: none;
+        }
+      }
     }
   }
 
   .c-grid {
     max-width: 578px;
+    @include adaptive(1199) {
+      max-width: 500px;
+    }
+    @include adaptive(991) {
+      margin-right: 0;
+      text-align: right;
+    }
+    @include adaptive(767) {
+      max-width: 100%;
+      text-align: left;
+      margin-left: 0;
+    }
   }
 
   &__wrapper {
@@ -43,18 +88,30 @@
     padding-top: 107px;
     padding-bottom: 95px;
     min-height: calc(100vh - 51px);
+    @include adaptive(767) {
+      min-height: 0;
+      left: 0;
+      padding-top: 60px;
+      padding-bottom: 64px;
+    }
   }
 
   &__title {
     padding-bottom: 18px;
     text-align: left;
+    @include adaptive(991) {
+      text-align: right;
+    }
+    @include adaptive(767) {
+      text-align: left;
+    }
   }
 
   &__desc {
-    font-size: 22px;
     font-weight: 300;
     line-height: 1.45;
     color: #4a4a4a;
+    @include fluid(font-size, 320px, 1440px, 16px, 22px);
 
     &--pb {
       padding-bottom: 34px;

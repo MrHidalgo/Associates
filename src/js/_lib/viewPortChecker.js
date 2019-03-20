@@ -79,9 +79,18 @@ const initViewPortCheckerCount = (
       repeat: false,
       callbackFunction: function(elem, action) {
 
-        $('.viewport-show-js [advantages-num-js]').countTo();
-        $('.viewport-show-js [network-num-js]').countTo();
+        // $('.viewport-show-js [advantages-num-js]').countTo();
 
+        $.each($('[network-num-js]'), function () {
+          let count = $(this).data('count'),
+            numAnim = new CountUp(this, 0, count);
+
+          if (!numAnim.error) {
+            numAnim.start();
+          } else {
+            console.error(numAnim.error);
+          }
+        });
       }
     });
 

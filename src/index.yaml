@@ -6,10 +6,10 @@ PageList:
   ready: 75
 - file: do.html
   titleName: What We Do
-  ready: 75
+  ready: 90
 - file: are.html
   titleName: Who We Are
-  ready: 75
+  ready: 90
 - file: plain.html
   titleName: Plain
   ready: 90

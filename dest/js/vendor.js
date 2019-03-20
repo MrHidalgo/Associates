@@ -19281,6 +19281,268 @@ T.prototype.parse=function(){for(var a=this.k.length,b=0;b<a;b++){var c=this.k[b
 c=c?c.split(","):e,0<c.length&&(c=U[c[0]])&&(this.G[d]=c))}this.G[d]||(c=U[d])&&(this.G[d]=c);for(c=0;c<f.length;c+=1)this.W.push(new A(d,f[c]))}};function V(a,b){this.a=a;this.c=b}var oa={Arimo:!0,Cousine:!0,Tinos:!0};V.prototype.load=function(a){for(var b=this.a,c=new S(this.c.api,v(b),this.c.text),d=this.c.families,f=d.length,e=0;e<f;e++){var g=d[e].split(":");3==g.length&&c.L.push(g.pop());var l="";2==g.length&&""!=g[1]&&(l=":");c.k.push(g.join(l))}d=new T(d);d.parse();w(b,c.d());a(d.W,d.G,oa)};function W(a,b){this.a=a;this.c=b;this.R=[]}W.prototype.A=function(a){var b=this.a;return v(this.a)+(this.c.api||"//f.fontdeck.com/s/css/js/")+(b.m.location.hostname||b.D.location.hostname)+"/"+a+".js"};
 W.prototype.load=function(a){var b=this.c.id,c=this.a.m,d=this;b?(c.__webfontfontdeckmodule__||(c.__webfontfontdeckmodule__={}),c.__webfontfontdeckmodule__[b]=function(b,c){for(var g=0,l=c.fonts.length;g<l;++g){var h=c.fonts[g];d.R.push(new A(h.name,ca("font-weight:"+h.weight+";font-style:"+h.style)))}a(d.R)},x(this.a,this.A(b),function(b){b&&a([])})):a([])};function X(a,b){this.a=a;this.c=b}X.prototype.A=function(a){return(this.c.api||"https://use.typekit.net")+"/"+a+".js"};X.prototype.load=function(a){var b=this.c.id,c=this.a.m;b?x(this.a,this.A(b),function(b){if(b)a([]);else if(c.Typekit&&c.Typekit.config&&c.Typekit.config.fn){b=c.Typekit.config.fn;for(var f=[],e=0;e<b.length;e+=2)for(var g=b[e],l=b[e+1],h=0;h<l.length;h++)f.push(new A(g,l[h]));try{c.Typekit.load({events:!1,classes:!1,async:!0})}catch(k){}a(f)}},2E3):a([])};function Y(a,b){this.a=a;this.c=b}Y.prototype.A=function(a,b){var c=v(this.a),d=(this.c.api||"fast.fonts.net/jsapi").replace(/^.*http(s?):(\/\/)?/,"");return c+"//"+d+"/"+a+".js"+(b?"?v="+b:"")};Y.prototype.load=function(a){var b=this.c.projectId,c=this.c.version;if(b){var d=this.a.m;x(this.a,this.A(b,c),function(c){if(c)a([]);else if(d["__mti_fntLst"+b]){c=d["__mti_fntLst"+b]();var e=[];if(c)for(var g=0;g<c.length;g++)e.push(new A(c[g].fontfamily));a(e)}else a([])}).id="__MonotypeAPIScript__"+b}else a([])};function pa(a,b){this.a=a;this.c=b}pa.prototype.load=function(a){var b,c,d=this.c.urls||[],f=this.c.families||[],e=this.c.testStrings||{};b=0;for(c=d.length;b<c;b++)w(this.a,d[b]);d=[];b=0;for(c=f.length;b<c;b++){var g=f[b].split(":");if(g[1])for(var l=g[1].split(","),h=0;h<l.length;h+=1)d.push(new A(g[0],l[h]));else d.push(new A(g[0]))}a(d,e)};var Z=new R(window);Z.p.t.custom=function(a,b){return new pa(b,a)};Z.p.t.fontdeck=function(a,b){return new W(b,a)};Z.p.t.monotype=function(a,b){return new Y(b,a)};Z.p.t.typekit=function(a,b){return new X(b,a)};Z.p.t.google=function(a,b){return new V(b,a)};var $={load:n(Z.load,Z)};"function"===typeof define&&define.amd?define(function(){return $}):"undefined"!==typeof module&&module.exports?module.exports=$:(window.WebFont=$,window.WebFontConfig&&Z.load(window.WebFontConfig));}());
 
+
+(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    define(factory);
+  } else if (typeof exports === 'object') {
+    module.exports = factory(require, exports, module);
+  } else {
+    root.CountUp = factory();
+  }
+}(this, function(require, exports, module) {
+
+/*
+
+	countUp.js
+	by @inorganik
+
+*/
+
+// target = id of html element or var of previously selected html element where counting occurs
+// startVal = the value you want to begin at
+// endVal = the value you want to arrive at
+// decimals = number of decimal places, default 0
+// duration = duration of animation in seconds, default 2
+// options = optional object of options (see below)
+
+var CountUp = function(target, startVal, endVal, decimals, duration, options) {
+
+	var self = this;
+	self.version = function () { return '1.9.3'; };
+	
+	// default options
+	self.options = {
+		useEasing: true, // toggle easing
+		useGrouping: true, // 1,000,000 vs 1000000
+		separator: ',', // character to use as a separator
+		decimal: '.', // character to use as a decimal
+		easingFn: easeOutExpo, // optional custom easing function, default is Robert Penner's easeOutExpo
+		formattingFn: formatNumber, // optional custom formatting function, default is formatNumber above
+		prefix: '', // optional text before the result
+		suffix: '', // optional text after the result
+		numerals: [] // optionally pass an array of custom numerals for 0-9
+	};
+
+	// extend default options with passed options object
+	if (options && typeof options === 'object') {
+		for (var key in self.options) {
+			if (options.hasOwnProperty(key) && options[key] !== null) {
+				self.options[key] = options[key];
+			}
+		}
+	}
+
+	if (self.options.separator === '') {
+		self.options.useGrouping = false;
+	}
+	else {
+		// ensure the separator is a string (formatNumber assumes this)
+		self.options.separator = '' + self.options.separator;
+	}
+
+	// make sure requestAnimationFrame and cancelAnimationFrame are defined
+	// polyfill for browsers without native support
+	// by Opera engineer Erik Möller
+	var lastTime = 0;
+	var vendors = ['webkit', 'moz', 'ms', 'o'];
+	for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+		window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+		window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] || window[vendors[x]+'CancelRequestAnimationFrame'];
+	}
+	if (!window.requestAnimationFrame) {
+		window.requestAnimationFrame = function(callback, element) {
+			var currTime = new Date().getTime();
+			var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+			var id = window.setTimeout(function() { callback(currTime + timeToCall); }, timeToCall);
+			lastTime = currTime + timeToCall;
+			return id;
+		};
+	}
+	if (!window.cancelAnimationFrame) {
+		window.cancelAnimationFrame = function(id) {
+			clearTimeout(id);
+		};
+	}
+
+	function formatNumber(num) {
+		var neg = (num < 0),
+        	x, x1, x2, x3, i, len;
+		num = Math.abs(num).toFixed(self.decimals);
+		num += '';
+		x = num.split('.');
+		x1 = x[0];
+		x2 = x.length > 1 ? self.options.decimal + x[1] : '';
+		if (self.options.useGrouping) {
+			x3 = '';
+			for (i = 0, len = x1.length; i < len; ++i) {
+				if (i !== 0 && ((i % 3) === 0)) {
+					x3 = self.options.separator + x3;
+				}
+				x3 = x1[len - i - 1] + x3;
+			}
+			x1 = x3;
+		}
+		// optional numeral substitution
+		if (self.options.numerals.length) {
+			x1 = x1.replace(/[0-9]/g, function(w) {
+				return self.options.numerals[+w];
+			})
+			x2 = x2.replace(/[0-9]/g, function(w) {
+				return self.options.numerals[+w];
+			})
+		}
+		return (neg ? '-' : '') + self.options.prefix + x1 + x2 + self.options.suffix;
+	}
+	// Robert Penner's easeOutExpo
+	function easeOutExpo(t, b, c, d) {
+		return c * (-Math.pow(2, -10 * t / d) + 1) * 1024 / 1023 + b;
+	}
+	function ensureNumber(n) {
+		return (typeof n === 'number' && !isNaN(n));
+	}
+
+	self.initialize = function() { 
+		if (self.initialized) return true;
+		
+		self.error = '';
+		self.d = (typeof target === 'string') ? document.getElementById(target) : target;
+		if (!self.d) { 
+			self.error = '[CountUp] target is null or undefined'
+			return false;
+		}
+		self.startVal = Number(startVal);
+		self.endVal = Number(endVal);
+		// error checks
+		if (ensureNumber(self.startVal) && ensureNumber(self.endVal)) {
+			self.decimals = Math.max(0, decimals || 0);
+			self.dec = Math.pow(10, self.decimals);
+			self.duration = Number(duration) * 1000 || 2000;
+			self.countDown = (self.startVal > self.endVal);
+			self.frameVal = self.startVal;
+			self.initialized = true;
+			return true;
+		}
+		else {
+			self.error = '[CountUp] startVal ('+startVal+') or endVal ('+endVal+') is not a number';
+			return false;
+		}
+	};
+
+	// Print value to target
+	self.printValue = function(value) {
+		var result = self.options.formattingFn(value);
+
+		if (self.d.tagName === 'INPUT') {
+			this.d.value = result;
+		}
+		else if (self.d.tagName === 'text' || self.d.tagName === 'tspan') {
+			this.d.textContent = result;
+		}
+		else {
+			this.d.innerHTML = result;
+		}
+	};
+
+	self.count = function(timestamp) {
+
+		if (!self.startTime) { self.startTime = timestamp; }
+
+		self.timestamp = timestamp;
+		var progress = timestamp - self.startTime;
+		self.remaining = self.duration - progress;
+
+		// to ease or not to ease
+		if (self.options.useEasing) {
+			if (self.countDown) {
+				self.frameVal = self.startVal - self.options.easingFn(progress, 0, self.startVal - self.endVal, self.duration);
+			} else {
+				self.frameVal = self.options.easingFn(progress, self.startVal, self.endVal - self.startVal, self.duration);
+			}
+		} else {
+			if (self.countDown) {
+				self.frameVal = self.startVal - ((self.startVal - self.endVal) * (progress / self.duration));
+			} else {
+				self.frameVal = self.startVal + (self.endVal - self.startVal) * (progress / self.duration);
+			}
+		}
+
+		// don't go past endVal since progress can exceed duration in the last frame
+		if (self.countDown) {
+			self.frameVal = (self.frameVal < self.endVal) ? self.endVal : self.frameVal;
+		} else {
+			self.frameVal = (self.frameVal > self.endVal) ? self.endVal : self.frameVal;
+		}
+
+		// decimal
+		self.frameVal = Math.round(self.frameVal*self.dec)/self.dec;
+
+		// format and print value
+		self.printValue(self.frameVal);
+
+		// whether to continue
+		if (progress < self.duration) {
+			self.rAF = requestAnimationFrame(self.count);
+		} else {
+			if (self.callback) self.callback();
+		}
+	};
+	// start your animation
+	self.start = function(callback) {
+		if (!self.initialize()) return;
+		self.callback = callback;
+		self.rAF = requestAnimationFrame(self.count);
+	};
+	// toggles pause/resume animation
+	self.pauseResume = function() {
+		if (!self.paused) {
+			self.paused = true;
+			cancelAnimationFrame(self.rAF);
+		} else {
+			self.paused = false;
+			delete self.startTime;
+			self.duration = self.remaining;
+			self.startVal = self.frameVal;
+			requestAnimationFrame(self.count);
+		}
+	};
+	// reset to startVal so animation can be run again
+	self.reset = function() {
+		self.paused = false;
+		delete self.startTime;
+		self.initialized = false;
+		if (self.initialize()) {
+			cancelAnimationFrame(self.rAF);
+			self.printValue(self.startVal);
+		}
+	};
+	// pass a new endVal and start animation
+	self.update = function (newEndVal) {
+		if (!self.initialize()) return;
+		newEndVal = Number(newEndVal);
+		if (!ensureNumber(newEndVal)) {
+			self.error = '[CountUp] update() - new endVal is not a number: '+newEndVal;
+			return;
+		}
+		self.error = '';
+		if (newEndVal === self.frameVal) return;
+		cancelAnimationFrame(self.rAF);
+		self.paused = false;
+		delete self.startTime;
+		self.startVal = self.frameVal;
+		self.endVal = newEndVal;
+		self.countDown = (self.startVal > self.endVal);
+		self.rAF = requestAnimationFrame(self.count);
+	};
+
+	// format startVal on initialization
+	if (self.initialize()) self.printValue(self.startVal);
+};
+
+return CountUp;
+
+}));
+
 /*! jQuery Migrate v3.0.1 | (c) jQuery Foundation and other contributors | jquery.org/license */
 
 void 0 === jQuery.migrateMute && (jQuery.migrateMute = !0), function(e) {
@@ -19496,133 +19758,3 @@ void 0 === jQuery.migrateMute && (jQuery.migrateMute = !0), function(e) {
         }, t && t.call(n, n), n;
     }, e.Deferred.exceptionHook = S.exceptionHook, e;
 });
-(function (factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD
-        define(['jquery'], factory);
-    } else if (typeof exports === 'object') {
-        // CommonJS
-        factory(require('jquery'));
-    } else {
-        // Browser globals
-        factory(jQuery);
-    }
-}(function ($) {
-  var CountTo = function (element, options) {
-    this.$element = $(element);
-    this.options  = $.extend({}, CountTo.DEFAULTS, this.dataOptions(), options);
-    this.init();
-  };
-
-  CountTo.DEFAULTS = {
-    from: 0,               // the number the element should start at
-    to: 0,                 // the number the element should end at
-    speed: 1000,           // how long it should take to count between the target numbers
-    refreshInterval: 100,  // how often the element should be updated
-    decimals: 0,           // the number of decimal places to show
-    formatter: formatter,  // handler for formatting the value before rendering
-    onUpdate: null,        // callback method for every time the element is updated
-    onComplete: null       // callback method for when the element finishes updating
-  };
-
-  CountTo.prototype.init = function () {
-    this.value     = this.options.from;
-    this.loops     = Math.ceil(this.options.speed / this.options.refreshInterval);
-    this.loopCount = 0;
-    this.increment = (this.options.to - this.options.from) / this.loops;
-  };
-
-  CountTo.prototype.dataOptions = function () {
-    var options = {
-      from:            this.$element.data('from'),
-      to:              this.$element.data('to'),
-      speed:           this.$element.data('speed'),
-      refreshInterval: this.$element.data('refresh-interval'),
-      decimals:        this.$element.data('decimals')
-    };
-
-    var keys = Object.keys(options);
-
-    for (var i in keys) {
-      var key = keys[i];
-
-      if (typeof(options[key]) === 'undefined') {
-        delete options[key];
-      }
-    }
-
-    return options;
-  };
-
-  CountTo.prototype.update = function () {
-    this.value += this.increment;
-    this.loopCount++;
-
-    this.render();
-
-    if (typeof(this.options.onUpdate) == 'function') {
-      this.options.onUpdate.call(this.$element, this.value);
-    }
-
-    if (this.loopCount >= this.loops) {
-      clearInterval(this.interval);
-      this.value = this.options.to;
-
-      if (typeof(this.options.onComplete) == 'function') {
-        this.options.onComplete.call(this.$element, this.value);
-      }
-    }
-  };
-
-  CountTo.prototype.render = function () {
-    var formattedValue = this.options.formatter.call(this.$element, this.value, this.options);
-    this.$element.text(formattedValue);
-  };
-
-  CountTo.prototype.restart = function () {
-    this.stop();
-    this.init();
-    this.start();
-  };
-
-  CountTo.prototype.start = function () {
-    this.stop();
-    this.render();
-    this.interval = setInterval(this.update.bind(this), this.options.refreshInterval);
-  };
-
-  CountTo.prototype.stop = function () {
-    if (this.interval) {
-      clearInterval(this.interval);
-    }
-  };
-
-  CountTo.prototype.toggle = function () {
-    if (this.interval) {
-      this.stop();
-    } else {
-      this.start();
-    }
-  };
-
-  function formatter(value, options) {
-    return value.toFixed(options.decimals);
-  }
-
-  $.fn.countTo = function (option) {
-    return this.each(function () {
-      var $this   = $(this);
-      var data    = $this.data('countTo');
-      var init    = !data || typeof(option) === 'object';
-      var options = typeof(option) === 'object' ? option : {};
-      var method  = typeof(option) === 'string' ? option : 'start';
-
-      if (init) {
-        if (data) data.stop();
-        $this.data('countTo', data = new CountTo(this, options));
-      }
-
-      data[method].call(data);
-    });
-  };
-}));

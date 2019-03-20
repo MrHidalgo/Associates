@@ -612,8 +612,18 @@ var initViewPortCheckerCount = function initViewPortCheckerCount() {
       repeat: false,
       callbackFunction: function callbackFunction(elem, action) {
 
-        $('.viewport-show-js [advantages-num-js]').countTo();
-        $('.viewport-show-js [network-num-js]').countTo();
+        // $('.viewport-show-js [advantages-num-js]').countTo();
+
+        $.each($('[network-num-js]'), function () {
+          var count = $(this).data('count'),
+              numAnim = new CountUp(this, 0, count);
+
+          if (!numAnim.error) {
+            numAnim.start();
+          } else {
+            console.error(numAnim.error);
+          }
+        });
       }
     });
   });
@@ -646,10 +656,19 @@ var initWebFontLoader = function initWebFontLoader() {
   //   }
   // };
 };
+
 /**
  * @description Document DOM ready.
  */
-(function () {
+$(document).ready(function (ev) {
+  /**
+   *
+   * @type {*|jQuery|HTMLElement}
+   * @private
+   */
+  var _document = $(document),
+      _window = $(window);
+
   /*
   * =============================================
   * CALLBACK :: start
@@ -677,11 +696,9 @@ var initWebFontLoader = function initWebFontLoader() {
   * ============================================= */
 
   /**
-   * @name initNative
-   *
    * @description Init all method
    */
-  var initNative = function initNative() {
+  var initJquery = function initJquery() {
     // default
     initWebFontLoader();
     initPreventBehavior();
@@ -701,5 +718,5 @@ var initWebFontLoader = function initWebFontLoader() {
     initTabs();
     initAreImageLoad();
   };
-  initNative();
-})();
+  initJquery();
+});

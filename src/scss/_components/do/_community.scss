@@ -9,39 +9,64 @@
     padding-top: 96px;
     padding-bottom: 155px;
     min-height: 717px;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+      min-height: 0;
+      padding-top: 50px;
+      padding-bottom: 75px;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include adaptive(767) {
+        width: 100%;
+      }
     }
 
     &-left {
       position: relative;
       top: -13px;
+      @include adaptive(767) {
+        left: 0;
+        padding-bottom: 30px;
+      }
     }
 
     &-right {
       padding-left: 8px;
+      @include adaptive(767) {
+        padding-left: 0;
+      }
     }
   }
 
   &__title {
     padding-bottom: 18px;
     text-align: left;
+    @include adaptive(767) {
+      text-align: center;
+    }
   }
 
   &__desc {
     padding-bottom: 43px;
     width: 100%;
     max-width: 563px;
-    font-size: 22px;
     font-weight: 300;
     line-height: 1.45;
     color: #4a4a4a;
+    @include fluid(font-size, 320px, 1440px, 16px, 22px);
+    @include adaptive(767) {
+      text-align: center;
+    }
   }
 
   &__btn {
     margin-bottom: 17px;
+    @include adaptive(767) {
+      max-width: 100%;
+    }
   }
 
   &__info {
@@ -49,6 +74,9 @@
     line-height: 1.25;
     letter-spacing: normal;
     color: #5e5e5e;
+    @include adaptive(767) {
+      text-align: center;
+    }
 
     span {
       font-weight: 500;
@@ -76,6 +104,10 @@
       height: 349px;
       padding: 25px 15px 15px;
       background-color: #333333;
+      @include adaptive(767) {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
     }
 
     &-bottom {

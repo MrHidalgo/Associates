@@ -6,4 +6,77 @@ else
   script(src="js/vendor.js")
   script(src="js/app.js")
 
+if(pageClassName === 'p-do')
+  script.
+    try {
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZGFuaWVsLXN0YW5jaXVsZXNjdSIsImEiOiJjamZtZm9majcwcTJjMnJvMGJzMzR5M2p1In0.BXCZsOCUui30dwsRplnBSA';
+      var map = new mapboxgl.Map({
+        container: 'mapOffice1',
+        style: 'mapbox://styles/daniel-stanciulescu/cjfmft4m20wpu2sk0jd3l1guy',
+        zoom: 13.0,
+        center: [-0.15636, 51.51705]
+      });
+
+      map.on("load", function () {
+        /* Image: An image is loaded and added to the map. */
+        map.loadImage("/img/map-marker.png", function (error, image) {
+          if (error) throw error;
+          map.addImage("custom-marker", image);
+          /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+          map.addLayer({
+            id: "markers",
+            type: "symbol",
+            /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+            source: {
+              type: "geojson",
+              data: {
+                type: "FeatureCollection",
+                features: [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-0.15649509745284718, 51.51710159656298]}}]
+              }
+            },
+            layout: {
+              "icon-image": "custom-marker",
+            }
+          });
+        });
+      });
+    } catch (e) {
+
+    }
+
+    try {
+      var map_hq = new mapboxgl.Map({
+        container: 'mapOffice2',
+        style: 'mapbox://styles/daniel-stanciulescu/cjfmft4m20wpu2sk0jd3l1guy',
+        zoom: 12,
+        center: [-0.14770, 51.54232]
+      });
+
+      map_hq.on("load", function () {
+        /* Image: An image is loaded and added to the map. */
+        map_hq.loadImage("/img/map-marker.png", function (error, image) {
+          if (error) throw error;
+          map_hq.addImage("custom-marker", image);
+          /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+          map_hq.addLayer({
+            id: "markers",
+            type: "symbol",
+            /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+            source: {
+              type: "geojson",
+              data: {
+                type: "FeatureCollection",
+                features: [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-0.14740585109180415, 51.542220470632145]}}]
+              }
+            },
+            layout: {
+              "icon-image": "custom-marker",
+            }
+          });
+        });
+      });
+    } catch (e) {
+
+    }
+
 // SCRIPT :: END

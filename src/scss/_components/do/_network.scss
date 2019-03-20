@@ -7,6 +7,9 @@
     display: flex;
     flex-direction: column;
     min-height: calc(100vh - 51px);
+    @include adaptive(767) {
+      min-height: 0;
+    }
   }
 
   &__row {
@@ -34,12 +37,20 @@
       display: flex;
       min-height: 479px;
       background-color: #c2185b;
+      @include adaptive(767) {
+        min-height: 419px;
+      }
+      @include adaptive(575) {
+        min-height: 319px;
+      }
 
       .c-grid {
         display: flex;
         align-items: center;
         min-height: 100%;
-
+        @include adaptive(1199) {
+          align-items: flex-end;
+        }
       }
     }
 
@@ -55,6 +66,9 @@
   &__title {
     color: #ffffff;
     text-align: left;
+    @include adaptive(1199) {
+      padding-bottom: 15px;
+    }
 
     span {
       display: block;
@@ -72,10 +86,17 @@
     min-height: 140px;
     padding-top: 13px;
     background-color: #45b8ac;
+    @include adaptive(991) {
+      max-width: calc((100% - 19px) / 2);
+      margin-bottom: 19px;
+    }
 
     &-wrapper {
       display: flex;
       justify-content: space-between;
+      @include adaptive(991) {
+        flex-wrap: wrap;
+      }
     }
 
     &-count {
@@ -87,6 +108,9 @@
       line-height: 0.75;
       letter-spacing: -1.4px;
       color: #ffffff;
+      @include adaptive(767) {
+        font-size: 48px;
+      }
 
       span {
         line-height: 0.75;
@@ -101,6 +125,9 @@
       letter-spacing: -0.5px;
       text-align: center;
       color: #ffffff;
+      @include adaptive(767) {
+        font-size: 18px;
+      }
     }
   }
 }
