@@ -6,6 +6,10 @@
   padding-top: 101px;
   padding-bottom: 96px;
   background-color: #44b4a8;
+  @include adaptive(767) {
+    padding-top: 30px;
+    padding-bottom: 42px;
+  }
 
   &__bg {
     z-index: 0;
@@ -14,6 +18,9 @@
     left: 0;
     width: 100%;
     height: 100%;
+    @include adaptive(767) {
+      position: static;
+    }
 
     &-left,
     &-right {
@@ -26,6 +33,11 @@
       align-items: center;
       width: 52%;
       padding-left: 36px;
+      @include adaptive(767) {
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 30px;
+      }
 
       img {
         display: block;
@@ -38,6 +50,9 @@
 
     &-right {
       width: 48%;
+      @include adaptive(767) {
+        display: none;
+      }
     }
   }
 
@@ -45,14 +60,23 @@
     z-index: 2;
     position: relative;
     display: flex;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include adaptive(767) {
+        width: 100%;
+      }
     }
 
     &-right {
       padding-left: 10px;
+      @include adaptive(767) {
+        padding-left: 0;
+      }
     }
   }
 
@@ -71,10 +95,13 @@
 
   &__desc {
     padding-bottom: 64px;
-    font-size: 22px;
     font-weight: 300;
     line-height: 1.45;
     color: #000;
+    @include fluid(font-size, 320px, 1440px, 16px, 22px);
+    @include adaptive(767) {
+      padding-bottom: 36px;
+    }
 
     &--pb {
       padding-bottom: 36px;

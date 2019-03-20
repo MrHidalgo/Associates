@@ -3,15 +3,23 @@
 .work {
   padding-top: 48px;
   padding-bottom: 109px;
+  @include adaptive(767) {
+    padding-bottom: 70px;
+  }
 
   &__wrapper {
     &-0 {
       padding-bottom: 137px;
+      @include adaptive(767) {
+        padding-bottom: 65px;
+      }
     }
     &-1 {
       padding-bottom: 148px;
+      @include adaptive(767) {
+        padding-bottom: 70px;
+      }
     }
-    &-2 {}
   }
   
   &__title {
@@ -31,9 +39,16 @@
       display: flex;
       justify-content: space-between;
       padding-bottom: 48px;
+      @include adaptive(991) {
+        flex-wrap: wrap;
+      }
 
       .work__row-left {
         width: 380px;
+        @include adaptive(991) {
+          width: 100%;
+          padding-bottom: 20px;
+        }
       }
 
       .work__row-right {
@@ -42,26 +57,46 @@
         justify-content: space-between;
         width: 100%;
         max-width: calc((100% - 20px) - 380px);
+        @include adaptive(991) {
+          max-width: 100%;
+        }
       }
     }
 
     &-1 {
       display: flex;
       justify-content: space-between;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
 
       .are__block {
         width: 100%;
         max-width: calc((100% - 20px) / 2);
         margin-bottom: 0;
+        @include adaptive(767) {
+          max-width: 100%;
+
+          &:nth-of-type(1) {
+            margin-bottom: 10px;
+          }
+        }
       }
     }
 
     &-2 {
       display: flex;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
 
       .work__row-left,
       .work__row-right {
         width: 50%;
+        @include adaptive(767) {
+          width: 100%;
+        }
 
         .are__block {
           width: 100%;
@@ -69,8 +104,27 @@
         }
       }
 
+      .work__row-left {
+        .work__title {
+          @include adaptive(767) {
+            display: none;
+          }
+        }
+      }
+
       .work__row-right {
         padding-left: 15px;
+        @include adaptive(767) {
+          padding-left: 0;
+        }
+
+        .work__title {
+          display: none;
+          @include adaptive(767) {
+            display: block;
+            text-align: center;
+          }
+        }
       }
     }
   }
@@ -79,10 +133,13 @@
     width: 100%;
     max-width: 480px;
     padding-bottom: 91px;
-    font-size: 22px;
     font-weight: 300;
     line-height: 1.45;
     color: #4a4a4a;
+    @include fluid(font-size, 320px, 1440px, 16px, 22px);
+    @include adaptive(767) {
+      padding-bottom: 45px;
+    }
   }
 
   &__img {
@@ -91,6 +148,12 @@
 
     &-0 {
       height: 384px;
+      @include adaptive(767) {
+        height: 255px;
+        width: calc(100% + 30px);
+        margin-bottom: 30px;
+        margin-left: -15px;
+      }
 
       &:after {
         content: '';
@@ -106,6 +169,14 @@
 
     &-1 {
       height: 612px;
+      @include adaptive(767) {
+        height: 412px;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+      }
+      @include adaptive(575) {
+        height: 193px;
+      }
     }
 
     img {
@@ -122,10 +193,17 @@
   &__box {
     padding: 22px 20px 41px;
     height: 100%;
+    @include adaptive(575) {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
 
     &-1,
     &-2 {
       height: calc((100% - 20px) / 2);
+      @include adaptive(991) {
+        height: auto;
+      }
     }
 
     &-0 {
@@ -133,6 +211,9 @@
     }
     &-1 {
       background-color: #5e5e5e;
+      @include adaptive(991) {
+        margin-bottom: 20px;
+      }
     }
     &-2 {
       background-color: #989898;
@@ -149,10 +230,16 @@
 
     > div {
       display: flex;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
 
       ul {
         width: 100%;
         max-width: calc(100% / 2);
+        @include adaptive(767) {
+          max-width: 100%;
+        }
       }
     }
 
@@ -160,9 +247,9 @@
       padding-left: 28px;
 
       li {
-        font-size: 22px;
         line-height: 2.18;
         color: #ffffff;
+        @include fluid(font-size, 320px, 1440px, 16px, 22px);
       }
     }
   }

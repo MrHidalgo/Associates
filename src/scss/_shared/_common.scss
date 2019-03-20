@@ -5,7 +5,7 @@
   &__block {
     display: flex;
     align-items: center;
-    height: 67px;
+    min-height: 67px;
     border: solid 1px #ffffff7f;
     background-color: #009688;
     margin-bottom: 10px;
@@ -26,10 +26,13 @@
         width: 100%;
         max-width: calc(100% - 79px);
         padding-right: 5px;
+        @include adaptive(767) {
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
 
         span {
           font-size: 16px;
-          line-height: 2;
           color: #ffffff;
         }
       }
@@ -43,6 +46,10 @@
       height: 40px;
       border-radius: 100%;
       background-color: #ffffff;
+      @include adaptive(575) {
+        width: 24px;
+        height: 24px;
+      }
 
       i {
         position: relative;
@@ -53,6 +60,11 @@
         border-width: 0 0 3px 3px;
         border-color: #009688;
         transform: rotate(-45deg);
+        @include adaptive(575) {
+          width: 14px;
+          height: 8px;
+          border-width: 0 0 2px 2px;
+        }
       }
     }
   }
@@ -68,6 +80,13 @@
       justify-content: center;
       @include adaptive(991) {
         flex-direction: column;
+      }
+
+      &-item {
+        @include adaptive(991) {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
       }
 
       &-btn {
