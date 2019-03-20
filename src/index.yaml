@@ -3,7 +3,7 @@ ProjectTitle: Associates
 PageList:
 - file: index.html
   titleName: Home
-  ready: 75
+  ready: 90
 - file: do.html
   titleName: What We Do
   ready: 90

@@ -19,10 +19,11 @@
     width: 100%;
     height: 51px;
     background-color: #ffffff;
-    box-shadow: 0 15px 0 0 rgba(#000, 0.05);
+    box-shadow: 0px 3px 5px 1px rgba(219, 219, 219, 0.65);
+    //box-shadow: 0 15px 0 0 rgba(#000, 0.05);
     @include adaptive(767) {
       height: 100%;
-      box-shadow: 0 8px 10px 0 rgba(#000, 0.05);
+      //box-shadow: 0 8px 10px 0 rgba(#000, 0.05);
     }
   }
 

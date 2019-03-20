@@ -3,6 +3,17 @@
 .advantages {
   padding-top: 61px;
   padding-bottom: 61px;
+  @include adaptive(767) {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .c-grid {
+    @include adaptive(767) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
   &__block {
     display: flex;
@@ -13,6 +24,9 @@
     max-width: calc((100% - 30px) / 3);
     height: 140px;
     padding-bottom: 16px;
+    @include adaptive(767) {
+      max-width: 100%;
+    }
 
     &-0 {
       background-color: #45b8ac;
@@ -27,6 +41,9 @@
     &-wrapper {
       display: flex;
       justify-content: space-between;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
     }
 
     &-count {
@@ -38,6 +55,12 @@
       line-height: 0.75;
       letter-spacing: -1.4px;
       color: #ffffff;
+      @include adaptive(991) {
+        font-size: 52px;
+      }
+      @include adaptive(767) {
+        font-size: 64px;
+      }
 
       span {
         line-height: 0.75;

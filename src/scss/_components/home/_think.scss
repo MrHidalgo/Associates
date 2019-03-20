@@ -18,6 +18,10 @@
     letter-spacing: -0.7px;
     text-align: center;
     color: #ffffff;
+    @include adaptive(767) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     span {
       font-weight: bold;

@@ -174,11 +174,10 @@
     svg {
       width: 268px;
       height: 67px;
-      filter: drop-shadow(0px 15px 0px rgba(#000, 0.05));
+      filter: drop-shadow(0px 3px 5px rgba(219, 219, 219, 0.65));
       @include adaptive(767) {
         width: 172px;
         height: 42px;
-        filter: drop-shadow(0px 8px 10px rgba(#000, 0.05));
       }
     }
   }
