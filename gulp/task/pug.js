@@ -5,8 +5,9 @@ const gulp        = require('gulp'),
 	frontMatter     = require('gulp-front-matter'),
 	// emitty          = require('emitty').setup('src/pug', 'pug'),
 	changedInPlace    = require('gulp-changed-in-place'),
-	htmlmin         = require('gulp-htmlmin');
-
+	htmlmin         = require('gulp-htmlmin'),
+	moment 					= require('moment'),
+	fs							= require('fs');
 
 /**
  *
@@ -27,6 +28,23 @@ const srcPath = configPath.src.templates + '/*.pug';
  * @description Gulp PUG/JADE - preprocessor for creating html files.
  */
 const renderPug = () => {
+	/**
+ 	* Load Django Configs Dump
+ 	*/
+	let platformConfigs = {};
+	try {
+		const platformConfigContents = fs.readFileSync(configOption.platformConfigFile);
+		platformConfigs = JSON.parse(platformConfigContents);
+	} catch (e) {
+	}
+
+	let webpackBundle = {};
+	try {
+		const webpackStatsContents = fs.readFileSync(configOption.webpackStatsFile);
+		webpackBundle = JSON.parse(webpackStatsContents);
+	} catch (e) {
+	}
+
 	return gulp
 		.src(srcPath)
 		.pipe(plumber(configOption.pipeBreaking.err))
@@ -38,7 +56,10 @@ const renderPug = () => {
 		.pipe(pug({
 			pretty: true,
 			data: {
-				env : (argv.prod) ? 'production' : ""
+				env : (argv.prod) ? 'production' : "",
+				config: platformConfigs,
+				webpackBundle: webpackBundle,
+				moment: moment,
 			},
 		}))
 		.pipe(gulpif(argv.prod, htmlmin({
