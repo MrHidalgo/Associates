@@ -5171,9 +5171,9 @@ picture {
   display: block;
   max-width: 100%;
   height: auto;
-  -webkit-transform: translateX(80%);
-      -ms-transform: translateX(80%);
-          transform: translateX(80%);
+  -webkit-transform: translateX(20%);
+      -ms-transform: translateX(20%);
+          transform: translateX(20%);
 }
 
 /* line 43, src/scss/_components/are/_main.scss */
@@ -5182,11 +5182,11 @@ picture {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: opacity 1s 0.3s ease-in-out, -webkit-transform 1s 0.3s ease-in-out;
-  transition: opacity 1s 0.3s ease-in-out, -webkit-transform 1s 0.3s ease-in-out;
-  -o-transition: opacity 1s 0.3s ease-in-out, transform 1s 0.3s ease-in-out;
-  transition: opacity 1s 0.3s ease-in-out, transform 1s 0.3s ease-in-out;
-  transition: opacity 1s 0.3s ease-in-out, transform 1s 0.3s ease-in-out, -webkit-transform 1s 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.8s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.8s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
 }
 
 /* line 52, src/scss/_components/are/_main.scss */
@@ -7103,6 +7103,101 @@ picture {
   text-decoration: underline;
 }
 
+/* line 3, src/scss/_components/points/_main.scss */
+.p-main {
+  overflow: hidden;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 78px;
+  background-color: #f8f8f8;
+}
+
+/* line 10, src/scss/_components/points/_main.scss */
+.p-main__bg {
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 19, src/scss/_components/points/_main.scss */
+.p-main__bg-left, .p-main__bg-right {
+  width: 50%;
+}
+
+/* line 24, src/scss/_components/points/_main.scss */
+.p-main__bg-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 29, src/scss/_components/points/_main.scss */
+.p-main__bg-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-transform: translateY(100px);
+      -ms-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+/* line 38, src/scss/_components/points/_main.scss */
+.p-main__wrapper {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: 616px;
+}
+
+/* line 45, src/scss/_components/points/_main.scss */
+.p-main__badge {
+  padding-bottom: 94px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+
+/* line 54, src/scss/_components/points/_main.scss */
+.p-main__title {
+  padding-bottom: 16px;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.14;
+  letter-spacing: -1.2px;
+  color: #000000;
+}
+
+/* line 63, src/scss/_components/points/_main.scss */
+.p-main__text {
+  width: 100%;
+  max-width: 580px;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+
 /* line 3, src/scss/_components/rankings/_rankings.scss */
 .rankings {
   position: relative;
@@ -7125,7 +7220,7 @@ picture {
   min-height: calc((100vh - 51px) - 374px);
 }
 
-/* line 21, src/scss/_components/rankings/_rankings.scss */
+/* line 25, src/scss/_components/rankings/_rankings.scss */
 .rankings__box {
   cursor: pointer;
   position: relative;
@@ -7143,7 +7238,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 31, src/scss/_components/rankings/_rankings.scss */
+/* line 35, src/scss/_components/rankings/_rankings.scss */
 .rankings__box:hover {
   -webkit-transform: translateY(-8px);
       -ms-transform: translateY(-8px);
@@ -7157,27 +7252,27 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 38, src/scss/_components/rankings/_rankings.scss */
+/* line 42, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-1 .rankings__box-top {
   background-color: #45b8ac;
 }
 
-/* line 43, src/scss/_components/rankings/_rankings.scss */
+/* line 47, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-2 .rankings__box-top {
   background-color: #26a69a;
 }
 
-/* line 48, src/scss/_components/rankings/_rankings.scss */
+/* line 52, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-3 .rankings__box-top {
   background-color: #009688;
 }
 
-/* line 53, src/scss/_components/rankings/_rankings.scss */
+/* line 57, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-4 .rankings__box-top {
   background-color: #008679;
 }
 
-/* line 58, src/scss/_components/rankings/_rankings.scss */
+/* line 62, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7193,13 +7288,13 @@ picture {
           justify-content: space-between;
 }
 
-/* line 64, src/scss/_components/rankings/_rankings.scss */
+/* line 68, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top {
   height: 166px;
   background-color: #26a69a;
 }
 
-/* line 68, src/scss/_components/rankings/_rankings.scss */
+/* line 72, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top--top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7213,13 +7308,13 @@ picture {
   padding: 19px 15px 10px;
 }
 
-/* line 75, src/scss/_components/rankings/_rankings.scss */
+/* line 79, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top--bottom {
   padding: 0 15px 7px;
   text-align: right;
 }
 
-/* line 80, src/scss/_components/rankings/_rankings.scss */
+/* line 84, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top--left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -7228,19 +7323,19 @@ picture {
   max-width: 100%;
 }
 
-/* line 85, src/scss/_components/rankings/_rankings.scss */
+/* line 89, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top--right {
   width: 82px;
 }
 
-/* line 90, src/scss/_components/rankings/_rankings.scss */
+/* line 94, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-bottom {
   height: -webkit-calc(271px - 166px);
   height: calc(271px - 166px);
   padding: 16px 15px 32px;
 }
 
-/* line 95, src/scss/_components/rankings/_rankings.scss */
+/* line 99, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-circle {
   overflow: hidden;
   position: relative;
@@ -7251,7 +7346,7 @@ picture {
   border: solid 2px #ffffff;
 }
 
-/* line 103, src/scss/_components/rankings/_rankings.scss */
+/* line 107, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-circle img {
   position: absolute;
   top: 0;
@@ -7264,7 +7359,7 @@ picture {
      object-position: center;
 }
 
-/* line 114, src/scss/_components/rankings/_rankings.scss */
+/* line 118, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-num {
   position: relative;
   display: -webkit-box;
@@ -7277,7 +7372,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 119, src/scss/_components/rankings/_rankings.scss */
+/* line 123, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-num span {
   font-size: 100px;
   font-weight: bold;
@@ -7285,7 +7380,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 126, src/scss/_components/rankings/_rankings.scss */
+/* line 130, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-num i {
   text-transform: uppercase;
   font-style: normal;
@@ -7295,7 +7390,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 136, src/scss/_components/rankings/_rankings.scss */
+/* line 140, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-name {
   font-size: 24px;
   font-weight: 500;
@@ -7303,14 +7398,14 @@ picture {
   color: #ffffff;
 }
 
-/* line 143, src/scss/_components/rankings/_rankings.scss */
+/* line 147, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-country {
   font-size: 18px;
   line-height: 1.33;
   color: #ffffff;
 }
 
-/* line 149, src/scss/_components/rankings/_rankings.scss */
+/* line 153, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-progress {
   position: relative;
   height: 16px;
@@ -7318,7 +7413,7 @@ picture {
   background-color: rgba(35, 36, 37, 0.1);
 }
 
-/* line 155, src/scss/_components/rankings/_rankings.scss */
+/* line 159, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-progress span {
   position: absolute;
   top: 0;
@@ -7327,7 +7422,7 @@ picture {
   background-color: #45b8ac;
 }
 
-/* line 164, src/scss/_components/rankings/_rankings.scss */
+/* line 168, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7335,14 +7430,14 @@ picture {
   display: flex;
 }
 
-/* line 167, src/scss/_components/rankings/_rankings.scss */
+/* line 171, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points--left {
   position: relative;
   width: 60%;
   padding-right: 15px;
 }
 
-/* line 172, src/scss/_components/rankings/_rankings.scss */
+/* line 176, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points--left:after {
   content: '';
   position: absolute;
@@ -7357,13 +7452,13 @@ picture {
   border: solid 1px #d3d3d4;
 }
 
-/* line 185, src/scss/_components/rankings/_rankings.scss */
+/* line 189, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points--right {
   width: 40%;
   padding-left: 15px;
 }
 
-/* line 190, src/scss/_components/rankings/_rankings.scss */
+/* line 194, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-title {
   font-size: 10px;
   line-height: 2.4;
@@ -7371,7 +7466,7 @@ picture {
   color: #232425;
 }
 
-/* line 197, src/scss/_components/rankings/_rankings.scss */
+/* line 201, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-num {
   font-size: 30px;
   font-weight: bold;
@@ -7380,7 +7475,7 @@ picture {
   text-align: center;
 }
 
-/* line 205, src/scss/_components/rankings/_rankings.scss */
+/* line 209, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7392,7 +7487,7 @@ picture {
           align-items: center;
 }
 
-/* line 209, src/scss/_components/rankings/_rankings.scss */
+/* line 213, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step i {
   margin-right: 3px;
   width: 0;
@@ -7401,7 +7496,7 @@ picture {
   border-width: 7px;
 }
 
-/* line 216, src/scss/_components/rankings/_rankings.scss */
+/* line 220, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step i.rankings__box-points-step--up {
   -webkit-transform: translateY(-4px);
       -ms-transform: translateY(-4px);
@@ -7409,7 +7504,7 @@ picture {
   border-color: transparent transparent #45b8ac transparent;
 }
 
-/* line 220, src/scss/_components/rankings/_rankings.scss */
+/* line 224, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step i.rankings__box-points-step--down {
   -webkit-transform: translateY(4px);
       -ms-transform: translateY(4px);
@@ -7417,7 +7512,7 @@ picture {
   border-color: #d63864 transparent transparent transparent;
 }
 
-/* line 226, src/scss/_components/rankings/_rankings.scss */
+/* line 230, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step span {
   margin-left: 3px;
   font-size: 30px;
