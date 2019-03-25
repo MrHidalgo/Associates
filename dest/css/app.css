@@ -7240,6 +7240,129 @@ picture {
   color: #000000;
 }
 
+/* line 3, src/scss/_components/points/_calculate.scss */
+.calculate {
+  padding-top: 82px;
+  padding-bottom: 32px;
+}
+
+/* line 8, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-0 {
+  position: relative;
+  margin-bottom: 58px;
+}
+
+/* line 12, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-0 .c-grid {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 17, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-0 .calculate__desc {
+  max-width: 476px;
+}
+
+/* line 22, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-1 {
+  margin-bottom: 38px;
+}
+
+/* line 25, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-1 .calculate__desc {
+  max-width: 496px;
+}
+
+/* line 31, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-2 .calculate__desc {
+  max-width: 479px;
+}
+
+/* line 35, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-2 .calculate__row-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 42, src/scss/_components/points/_calculate.scss */
+.calculate__bg {
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 51, src/scss/_components/points/_calculate.scss */
+.calculate__bg-left, .calculate__bg-right {
+  width: 50%;
+  height: 100%;
+}
+
+/* line 57, src/scss/_components/points/_calculate.scss */
+.calculate__bg-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* line 64, src/scss/_components/points/_calculate.scss */
+.calculate__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 67, src/scss/_components/points/_calculate.scss */
+.calculate__row-left, .calculate__row-right {
+  width: 50%;
+}
+
+/* line 73, src/scss/_components/points/_calculate.scss */
+.calculate__title {
+  padding-bottom: 9px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+  color: #4a4a4a;
+}
+
+/* line 82, src/scss/_components/points/_calculate.scss */
+.calculate__desc {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #4a4a4a;
+}
+
+/* line 89, src/scss/_components/points/_calculate.scss */
+.calculate__desc--pb {
+  padding-bottom: 30px;
+}
+
 /* line 3, src/scss/_components/points/_benefits.scss */
 .benefits {
   padding-top: 65px;
