@@ -60,7 +60,10 @@ section#benefits.benefits
                 != "points"
 
               .benefits__box-circle
-                +iconSVG(benefitsArr[idx].iconName)
+                if(idx === 4)
+                  p!= "1.2x"
+                else
+                  +iconSVG(benefitsArr[idx].iconName)
 
               .benefits__box-desc
                 p!= benefitsArr[idx].desc

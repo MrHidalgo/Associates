@@ -7533,13 +7533,23 @@ picture {
   background-color: #4a4a4a;
 }
 
-/* line 99, src/scss/_components/points/_benefits.scss */
+/* line 98, src/scss/_components/points/_benefits.scss */
+.benefits__box-circle p {
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 0.63;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 108, src/scss/_components/points/_benefits.scss */
 .benefits__box-desc {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* line 103, src/scss/_components/points/_benefits.scss */
+/* line 112, src/scss/_components/points/_benefits.scss */
 .benefits__box-desc p {
   font-size: 16px;
   font-weight: 300;
@@ -7570,7 +7580,405 @@ picture {
   min-height: calc((100vh - 51px) - 374px);
 }
 
-/* line 25, src/scss/_components/rankings/_rankings.scss */
+/* line 21, src/scss/_components/rankings/_rankings.scss */
+.rankings__table {
+  padding-top: 16px;
+}
+
+/* line 24, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-head {
+  min-height: 38px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-bottom: solid 1px rgba(34, 37, 41, 0.2);
+}
+
+/* line 32, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-body .rankings__table-tr {
+  min-height: 79px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: solid 1px rgba(34, 37, 41, 0.2);
+}
+
+/* line 40, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-tr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 43, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-tr .rankings__table-th,
+.rankings__table-tr .rankings__table-td {
+  width: 100%;
+}
+
+/* line 47, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-tr .rankings__table-th-0,
+.rankings__table-tr .rankings__table-td-0 {
+  max-width: 91px;
+}
+
+/* line 50, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-tr .rankings__table-th-1,
+.rankings__table-tr .rankings__table-td-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/* line 53, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-tr .rankings__table-th-2,
+.rankings__table-tr .rankings__table-td-2 {
+  max-width: 381px;
+}
+
+/* line 56, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-tr .rankings__table-th-3,
+.rankings__table-tr .rankings__table-td-3 {
+  max-width: 116px;
+}
+
+/* line 59, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-tr .rankings__table-th-4,
+.rankings__table-tr .rankings__table-td-4 {
+  max-width: 210px;
+}
+
+/* line 66, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-th-0 {
+  padding-left: 7px;
+}
+
+/* line 69, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-th-1 {
+  padding-left: 19px;
+}
+
+/* line 72, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-th-2 {
+  padding-left: 19px;
+}
+
+/* line 75, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-th-3 {
+  padding-left: 19px;
+}
+
+/* line 78, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-th-4 {
+  padding-left: 20px;
+}
+
+/* line 82, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-th p {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #232425;
+}
+
+/* line 89, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+/* line 94, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 15px;
+  padding-right: 26px;
+}
+
+/* line 100, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-0:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background-color: #d3d3d4;
+}
+
+/* line 111, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-1 {
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+/* line 115, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-1:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background-color: #d3d3d4;
+}
+
+/* line 126, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-2 {
+  padding-left: 19px;
+  padding-right: 26px;
+}
+
+/* line 130, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-2:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background-color: #d3d3d4;
+}
+
+/* line 141, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-3 {
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+/* line 145, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-3:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background-color: #d3d3d4;
+}
+
+/* line 156, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-4 {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+/* line 160, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-td-4 p {
+  font-size: 24px;
+  line-height: 1;
+  color: #232425;
+}
+
+/* line 168, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: solid 2px #45b8ac;
+  background-color: #45b8ac;
+}
+
+/* line 178, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-circle span {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 187, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-user {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 191, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-user--left {
+  width: 56px;
+}
+
+/* line 195, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-user--right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 100%;
+}
+
+/* line 199, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-user--right p {
+  font-size: 24px;
+  line-height: 1;
+  color: #232425;
+}
+
+/* line 206, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-user--circle {
+  overflow: hidden;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  border: solid 2px #45b8ac;
+}
+
+/* line 214, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-user--circle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 226, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-progress {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 230, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-progress--left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 100%;
+  padding-right: 14px;
+}
+
+/* line 235, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-progress--left p {
+  font-size: 24px;
+  line-height: 1;
+  color: #232425;
+}
+
+/* line 242, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-progress--right {
+  width: 249px;
+}
+
+/* line 246, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-progress--bar {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  background-color: rgba(35, 36, 37, 0.1);
+}
+
+/* line 252, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-progress--bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #45b8ac;
+}
+
+/* line 262, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-change {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 266, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-change i {
+  margin-right: 2px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px;
+}
+
+/* line 273, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-change i.rankings__table-change--up {
+  -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+          transform: translateY(-4px);
+  border-color: transparent transparent #45b8ac transparent;
+}
+
+/* line 277, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-change i.rankings__table-change--down {
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
+  border-color: #d63864 transparent transparent transparent;
+}
+
+/* line 283, src/scss/_components/rankings/_rankings.scss */
+.rankings__table-change span {
+  margin-left: 2px;
+  font-size: 24px;
+  line-height: 1;
+  color: #232425;
+}
+
+/* line 292, src/scss/_components/rankings/_rankings.scss */
 .rankings__box {
   cursor: pointer;
   position: relative;
@@ -7588,7 +7996,7 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 35, src/scss/_components/rankings/_rankings.scss */
+/* line 302, src/scss/_components/rankings/_rankings.scss */
 .rankings__box:hover {
   -webkit-transform: translateY(-8px);
       -ms-transform: translateY(-8px);
@@ -7602,27 +8010,27 @@ picture {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 
-/* line 42, src/scss/_components/rankings/_rankings.scss */
+/* line 309, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-1 .rankings__box-top {
   background-color: #45b8ac;
 }
 
-/* line 47, src/scss/_components/rankings/_rankings.scss */
+/* line 314, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-2 .rankings__box-top {
   background-color: #26a69a;
 }
 
-/* line 52, src/scss/_components/rankings/_rankings.scss */
+/* line 319, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-3 .rankings__box-top {
   background-color: #009688;
 }
 
-/* line 57, src/scss/_components/rankings/_rankings.scss */
+/* line 324, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-4 .rankings__box-top {
   background-color: #008679;
 }
 
-/* line 62, src/scss/_components/rankings/_rankings.scss */
+/* line 329, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7638,13 +8046,13 @@ picture {
           justify-content: space-between;
 }
 
-/* line 68, src/scss/_components/rankings/_rankings.scss */
+/* line 335, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top {
   height: 166px;
   background-color: #26a69a;
 }
 
-/* line 72, src/scss/_components/rankings/_rankings.scss */
+/* line 339, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top--top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7658,13 +8066,13 @@ picture {
   padding: 19px 15px 10px;
 }
 
-/* line 79, src/scss/_components/rankings/_rankings.scss */
+/* line 346, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top--bottom {
   padding: 0 15px 7px;
   text-align: right;
 }
 
-/* line 84, src/scss/_components/rankings/_rankings.scss */
+/* line 351, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top--left {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -7673,19 +8081,19 @@ picture {
   max-width: 100%;
 }
 
-/* line 89, src/scss/_components/rankings/_rankings.scss */
+/* line 356, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-top--right {
   width: 82px;
 }
 
-/* line 94, src/scss/_components/rankings/_rankings.scss */
+/* line 361, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-bottom {
   height: -webkit-calc(271px - 166px);
   height: calc(271px - 166px);
   padding: 16px 15px 32px;
 }
 
-/* line 99, src/scss/_components/rankings/_rankings.scss */
+/* line 366, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-circle {
   overflow: hidden;
   position: relative;
@@ -7696,7 +8104,7 @@ picture {
   border: solid 2px #ffffff;
 }
 
-/* line 107, src/scss/_components/rankings/_rankings.scss */
+/* line 374, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-circle img {
   position: absolute;
   top: 0;
@@ -7709,7 +8117,7 @@ picture {
      object-position: center;
 }
 
-/* line 118, src/scss/_components/rankings/_rankings.scss */
+/* line 385, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-num {
   position: relative;
   display: -webkit-box;
@@ -7722,7 +8130,7 @@ picture {
           align-items: flex-start;
 }
 
-/* line 123, src/scss/_components/rankings/_rankings.scss */
+/* line 390, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-num span {
   font-size: 100px;
   font-weight: bold;
@@ -7730,7 +8138,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 130, src/scss/_components/rankings/_rankings.scss */
+/* line 397, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-num i {
   text-transform: uppercase;
   font-style: normal;
@@ -7740,7 +8148,7 @@ picture {
   color: #ffffff;
 }
 
-/* line 140, src/scss/_components/rankings/_rankings.scss */
+/* line 407, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-name {
   font-size: 24px;
   font-weight: 500;
@@ -7748,14 +8156,14 @@ picture {
   color: #ffffff;
 }
 
-/* line 147, src/scss/_components/rankings/_rankings.scss */
+/* line 414, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-country {
   font-size: 18px;
   line-height: 1.33;
   color: #ffffff;
 }
 
-/* line 153, src/scss/_components/rankings/_rankings.scss */
+/* line 420, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-progress {
   position: relative;
   height: 16px;
@@ -7763,7 +8171,7 @@ picture {
   background-color: rgba(35, 36, 37, 0.1);
 }
 
-/* line 159, src/scss/_components/rankings/_rankings.scss */
+/* line 426, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-progress span {
   position: absolute;
   top: 0;
@@ -7772,7 +8180,7 @@ picture {
   background-color: #45b8ac;
 }
 
-/* line 168, src/scss/_components/rankings/_rankings.scss */
+/* line 435, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7780,14 +8188,14 @@ picture {
   display: flex;
 }
 
-/* line 171, src/scss/_components/rankings/_rankings.scss */
+/* line 438, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points--left {
   position: relative;
   width: 60%;
   padding-right: 15px;
 }
 
-/* line 176, src/scss/_components/rankings/_rankings.scss */
+/* line 443, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points--left:after {
   content: '';
   position: absolute;
@@ -7802,13 +8210,13 @@ picture {
   border: solid 1px #d3d3d4;
 }
 
-/* line 189, src/scss/_components/rankings/_rankings.scss */
+/* line 456, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points--right {
   width: 40%;
   padding-left: 15px;
 }
 
-/* line 194, src/scss/_components/rankings/_rankings.scss */
+/* line 461, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-title {
   font-size: 10px;
   line-height: 2.4;
@@ -7816,7 +8224,7 @@ picture {
   color: #232425;
 }
 
-/* line 201, src/scss/_components/rankings/_rankings.scss */
+/* line 468, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-num {
   font-size: 30px;
   font-weight: bold;
@@ -7825,7 +8233,7 @@ picture {
   text-align: center;
 }
 
-/* line 209, src/scss/_components/rankings/_rankings.scss */
+/* line 476, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7837,7 +8245,7 @@ picture {
           align-items: center;
 }
 
-/* line 213, src/scss/_components/rankings/_rankings.scss */
+/* line 480, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step i {
   margin-right: 3px;
   width: 0;
@@ -7846,7 +8254,7 @@ picture {
   border-width: 7px;
 }
 
-/* line 220, src/scss/_components/rankings/_rankings.scss */
+/* line 487, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step i.rankings__box-points-step--up {
   -webkit-transform: translateY(-4px);
       -ms-transform: translateY(-4px);
@@ -7854,7 +8262,7 @@ picture {
   border-color: transparent transparent #45b8ac transparent;
 }
 
-/* line 224, src/scss/_components/rankings/_rankings.scss */
+/* line 491, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step i.rankings__box-points-step--down {
   -webkit-transform: translateY(4px);
       -ms-transform: translateY(4px);
@@ -7862,7 +8270,7 @@ picture {
   border-color: #d63864 transparent transparent transparent;
 }
 
-/* line 230, src/scss/_components/rankings/_rankings.scss */
+/* line 497, src/scss/_components/rankings/_rankings.scss */
 .rankings__box-points-step span {
   margin-left: 3px;
   font-size: 30px;

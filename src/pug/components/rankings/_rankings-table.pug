@@ -1,5 +1,107 @@
 // SECTION rankings table :: START
 
+-
+  var rankingsTableArr = [
+    {
+      id: '5',
+      userName: 'Gussie Perry',
+      progress: '36,000',
+      progressWidth: '85%',
+      changeDirection: 'up',
+      changeVal: '6,000',
+      location: 'San Fancisco',
+    },
+    {
+      id: '6',
+      userName: 'Lenora Garner',
+      progress: '32,350',
+      progressWidth: '80%',
+      changeDirection: 'down',
+      changeVal: '2,250',
+      location: 'London',
+    },
+    {
+      id: '7',
+      userName: 'Hunter Torres-Holden',
+      progress: '31,950',
+      progressWidth: '75%',
+      changeDirection: 'down',
+      changeVal: '6,800',
+      location: 'London',
+    },
+    {
+      id: '8',
+      userName: 'Nettie Welch',
+      progress: '31,350',
+      progressWidth: '70%',
+      changeDirection: 'up',
+      changeVal: '500',
+      location: 'New Yor',
+    },
+    {
+      id: '9',
+      userName: 'Russell Martin',
+      progress: '30,000',
+      progressWidth: '65%',
+      changeDirection: 'down',
+      changeVal: '1,000',
+      location: 'Moscow',
+    },
+    {
+      id: '10',
+      userName: 'Lottie-Mai Butler Jenkins',
+      progress: '29,500',
+      progressWidth: '60%',
+      changeDirection: 'up',
+      changeVal: '2,600',
+      location: 'Johannesburg',
+    },
+  ];
+
 .rankings__table
+  .rankings__table-head
+    .rankings__table-tr
+      .rankings__table-th.rankings__table-th-0
+        p!= "Ranking"
+      .rankings__table-th.rankings__table-th-1
+        p!= "Associate"
+      .rankings__table-th.rankings__table-th-2
+        p!= "Points Scored"
+      .rankings__table-th.rankings__table-th-3
+        p!= "Change"
+      .rankings__table-th.rankings__table-th-4
+        p!= "Location"
+
+  .rankings__table-body
+    each val, idx in rankingsTableArr
+      .rankings__table-tr
+        .rankings__table-td.rankings__table-td-0
+          .rankings__table-circle
+            span!= rankingsTableArr[idx].id
+
+        .rankings__table-td.rankings__table-td-1
+          .rankings__table-user
+            .rankings__table-user--left
+              .rankings__table-user--circle
+                img(src="./img/mockupone.png" srcset="./img/mockupone@2x.png 2x" alt="" title="")
+            .rankings__table-user--right
+              p!= rankingsTableArr[idx].userName
+
+        .rankings__table-td.rankings__table-td-2
+          .rankings__table-progress
+            .rankings__table-progress--left
+              p!= rankingsTableArr[idx].progress
+            .rankings__table-progress--right
+              .rankings__table-progress--bar
+                span(style!= "width:" + rankingsTableArr[idx].progressWidth + ";")
+
+        .rankings__table-td.rankings__table-td-3
+          .rankings__table-change
+            i(class!= "rankings__table-change--" + rankingsTableArr[idx].changeDirection)
+            span!= rankingsTableArr[idx].changeVal
+
+        .rankings__table-td.rankings__table-td-4
+          p!= rankingsTableArr[idx].location
+
 
 // SECTION rankings table :: END
