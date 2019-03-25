@@ -1,0 +1,79 @@
+// SECTION rankings box :: START
+
+-
+  var arrRankings = [
+    {
+      id: '1',
+      attr: 'st',
+      name: 'Raymond Robinson',
+      country: 'York',
+      progress: '85%',
+      points: '36,000',
+      steps: '1,000',
+    },
+    {
+      id: '2',
+      attr: 'nd',
+      name: 'Mable Thompson',
+      country: 'Austin',
+      progress: '83%',
+      points: '32,050',
+      steps: '500',
+    },
+    {
+      id: '3',
+      attr: 'rd',
+      name: 'Elizabeth Houston',
+      country: 'Paris',
+      progress: '80%',
+      points: '31,100',
+      steps: '800',
+    },
+    {
+      id: '4',
+      attr: 'th',
+      name: 'Gavin Bryan',
+      country: 'Milan',
+      progress: '75%',
+      points: '29,000',
+      steps: '300',
+    },
+  ];
+
+.rankings__box-wrapper
+
+  each val, idx in arrRankings
+    .rankings__box(class!= "rankings__box-" + arrRankings[idx].id)
+      .rankings__box-top
+
+        .rankings__box-top--top
+          .rankings__box-top--left
+            p.rankings__box-num
+              span!= arrRankings[idx].id
+              i!= arrRankings[idx].attr
+          .rankings__box-top--right
+            .rankings__box-circle
+              img(src="./img/mockupone.png" srcset="./img/mockupone@2x.png 2x" alt="" title="")
+
+        .rankings__box-top--bottom
+          p.rankings__box-name!= arrRankings[idx].name
+          p.rankings__box-country!= arrRankings[idx].country
+
+      .rankings__box-bottom
+        .rankings__box-progress
+          span(style!= "width:" + arrRankings[idx].progress + ";")
+
+        .rankings__box-points
+          .rankings__box-points--left
+            p.rankings__box-points-title!= "Points Scored"
+            p.rankings__box-points-num!= arrRankings[idx].points
+
+          .rankings__box-points--right
+            p.rankings__box-points-title!= "Change"
+
+            .rankings__box-points-step
+              i(class!= (idx === 0 || idx === 3) ? 'rankings__box-points-step--up':'rankings__box-points-step--down')
+              span!= arrRankings[idx].steps
+
+
+// SECTION rankings box :: END

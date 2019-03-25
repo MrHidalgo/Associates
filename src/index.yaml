@@ -3,19 +3,25 @@ ProjectTitle: Associates
 PageList:
 - file: index.html
   titleName: Home
-  ready: 90
+  ready: 95
 - file: do.html
   titleName: What We Do
-  ready: 90
+  ready: 95
 - file: are.html
   titleName: Who We Are
-  ready: 90
+  ready: 95
 - file: plain.html
   titleName: Plain
-  ready: 90
+  ready: 95
 - file: apply.html
   titleName: Apply
-  ready: 90
+  ready: 95
 - file: apply-closed.html
   titleName: Apply Closed
-  ready: 90
+  ready: 95
+- file: points.html
+  titleName: Point rankings
+  ready: 1
+- file: rankings.html
+  titleName: Rankings
+  ready: 1

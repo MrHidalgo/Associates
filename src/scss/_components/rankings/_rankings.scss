@@ -1,0 +1,237 @@
+// SECTION rankings :: START
+
+.rankings {
+  position: relative;
+  top: -51px;
+  min-height: calc(100vh - 51px);
+
+  &__wrapper {
+    &-0 {
+      min-height: 374px;
+      padding-top: 52px;
+      padding-bottom: 52px;
+      background-color: #f8f8f8;
+    }
+
+    &-1 {
+      min-height: calc((100vh - 51px) - 374px);
+    }
+  }
+
+  &__box {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    max-width: calc((100% - (21px * 3)) / 4);
+    height: 271px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 9px 0 #0000002d;
+    @include transition(transform, box-shadow);
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 17px 9px 0 #0000002d;
+      @include transition(transform, box-shadow);
+    }
+
+    &-1 {
+      .rankings__box-top {
+        background-color: #45b8ac;
+      }
+    }
+    &-2 {
+      .rankings__box-top {
+        background-color: #26a69a
+      }
+    }
+    &-3 {
+      .rankings__box-top {
+        background-color: #009688;
+      }
+    }
+    &-4 {
+      .rankings__box-top {
+        background-color: #008679;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &-top {
+      height: 166px;
+      background-color: #26a69a;
+
+      &--top {
+        display: flex;
+        align-items: center;
+        min-height: 82px;
+        padding: 19px 15px 10px;
+      }
+
+      &--bottom {
+        padding: 0 15px 7px;
+        text-align: right;
+      }
+
+      &--left {
+        flex: 1;
+        max-width: 100%;
+      }
+
+      &--right {
+        width: 82px;
+      }
+    }
+
+    &-bottom {
+      height: calc(271px - 166px);
+      padding: 16px 15px 32px;
+    }
+
+    &-circle {
+      overflow: hidden;
+      position: relative;
+      width: 82px;
+      height: 82px;
+      border-radius: 100%;
+      border: solid 2px #ffffff;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &-num {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+
+      span {
+        font-size: 100px;
+        font-weight: bold;
+        line-height: 0.7;
+        color: #ffffff;
+      }
+
+      i {
+        text-transform: uppercase;
+        font-style: normal;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1;
+        color: #ffffff;
+      }
+    }
+
+    &-name {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1;
+      color: #ffffff;
+    }
+
+    &-country {
+      font-size: 18px;
+      line-height: 1.33;
+      color: #ffffff;
+    }
+
+    &-progress {
+      position: relative;
+      height: 16px;
+      margin-bottom: 4px;
+      background-color: rgba(35, 36, 37, 0.1);
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #45b8ac;
+      }
+    }
+
+    &-points {
+      display: flex;
+
+      &--left {
+        position: relative;
+        width: 60%;
+        padding-right: 15px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+          margin-top: 12px;
+          width: 1px;
+          height: 23px;
+          border: solid 1px #d3d3d4;
+        }
+      }
+
+      &--right {
+        width: 40%;
+        padding-left: 15px;
+      }
+
+      &-title {
+        font-size: 10px;
+        line-height: 2.4;
+        text-align: center;
+        color: #232425;
+      }
+
+      &-num {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 0.8;
+        color: #232425;
+        text-align: center;
+      }
+
+      &-step {
+        display: flex;
+        align-items: center;
+
+        i {
+          margin-right: 3px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 7px;
+
+          &.rankings__box-points-step--up {
+            transform: translateY(-4px);
+            border-color: transparent transparent #45b8ac transparent;
+          }
+          &.rankings__box-points-step--down {
+            transform: translateY(4px);
+            border-color: #d63864 transparent transparent transparent;
+          }
+        }
+
+        span {
+          margin-left: 3px;
+          font-size: 30px;
+          line-height: 0.8;
+          color: #232425;
+        }
+      }
+    }
+  }
+}
+
+// SECTION rankings :: END

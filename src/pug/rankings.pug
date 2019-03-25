@@ -1,0 +1,14 @@
+---
+title: Associates | Rankings
+
+pageClassName: p-rankings
+bodyMod: body--wp
+---
+extends shared/_layout
+
+block header
+block footer
+block content
+  div.body(class != pageClassName)
+
+    include components/rankings/_rankings
