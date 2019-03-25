@@ -3,8 +3,8 @@
 .p-main {
   overflow: hidden;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 78px;
+  padding-top: 32px;
+  padding-bottom: 77px;
   background-color: #f8f8f8;
 
   &__bg {
@@ -30,7 +30,7 @@
         display: block;
         max-width: 100%;
         height: auto;
-        transform: translateY(100px);
+        transform: translateY(113px);
       }
     }
   }
@@ -43,7 +43,7 @@
   }
 
   &__badge {
-    padding-bottom: 94px;
+    padding-bottom: 95px;
     font-size: 24px;
     font-weight: 300;
     line-height: 1.33;
@@ -52,7 +52,7 @@
   }
 
   &__title {
-    padding-bottom: 16px;
+    padding-bottom: 18px;
     font-size: 56px;
     font-weight: 900;
     line-height: 1.14;
@@ -67,7 +67,7 @@
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1.33;
+    line-height: 1.35;
     letter-spacing: -0.5px;
     color: #000000;
   }

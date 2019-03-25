@@ -7149,8 +7149,8 @@ picture {
 .p-main {
   overflow: hidden;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 78px;
+  padding-top: 32px;
+  padding-bottom: 77px;
   background-color: #f8f8f8;
 }
 
@@ -7194,9 +7194,9 @@ picture {
   display: block;
   max-width: 100%;
   height: auto;
-  -webkit-transform: translateY(100px);
-      -ms-transform: translateY(100px);
-          transform: translateY(100px);
+  -webkit-transform: translateY(113px);
+      -ms-transform: translateY(113px);
+          transform: translateY(113px);
 }
 
 /* line 38, src/scss/_components/points/_main.scss */
@@ -7209,7 +7209,7 @@ picture {
 
 /* line 45, src/scss/_components/points/_main.scss */
 .p-main__badge {
-  padding-bottom: 94px;
+  padding-bottom: 95px;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.33;
@@ -7219,7 +7219,7 @@ picture {
 
 /* line 54, src/scss/_components/points/_main.scss */
 .p-main__title {
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   font-size: 56px;
   font-weight: 900;
   line-height: 1.14;
@@ -7235,7 +7235,7 @@ picture {
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.33;
+  line-height: 1.35;
   letter-spacing: -0.5px;
   color: #000000;
 }
@@ -7249,7 +7249,7 @@ picture {
 /* line 8, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-0 {
   position: relative;
-  margin-bottom: 58px;
+  margin-bottom: 88px;
 }
 
 /* line 12, src/scss/_components/points/_calculate.scss */
@@ -7265,7 +7265,7 @@ picture {
 
 /* line 22, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-1 {
-  margin-bottom: 38px;
+  margin-bottom: 66px;
 }
 
 /* line 25, src/scss/_components/points/_calculate.scss */
@@ -7273,12 +7273,28 @@ picture {
   max-width: 496px;
 }
 
-/* line 31, src/scss/_components/points/_calculate.scss */
+/* line 29, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-1 .calculate__row-right {
+  padding-top: 18px;
+  padding-left: 14px;
+}
+
+/* line 34, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-1 .calculate__title {
+  padding-bottom: 14px;
+}
+
+/* line 40, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-2 .calculate__desc {
   max-width: 479px;
 }
 
-/* line 35, src/scss/_components/points/_calculate.scss */
+/* line 44, src/scss/_components/points/_calculate.scss */
+.calculate__wrapper-2 .calculate__row-left {
+  padding-top: 62px;
+}
+
+/* line 48, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-2 .calculate__row-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7288,9 +7304,10 @@ picture {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 29px;
 }
 
-/* line 42, src/scss/_components/points/_calculate.scss */
+/* line 56, src/scss/_components/points/_calculate.scss */
 .calculate__bg {
   z-index: 0;
   position: absolute;
@@ -7304,13 +7321,13 @@ picture {
   height: 100%;
 }
 
-/* line 51, src/scss/_components/points/_calculate.scss */
+/* line 65, src/scss/_components/points/_calculate.scss */
 .calculate__bg-left, .calculate__bg-right {
   width: 50%;
   height: 100%;
 }
 
-/* line 57, src/scss/_components/points/_calculate.scss */
+/* line 71, src/scss/_components/points/_calculate.scss */
 .calculate__bg-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7326,7 +7343,17 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 64, src/scss/_components/points/_calculate.scss */
+/* line 76, src/scss/_components/points/_calculate.scss */
+.calculate__bg-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+/* line 85, src/scss/_components/points/_calculate.scss */
 .calculate__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7334,12 +7361,19 @@ picture {
   display: flex;
 }
 
-/* line 67, src/scss/_components/points/_calculate.scss */
+/* line 88, src/scss/_components/points/_calculate.scss */
 .calculate__row-left, .calculate__row-right {
   width: 50%;
 }
 
-/* line 73, src/scss/_components/points/_calculate.scss */
+/* line 92, src/scss/_components/points/_calculate.scss */
+.calculate__row-left img, .calculate__row-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 100, src/scss/_components/points/_calculate.scss */
 .calculate__title {
   padding-bottom: 9px;
   font-size: 32px;
@@ -7349,18 +7383,18 @@ picture {
   color: #4a4a4a;
 }
 
-/* line 82, src/scss/_components/points/_calculate.scss */
+/* line 109, src/scss/_components/points/_calculate.scss */
 .calculate__desc {
   width: 100%;
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.33;
+  line-height: 1.35;
   color: #4a4a4a;
 }
 
-/* line 89, src/scss/_components/points/_calculate.scss */
+/* line 116, src/scss/_components/points/_calculate.scss */
 .calculate__desc--pb {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 /* line 3, src/scss/_components/points/_benefits.scss */
@@ -7390,7 +7424,7 @@ picture {
   padding-bottom: 58px;
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.33;
+  line-height: 1.35;
   text-align: center;
   color: #4a4a4a;
 }
