@@ -13,6 +13,11 @@ vendor/*
 # ==========
 package-lock.json
 
+# DIST
+# ==========
+dest/
+!dest/icon
+!dest/img
 
 # EXTENSIONS
 # ==========

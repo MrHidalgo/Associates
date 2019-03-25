@@ -34,16 +34,16 @@
       padding-top: 60px;
 
       img {
-        opacity: 0;
+         opacity: 0;
         display: block;
         max-width: 100%;
         height: auto;
-        transform: translateX(80%);
+        transform: translateX(20%);
 
         .is-animated & {
-          opacity: 1;
+           opacity: 1;
           transform: translateX(0);
-          @include transition(opacity 1s, transform 1s);
+          @include transition(opacity .3s, transform .8s);
         }
       }
     }

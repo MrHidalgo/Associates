@@ -58,7 +58,10 @@ const configOption = {
   sourceMapStyle: {
     includeContent: true,
     sourceRoot: '../src'
-  }
+  },
+
+  platformConfigFile: '/tmp/config.json',
+  webpackStatsFile: '/tmp/webpack-stats.json',
 };
 
 
