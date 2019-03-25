@@ -1,0 +1,70 @@
+// SECTION benefits :: START
+
+-
+  var benefitsArr = [
+    {
+      id: '1',
+      points: '200',
+      iconName: 'benefits-1',
+      desc: 'Associates unlock the ability to request invitations to projects'
+    },
+    {
+      id: '2',
+      points: '1,000',
+      iconName: 'benefits-2',
+      desc: 'Associates are entered onto the Associate Leaderboard'
+    },
+    {
+      id: '3',
+      points: '2,000',
+      iconName: 'benefits-3',
+      desc: 'Associates can nominate up to 5 colleagues to join the platform, each successful referral worth £15'
+    },
+    {
+      id: '4',
+      points: '5,000',
+      iconName: 'benefits-4',
+      desc: 'Associates can request a written reference from us here at Outsmart Insight'
+    },
+    {
+      id: '5',
+      points: '10,000',
+      iconName: 'benefits-5',
+      desc: 'Associates unlock a 1.2x fee surge valid for all earnings from client projects'
+    },
+    {
+      id: '6',
+      points: '20,000',
+      iconName: 'benefits-6',
+      desc: 'Speak to a member of our alumni network about your dream job, the inside track on how to get it, and what it\'s like to work there'
+    },
+  ];
+
+section#benefits.benefits
+  .c-grid
+    .benefits__wrapper
+
+      h2.benefits__title!= "What are the benefits of earning points?"
+      p.benefits__text!= "The purpose of points is to give an indication of Associates’ participation and achievements on the platform. It is a way to encourage Associates to actively be involved in projects and community engagement, as well as rewarding Associates for their efforts."
+
+      .benefits__box-wrapper
+        each val, idx in benefitsArr
+          .benefits__box(class!= "benefits__box-" + benefitsArr[idx].id)
+            .benefits__box-bg
+              .benefits__box-bg--top
+              .benefits__box-bg--bottom
+
+            .benefits__box-content
+              .benefits__box-points
+                span!= benefitsArr[idx].points
+                != "points"
+
+              .benefits__box-circle
+                +iconSVG(benefitsArr[idx].iconName)
+
+              .benefits__box-desc
+                p!= benefitsArr[idx].desc
+
+
+
+// SECTION benefits :: END

@@ -156,6 +156,42 @@
   transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+/* line 1, src/scss/_generated/_spriteSVG.scss */
+.icon-benefits-1 {
+  width: 42px;
+  height: 48px;
+}
+
+/* line 5, src/scss/_generated/_spriteSVG.scss */
+.icon-benefits-2 {
+  width: 64px;
+  height: 41px;
+}
+
+/* line 9, src/scss/_generated/_spriteSVG.scss */
+.icon-benefits-3 {
+  width: 76px;
+  height: 67px;
+}
+
+/* line 13, src/scss/_generated/_spriteSVG.scss */
+.icon-benefits-4 {
+  width: 52px;
+  height: 62px;
+}
+
+/* line 17, src/scss/_generated/_spriteSVG.scss */
+.icon-benefits-5 {
+  width: 65px;
+  height: 29px;
+}
+
+/* line 21, src/scss/_generated/_spriteSVG.scss */
+.icon-benefits-6 {
+  width: 51px;
+  height: 50px;
+}
+
 @font-face {
   font-family: "iconFont";
   src: url("../fonts/iconFont.eot");
@@ -1533,6 +1569,12 @@ picture {
   font-size: 16px;
   line-height: 1.56;
   color: #ffffff;
+}
+
+/* line 3, src/scss/_shared/_iconSVG.scss */
+.icon-svg {
+  display: inline-block;
+  fill: currentColor;
 }
 
 /* line 1, src/scss/_shared/_iconFont.scss */
@@ -7196,6 +7238,157 @@ picture {
   line-height: 1.33;
   letter-spacing: -0.5px;
   color: #000000;
+}
+
+/* line 3, src/scss/_components/points/_benefits.scss */
+.benefits {
+  padding-top: 65px;
+  padding-bottom: 105px;
+  background-color: #f8f8f8;
+}
+
+/* line 8, src/scss/_components/points/_benefits.scss */
+.benefits__title {
+  padding-bottom: 22px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* line 18, src/scss/_components/points/_benefits.scss */
+.benefits__text {
+  width: 100%;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 58px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* line 31, src/scss/_components/points/_benefits.scss */
+.benefits__box {
+  position: relative;
+  width: 100%;
+  max-width: -webkit-calc((100% - (8px * 5)) / 6);
+  max-width: calc((100% - (8px * 5)) / 6);
+  height: 377px;
+  -webkit-box-shadow: 0 5px 9px 0 #0000002d;
+          box-shadow: 0 5px 9px 0 #0000002d;
+  background-color: #ffffff;
+}
+
+/* line 39, src/scss/_components/points/_benefits.scss */
+.benefits__box-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 44, src/scss/_components/points/_benefits.scss */
+.benefits__box-bg {
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 54, src/scss/_components/points/_benefits.scss */
+.benefits__box-bg--top {
+  height: 138px;
+  background-color: #45b8ac;
+}
+
+/* line 59, src/scss/_components/points/_benefits.scss */
+.benefits__box-bg--bottom {
+  height: -webkit-calc(100% - 138px);
+  height: calc(100% - 138px);
+  background-color: #ffffff;
+}
+
+/* line 65, src/scss/_components/points/_benefits.scss */
+.benefits__box-content {
+  z-index: 2;
+  position: relative;
+  padding-top: 32px;
+}
+
+/* line 71, src/scss/_components/points/_benefits.scss */
+.benefits__box-points {
+  width: 100%;
+  padding-bottom: 28px;
+  font-size: 28px;
+  line-height: 0.86;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 80, src/scss/_components/points/_benefits.scss */
+.benefits__box-points span {
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+/* line 86, src/scss/_components/points/_benefits.scss */
+.benefits__box-circle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 108px;
+  height: 108px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #4a4a4a;
+}
+
+/* line 99, src/scss/_components/points/_benefits.scss */
+.benefits__box-desc {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 103, src/scss/_components/points/_benefits.scss */
+.benefits__box-desc p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  color: #4a4a4a;
 }
 
 /* line 3, src/scss/_components/rankings/_rankings.scss */

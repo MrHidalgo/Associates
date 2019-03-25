@@ -1,0 +1,114 @@
+// SECTION benefits :: START
+
+.benefits {
+  padding-top: 65px;
+  padding-bottom: 105px;
+  background-color: #f8f8f8;
+
+  &__title {
+    padding-bottom: 22px;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: -0.7px;
+    text-align: center;
+    color: #4a4a4a;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 58px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    text-align: center;
+    color: #4a4a4a;
+  }
+
+  &__box {
+    position: relative;
+    width: 100%;
+    max-width: calc((100% - (8px * 5)) / 6);
+    height: 377px;
+    box-shadow: 0 5px 9px 0 #0000002d;
+    background-color: #ffffff;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-bg {
+      z-index: 0;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &--top {
+        height: 138px;
+        background-color: #45b8ac;
+      }
+
+      &--bottom {
+        height: calc(100% - 138px);
+        background-color: #ffffff;
+      }
+    }
+
+    &-content {
+      z-index: 2;
+      position: relative;
+      padding-top: 32px;
+    }
+
+    &-points {
+      width: 100%;
+      padding-bottom: 28px;
+      font-size: 28px;
+      line-height: 0.86;
+      letter-spacing: -0.7px;
+      text-align: center;
+      color: #ffffff;
+
+      span {
+        padding-right: 5px;
+        font-weight: bold;
+      }
+    }
+
+    &-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 108px;
+      height: 108px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 13px;
+      border-radius: 100%;
+      background-color: #4a4a4a;
+    }
+
+    &-desc {
+      padding-left: 10px;
+      padding-right: 10px;
+
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: center;
+        color: #4a4a4a;
+      }
+    }
+  }
+}
+
+// SECTION benefits :: END
