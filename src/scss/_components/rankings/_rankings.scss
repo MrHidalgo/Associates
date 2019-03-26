@@ -11,15 +11,35 @@
       padding-top: 52px;
       padding-bottom: 52px;
       background-color: #f8f8f8;
+      @include adaptive(1199) {
+        padding-bottom: 31px;
+      }
     }
 
     &-1 {
       min-height: calc((100vh - 51px) - 374px);
+      @include adaptive(1199) {
+        .c-grid {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
     }
   }
 
   &__table {
     padding-top: 16px;
+    @include adaptive(1199) {
+      width: 1170px;
+    }
+
+    &-wrapper {
+      @include adaptive(1199) {
+        overflow: hidden;
+        overflow-x: auto;
+        position: relative;
+      }
+    }
 
     &-head {
       min-height: 38px;
@@ -294,10 +314,21 @@
     position: relative;
     width: 100%;
     max-width: calc((100% - (21px * 3)) / 4);
-    height: 271px;
+    min-height: 271px;
     background-color: #ffffff;
     box-shadow: 0 5px 9px 0 #0000002d;
     @include transition(transform, box-shadow);
+    @include adaptive(1199) {
+      max-width: calc((100% - 21px) / 2);
+      margin-bottom: 21px;
+    }
+    @include adaptive(575) {
+      max-width: 100%;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
 
     &:hover {
       transform: translateY(-8px);
@@ -330,6 +361,9 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      @include adaptive(1199) {
+        flex-wrap: wrap;
+      }
     }
 
     &-top {
@@ -476,6 +510,7 @@
       &-step {
         display: flex;
         align-items: center;
+        justify-content: center;
 
         i {
           margin-right: 3px;
