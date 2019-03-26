@@ -7326,55 +7326,148 @@ picture {
   padding-bottom: 32px;
 }
 
-/* line 8, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/points/_calculate.scss */
+  .calculate {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+/* line 12, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-0 {
   position: relative;
   margin-bottom: 88px;
 }
 
-/* line 12, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 12, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-0 {
+    margin-bottom: 75px;
+  }
+}
+
+/* line 19, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-0 .c-grid {
   z-index: 2;
   position: relative;
 }
 
-/* line 17, src/scss/_components/points/_calculate.scss */
+/* line 24, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-0 .calculate__desc {
   max-width: 476px;
 }
 
-/* line 22, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 24, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-0 .calculate__desc {
+    max-width: 100%;
+  }
+}
+
+/* line 32, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-1 {
   margin-bottom: 66px;
 }
 
-/* line 25, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 32, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-1 {
+    margin-bottom: 75px;
+  }
+}
+
+/* line 38, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-1 .calculate__desc {
   max-width: 496px;
 }
 
-/* line 29, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 38, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-1 .calculate__desc {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 45, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-1 .calculate__row {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 51, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-1 .calculate__row img {
+    margin-left: -15px;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 58, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-1 .calculate__row-right {
   padding-top: 18px;
   padding-left: 14px;
 }
 
-/* line 34, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 58, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-1 .calculate__row-right {
+    padding: 0;
+  }
+}
+
+/* line 66, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-1 .calculate__title {
   padding-bottom: 14px;
 }
 
-/* line 40, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 66, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-1 .calculate__title {
+    padding-bottom: 9px;
+  }
+}
+
+/* line 75, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-2 .calculate__desc {
   max-width: 479px;
 }
 
-/* line 44, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 75, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-2 .calculate__desc {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 82, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-2 .calculate__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+/* line 88, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-2 .calculate__row-left {
   padding-top: 62px;
 }
 
-/* line 48, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 88, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-2 .calculate__row-left {
+    padding-top: 0;
+  }
+}
+
+/* line 95, src/scss/_components/points/_calculate.scss */
 .calculate__wrapper-2 .calculate__row-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7387,7 +7480,15 @@ picture {
   padding-left: 29px;
 }
 
-/* line 56, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 95, src/scss/_components/points/_calculate.scss */
+  .calculate__wrapper-2 .calculate__row-right {
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 107, src/scss/_components/points/_calculate.scss */
 .calculate__bg {
   z-index: 0;
   position: absolute;
@@ -7401,13 +7502,27 @@ picture {
   height: 100%;
 }
 
-/* line 65, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 107, src/scss/_components/points/_calculate.scss */
+  .calculate__bg {
+    position: static;
+  }
+}
+
+/* line 119, src/scss/_components/points/_calculate.scss */
 .calculate__bg-left, .calculate__bg-right {
   width: 50%;
   height: 100%;
 }
 
-/* line 71, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 125, src/scss/_components/points/_calculate.scss */
+  .calculate__bg-left {
+    display: none;
+  }
+}
+
+/* line 131, src/scss/_components/points/_calculate.scss */
 .calculate__bg-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7423,7 +7538,16 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 76, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 131, src/scss/_components/points/_calculate.scss */
+  .calculate__bg-right {
+    width: 90%;
+    margin-bottom: 30px;
+    margin-left: auto;
+  }
+}
+
+/* line 141, src/scss/_components/points/_calculate.scss */
 .calculate__bg-right img {
   display: block;
   max-width: 100%;
@@ -7433,7 +7557,7 @@ picture {
           transform: translateY(-4px);
 }
 
-/* line 85, src/scss/_components/points/_calculate.scss */
+/* line 150, src/scss/_components/points/_calculate.scss */
 .calculate__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7441,29 +7565,60 @@ picture {
   display: flex;
 }
 
-/* line 88, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 150, src/scss/_components/points/_calculate.scss */
+  .calculate__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 156, src/scss/_components/points/_calculate.scss */
 .calculate__row-left, .calculate__row-right {
   width: 50%;
 }
 
-/* line 92, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 767px) {
+  /* line 156, src/scss/_components/points/_calculate.scss */
+  .calculate__row-left, .calculate__row-right {
+    width: 100%;
+  }
+}
+
+/* line 163, src/scss/_components/points/_calculate.scss */
 .calculate__row-left img, .calculate__row-right img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 100, src/scss/_components/points/_calculate.scss */
+/* line 171, src/scss/_components/points/_calculate.scss */
 .calculate__title {
   padding-bottom: 9px;
-  font-size: 32px;
   font-weight: bold;
   line-height: 1.25;
   letter-spacing: -0.7px;
   color: #4a4a4a;
+  font-size: 26px;
 }
 
-/* line 109, src/scss/_components/points/_calculate.scss */
+@media screen and (min-width: 320px) {
+  /* line 171, src/scss/_components/points/_calculate.scss */
+  .calculate__title {
+    font-size: -webkit-calc(26px + 6 * (100vw - 320px) / 1120);
+    font-size: calc(26px + 6 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 171, src/scss/_components/points/_calculate.scss */
+  .calculate__title {
+    font-size: 32px;
+  }
+}
+
+/* line 180, src/scss/_components/points/_calculate.scss */
 .calculate__desc {
   width: 100%;
   font-size: 18px;
@@ -7472,7 +7627,14 @@ picture {
   color: #4a4a4a;
 }
 
-/* line 116, src/scss/_components/points/_calculate.scss */
+@media screen and (max-width: 991px) {
+  /* line 180, src/scss/_components/points/_calculate.scss */
+  .calculate__desc {
+    font-size: 16px;
+  }
+}
+
+/* line 190, src/scss/_components/points/_calculate.scss */
 .calculate__desc--pb {
   padding-bottom: 24px;
 }
