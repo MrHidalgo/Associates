@@ -7168,12 +7168,19 @@ picture {
   height: 100%;
 }
 
-/* line 19, src/scss/_components/points/_main.scss */
+@media screen and (max-width: 767px) {
+  /* line 10, src/scss/_components/points/_main.scss */
+  .p-main__bg {
+    display: none;
+  }
+}
+
+/* line 22, src/scss/_components/points/_main.scss */
 .p-main__bg-left, .p-main__bg-right {
   width: 50%;
 }
 
-/* line 24, src/scss/_components/points/_main.scss */
+/* line 27, src/scss/_components/points/_main.scss */
 .p-main__bg-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7189,7 +7196,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 29, src/scss/_components/points/_main.scss */
+/* line 32, src/scss/_components/points/_main.scss */
 .p-main__bg-right img {
   display: block;
   max-width: 100%;
@@ -7199,7 +7206,7 @@ picture {
           transform: translateY(113px);
 }
 
-/* line 38, src/scss/_components/points/_main.scss */
+/* line 41, src/scss/_components/points/_main.scss */
 .p-main__wrapper {
   z-index: 2;
   position: relative;
@@ -7207,37 +7214,110 @@ picture {
   max-width: 616px;
 }
 
-/* line 45, src/scss/_components/points/_main.scss */
+@media screen and (max-width: 1199px) {
+  /* line 41, src/scss/_components/points/_main.scss */
+  .p-main__wrapper {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 41, src/scss/_components/points/_main.scss */
+  .p-main__wrapper {
+    max-width: 100%;
+  }
+}
+
+/* line 54, src/scss/_components/points/_main.scss */
 .p-main__badge {
   padding-bottom: 95px;
-  font-size: 24px;
   font-weight: 300;
   line-height: 1.33;
   letter-spacing: -0.5px;
   color: #000000;
+  font-size: 20px;
 }
 
-/* line 54, src/scss/_components/points/_main.scss */
+@media screen and (min-width: 320px) {
+  /* line 54, src/scss/_components/points/_main.scss */
+  .p-main__badge {
+    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 1120);
+    font-size: calc(20px + 4 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 54, src/scss/_components/points/_main.scss */
+  .p-main__badge {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 54, src/scss/_components/points/_main.scss */
+  .p-main__badge {
+    padding-bottom: 75px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 54, src/scss/_components/points/_main.scss */
+  .p-main__badge {
+    padding-bottom: 55px;
+  }
+}
+
+/* line 69, src/scss/_components/points/_main.scss */
 .p-main__title {
   padding-bottom: 18px;
-  font-size: 56px;
   font-weight: 900;
   line-height: 1.14;
   letter-spacing: -1.2px;
   color: #000000;
+  font-size: 40px;
 }
 
-/* line 63, src/scss/_components/points/_main.scss */
+@media screen and (min-width: 320px) {
+  /* line 69, src/scss/_components/points/_main.scss */
+  .p-main__title {
+    font-size: -webkit-calc(40px + 16 * (100vw - 320px) / 1120);
+    font-size: calc(40px + 16 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 69, src/scss/_components/points/_main.scss */
+  .p-main__title {
+    font-size: 56px;
+  }
+}
+
+/* line 78, src/scss/_components/points/_main.scss */
 .p-main__text {
   width: 100%;
   max-width: 580px;
-  font-size: 24px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.35;
   letter-spacing: -0.5px;
   color: #000000;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 78, src/scss/_components/points/_main.scss */
+  .p-main__text {
+    font-size: -webkit-calc(20px + 4 * (100vw - 320px) / 1120);
+    font-size: calc(20px + 4 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 78, src/scss/_components/points/_main.scss */
+  .p-main__text {
+    font-size: 24px;
+  }
 }
 
 /* line 3, src/scss/_components/points/_calculate.scss */
