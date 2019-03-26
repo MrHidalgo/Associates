@@ -21,7 +21,7 @@ PageList:
   ready: 95
 - file: points.html
   titleName: Point rankings
-  ready: 75
+  ready: 90
 - file: rankings.html
   titleName: Rankings
   ready: 90

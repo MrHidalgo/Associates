@@ -7649,12 +7649,27 @@ picture {
 /* line 8, src/scss/_components/points/_benefits.scss */
 .benefits__title {
   padding-bottom: 22px;
-  font-size: 32px;
   font-weight: bold;
   line-height: 1.25;
   letter-spacing: -0.7px;
   text-align: center;
   color: #4a4a4a;
+  font-size: 26px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 8, src/scss/_components/points/_benefits.scss */
+  .benefits__title {
+    font-size: -webkit-calc(26px + 6 * (100vw - 320px) / 1120);
+    font-size: calc(26px + 6 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 8, src/scss/_components/points/_benefits.scss */
+  .benefits__title {
+    font-size: 32px;
+  }
 }
 
 /* line 18, src/scss/_components/points/_benefits.scss */
@@ -7671,7 +7686,14 @@ picture {
   color: #4a4a4a;
 }
 
-/* line 31, src/scss/_components/points/_benefits.scss */
+@media screen and (max-width: 991px) {
+  /* line 18, src/scss/_components/points/_benefits.scss */
+  .benefits__text {
+    font-size: 16px;
+  }
+}
+
+/* line 34, src/scss/_components/points/_benefits.scss */
 .benefits__box {
   position: relative;
   width: 100%;
@@ -7683,7 +7705,32 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 39, src/scss/_components/points/_benefits.scss */
+@media screen and (max-width: 1199px) {
+  /* line 34, src/scss/_components/points/_benefits.scss */
+  .benefits__box {
+    max-width: -webkit-calc((100% - (8px * 2)) / 3);
+    max-width: calc((100% - (8px * 2)) / 3);
+    height: auto;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 34, src/scss/_components/points/_benefits.scss */
+  .benefits__box {
+    max-width: -webkit-calc((100% - 8px) / 2);
+    max-width: calc((100% - 8px) / 2);
+  }
+}
+
+@media screen and (max-width: 374px) {
+  /* line 34, src/scss/_components/points/_benefits.scss */
+  .benefits__box {
+    max-width: 100%;
+  }
+}
+
+/* line 53, src/scss/_components/points/_benefits.scss */
 .benefits__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7695,7 +7742,16 @@ picture {
           justify-content: space-between;
 }
 
-/* line 44, src/scss/_components/points/_benefits.scss */
+@media screen and (max-width: 1199px) {
+  /* line 53, src/scss/_components/points/_benefits.scss */
+  .benefits__box-wrapper {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 61, src/scss/_components/points/_benefits.scss */
 .benefits__box-bg {
   z-index: 0;
   position: absolute;
@@ -7714,27 +7770,27 @@ picture {
   height: 100%;
 }
 
-/* line 54, src/scss/_components/points/_benefits.scss */
+/* line 71, src/scss/_components/points/_benefits.scss */
 .benefits__box-bg--top {
   height: 138px;
   background-color: #45b8ac;
 }
 
-/* line 59, src/scss/_components/points/_benefits.scss */
+/* line 76, src/scss/_components/points/_benefits.scss */
 .benefits__box-bg--bottom {
   height: -webkit-calc(100% - 138px);
   height: calc(100% - 138px);
   background-color: #ffffff;
 }
 
-/* line 65, src/scss/_components/points/_benefits.scss */
+/* line 82, src/scss/_components/points/_benefits.scss */
 .benefits__box-content {
   z-index: 2;
   position: relative;
   padding-top: 32px;
 }
 
-/* line 71, src/scss/_components/points/_benefits.scss */
+/* line 88, src/scss/_components/points/_benefits.scss */
 .benefits__box-points {
   width: 100%;
   padding-bottom: 28px;
@@ -7745,13 +7801,13 @@ picture {
   color: #ffffff;
 }
 
-/* line 80, src/scss/_components/points/_benefits.scss */
+/* line 97, src/scss/_components/points/_benefits.scss */
 .benefits__box-points span {
   padding-right: 5px;
   font-weight: bold;
 }
 
-/* line 86, src/scss/_components/points/_benefits.scss */
+/* line 103, src/scss/_components/points/_benefits.scss */
 .benefits__box-circle {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7775,7 +7831,7 @@ picture {
   background-color: #4a4a4a;
 }
 
-/* line 98, src/scss/_components/points/_benefits.scss */
+/* line 115, src/scss/_components/points/_benefits.scss */
 .benefits__box-circle p {
   font-size: 38px;
   font-weight: bold;
@@ -7785,13 +7841,14 @@ picture {
   color: #ffffff;
 }
 
-/* line 108, src/scss/_components/points/_benefits.scss */
+/* line 125, src/scss/_components/points/_benefits.scss */
 .benefits__box-desc {
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 15px;
 }
 
-/* line 112, src/scss/_components/points/_benefits.scss */
+/* line 130, src/scss/_components/points/_benefits.scss */
 .benefits__box-desc p {
   font-size: 16px;
   font-weight: 300;

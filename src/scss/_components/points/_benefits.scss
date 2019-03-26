@@ -7,12 +7,12 @@
 
   &__title {
     padding-bottom: 22px;
-    font-size: 32px;
     font-weight: bold;
     line-height: 1.25;
     letter-spacing: -0.7px;
     text-align: center;
     color: #4a4a4a;
+    @include fluid(font-size, 320px, 1440px, 26px, 32px);
   }
 
   &__text {
@@ -26,6 +26,9 @@
     line-height: 1.35;
     text-align: center;
     color: #4a4a4a;
+    @include adaptive(991) {
+      font-size: 16px;
+    }
   }
 
   &__box {
@@ -35,10 +38,24 @@
     height: 377px;
     box-shadow: 0 5px 9px 0 #0000002d;
     background-color: #ffffff;
+    @include adaptive(1199) {
+      max-width: calc((100% - (8px * 2)) / 3);
+      height: auto;
+      margin-bottom: 8px;
+    }
+    @include adaptive(575) {
+      max-width: calc((100% - 8px) / 2);
+    }
+    @include adaptive(374) {
+      max-width: 100%;
+    }
 
     &-wrapper {
       display: flex;
       justify-content: space-between;
+      @include adaptive(1199) {
+        flex-wrap: wrap;
+      }
     }
 
     &-bg {
@@ -108,6 +125,7 @@
     &-desc {
       padding-left: 10px;
       padding-right: 10px;
+      padding-bottom: 15px;
 
       p {
         font-size: 16px;
